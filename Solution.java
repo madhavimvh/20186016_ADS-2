@@ -43,7 +43,7 @@ class Graphlist implements Graph {
 		return false;
 	}
 	public String display(String[] str) {
-		System.out.println(V() + " vertices" + ", " + E() + " edges");
+		System.out.print(V() + " vertices" + ", " + E() + " edges");
 		String s = "";
 		for (int i = 0; i < str.length; i++) {
 			s = str[i] + ": " ;

@@ -29,8 +29,7 @@ Your Output:
 7
 9
 5
-13 vertices, 13 edges
-Haryana: Gujarat
+13 vertices, 13 edgesHaryana: Gujarat
 Delhi
 
 Exception in thread "main" java.util.NoSuchElementException: No line found
@@ -192,8 +191,7 @@ Your Output:
 27
 29
 35
-36 vertices, 78 edges
-West Bengal: Uttar Pradesh
+36 vertices, 78 edgesWest Bengal: Uttar Pradesh
 Bihar
 
 Exception in thread "main" java.util.NoSuchElementException: No line found
@@ -289,8 +287,7 @@ No edges
 
 Your Output: 
 0
-1 vertices, 1 edges
-Hyderabad: 
+1 vertices, 1 edgesHyderabad: 
 Exception in thread "main" java.util.NoSuchElementException: No line found
 	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
 	at Solution.main(Solution.java:122)
@@ -322,8 +319,7 @@ Expected Output:
 No edges
 
 Your Output: 
-0 vertices, 0 edges
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+0 vertices, 0 edgesException in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
 	at Graphlist.display(Solution.java:50)
 	at Solution.main(Solution.java:120)
 ----------------------------------------
