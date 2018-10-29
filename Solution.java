@@ -1,17 +1,72 @@
 import java.util.Scanner;
+/**
+ * Interface for graph.
+ */
 interface Graph {
+	/**
+	 * { function_description }.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
     public int V();
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int E();
-    public void addEdge(int v, int w);
-    public Iterable<Integer> adj(int v);
-    public boolean hasEdge(int v, int w);
+    /**
+     * Adds an edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     */
+    public void addEdge(final int v, final int w);
+    /**
+     * { function_description }.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Iterable<Integer> adj(final int v);
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     True if has edge, False otherwise.
+     */
+    public boolean hasEdge(final int v, final int w);
 }
+/**
+ * Class for graphlist.
+ */
 class Graphlist implements Graph {
+	/**
+	 * { var_description }.
+	 */
 	private int V;
+	/**
+	 * { var_description }.
+	 */
 	private int E;
+	/**
+	 * { var_description }.
+	 */
 	private int e;
+	/**
+	 * { var_description }.
+	 */
 	private Bag<Integer>[] adj;
-	Graphlist(int VV, int EE) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      VV    { parameter_description }
+	 * @param      EE    { parameter_description }
+	 */
+	Graphlist(final int VV, final int EE) {
 		this.V = VV;
 		this.E = EE;
 		this.e = 0;
@@ -20,13 +75,29 @@ class Graphlist implements Graph {
 			adj[v] = new Bag<Integer>();
 		}
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int V() {
 		return V;
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int E() {
 		return e;
 	}
-	public void addEdge(int v, int w) {
+	/**
+	 * Adds an edge.
+	 *
+	 * @param      v     { parameter_description }
+	 * @param      w     { parameter_description }
+	 */
+	public void addEdge(final int v, final int w) {
 		if (v == w) {
 			return;
 		}
@@ -36,11 +107,19 @@ class Graphlist implements Graph {
 		adj[v].add(w);
 		adj[w].add(v);
 	}
-	public Iterable<Integer> adj(int v) {
+	public Iterable<Integer> adj(final int v) {
 		return adj[v];
 
 	}
-	public boolean hasEdge(int v, int w) {
+	/**
+	 * Determines if it has edge.
+	 *
+	 * @param      v     { parameter_description }
+	 * @param      w     { parameter_description }
+	 *
+	 * @return     True if has edge, False otherwise.
+	 */
+	public boolean hasEdge(final int v, final int w) {
 		for (int each : adj[v]) {
 			if (each == w) {
 				return true;
@@ -48,7 +127,14 @@ class Graphlist implements Graph {
 		}
 		return false;
 	}
-	public void display(String[] str) throws Exception {
+	/**
+	 * { function_description }.
+	 *
+	 * @param      str        The string
+	 *
+	 * @throws     Exception  { exception_description }
+	 */
+	public void display(final String[] str) throws Exception {
 		if (V <= 1 && E <= 1) {
 			System.out.println(V() + " vertices" + ", " + E() + " edges");
 			throw new Exception("No edges");
@@ -65,24 +151,61 @@ class Graphlist implements Graph {
 	}
 	}
 }
+/**
+ * Class for graphmatrix.
+ */
 class Graphmatrix implements Graph {
+	/**
+	 * { var_description }.
+	 */
 	private int V;
+	/**
+	 * { var_description }.
+	 */
 	private int E;
+	/**
+	 * { var_description }.
+	 */
 	private int e;
+	/**
+	 * { var_description }.
+	 */
 	private int[][] adj;
-	Graphmatrix(int VV, int EE) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      VV    { parameter_description }
+	 * @param      EE    { parameter_description }
+	 */
+	Graphmatrix(final int VV, final int EE) {
 		this.V = VV;
 		this.E = EE;
 		this.e = 0;
 		this.adj = new int[V][V];
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int V() {
 		return V;
 	}
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int E() {
     	return e;
     }
-    public void addEdge(int v, int w) {
+    /**
+     * Adds an edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     */
+    public void addEdge(final int v, final int w) {
     	if (v == w) {
     		return;
     	}
@@ -93,7 +216,14 @@ class Graphmatrix implements Graph {
 	    adj[w][v] = 1;
 
     }
-    public Iterable<Integer> adj(int v) {
+    /**
+     * { function_description }.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Iterable<Integer> adj(final int v) {
     	Bag<Integer> bag =  new Bag<Integer>();
     	for (int i = 0; i < V; i++) {
     		if (adj[v][i] == 1) {
@@ -102,10 +232,27 @@ class Graphmatrix implements Graph {
     	}
     	return bag;
     }
-    public boolean hasEdge(int v, int w) {
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     True if has edge, False otherwise.
+     */
+    public boolean hasEdge(final int v, final int w) {
     	return (adj[v][w] == 1);
     }
-    public String display(String[] str) throws Exception{
+    /**
+     * { function_description }.
+     *
+     * @param      str        The string
+     *
+     * @return     { description_of_the_return_value }
+     *
+     * @throws     Exception  { exception_description }
+     */
+    public String display(final String[] str) throws Exception{
     	if (V <= 1 && E <= 1) {
 			System.out.println(V() + " vertices" + ", " + E() + " edges");
     		throw new Exception("No edges");
@@ -123,8 +270,21 @@ class Graphmatrix implements Graph {
     }
 }
 }
+/**
+ * Class for solution.
+ */
 public class Solution {
-	public static void main(String[] args) {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String str = scan.nextLine();
 		int v = Integer.parseInt(scan.nextLine());
@@ -152,7 +312,8 @@ public class Solution {
 			str1 = scan.nextLine().split(",");
 			while(scan.hasNext()) {
 				String[] s = scan.nextLine().split(" ");
-				matrix.addEdge(Integer.parseInt(s[0]), Integer.parseInt(s[1]));
+				matrix.addEdge(Integer.parseInt(s[0]),
+					Integer.parseInt(s[1]));
 				
 			}
 			try {
