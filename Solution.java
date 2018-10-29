@@ -27,7 +27,7 @@ class Graphlist implements Graph {
 		return e;
 	}
 	public void addEdge(int v, int w) {
-		if (v != w) {
+		if (v == w) {
 			return;
 		}
 		if(!hasEdge(v, w)) {
@@ -83,7 +83,7 @@ class Graphmatrix implements Graph {
     	return e;
     }
     public void addEdge(int v, int w) {
-    	if (v != w) {
+    	if (v == w) {
     		return;
     	}
     	if(!hasEdge(v, w)) {
