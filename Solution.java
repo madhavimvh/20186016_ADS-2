@@ -9,10 +9,12 @@ interface Graph {
 class Graphlist implements Graph {
 	private int V;
 	private int E;
+	private int e;
 	private Bag<Integer>[] adj;
 	Graphlist(int VV, int EE) {
 		this.V = VV;
 		this.E = EE;
+		this.e = 0;
 		adj = (Bag<Integer>[]) new Bag[V];
 		for (int v = 0; v < V; v++) {
 			adj[v] = new Bag<Integer>();
@@ -22,7 +24,7 @@ class Graphlist implements Graph {
 		return V;
 	}
 	public int E() {
-		return E;
+		return e;
 	}
 	public void addEdge(int v, int w) {
 		if (v != w && !hasEdge(v, w)) {
@@ -58,22 +60,25 @@ class Graphlist implements Graph {
 class Graphmatrix implements Graph {
 	private int V;
 	private int E;
+	private int e;
 	private int[][] adj;
 	Graphmatrix(int VV, int EE) {
 		this.V = VV;
 		this.E = EE;
+		this.e = 0;
 		this.adj = new int[V][V];
 	}
 	public int V() {
 		return V;
 	}
     public int E() {
-    	return E;
+    	return e;
     }
     public void addEdge(int v, int w) {
     	if (v != w && !hasEdge(v, w)) {
 	    	adj[v][w] = 1;
 	    	adj[w][v] = 1;
+	    	e++;
     	}
 
     }
