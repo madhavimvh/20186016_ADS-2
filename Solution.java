@@ -45,7 +45,11 @@ class Graphlist implements Graph {
 		}
 		return false;
 	}
-	public void display(String[] str) {
+	public void display(String[] str) throws Exception {
+		if (V <= 1 && E <= 1) {
+			System.out.println(V() + " vertices" + ", " + E() + " edges");
+			throw new Exception("No edges");
+		} else {
 		System.out.println(V() + " vertices" + ", " + E() + " edges");
 		String s = "";
 		for (int i = 0; i < str.length; i++) {
@@ -55,7 +59,7 @@ class Graphlist implements Graph {
 			}
 			System.out.println(s);
 		}
-		// return s;
+	}
 	}
 }
 class Graphmatrix implements Graph {
@@ -95,7 +99,11 @@ class Graphmatrix implements Graph {
     public boolean hasEdge(int v, int w) {
     	return (adj[v][w] == 1);
     }
-    public String display(String[] str) {
+    public String display(String[] str) throws Exception{
+    	if (V <= 1 && E <= 1) {
+			System.out.println(V() + " vertices" + ", " + E() + " edges");
+    		throw new Exception("No edges");
+    	} else {
 		System.out.println(V() + " vertices" + ", " + E() + " edges");
     	String s = "";
     	for (int i = 0; i < V; i++) {
@@ -107,6 +115,7 @@ class Graphmatrix implements Graph {
     	return s;
 
     }
+}
 }
 public class Solution {
 	public static void main(String[] args) {
@@ -124,7 +133,11 @@ public class Solution {
 				list.addEdge(Integer.parseInt(s[0]), Integer.parseInt(s[1]));
 				
 			}
+			try {
 			list.display(str1);
+			} catch (Exception ex) {
+				System.out.println(ex.getMessage());
+			}
 			break;
 			case "Matrix":
 			// v = Integer.parseInt(scan.nextLine());
@@ -136,7 +149,11 @@ public class Solution {
 				matrix.addEdge(Integer.parseInt(s[0]), Integer.parseInt(s[1]));
 				
 			}
-			System.out.println(matrix.display(str1));
+			try {
+				System.out.println(matrix.display(str1));
+			} catch(Exception ex) {
+				System.out.println(ex.getMessage());
+			}
 			break;
 		}
 	}
