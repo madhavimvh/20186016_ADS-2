@@ -31,10 +31,10 @@ class Graphlist implements Graph {
 			return;
 		}
 		if(!hasEdge(v, w)) {
-		adj[v].add(w);
-		adj[w].add(v);
 		e++;
 		}
+		adj[v].add(w);
+		adj[w].add(v);
 	}
 	public Iterable<Integer> adj(int v) {
 		return adj[v];
@@ -87,10 +87,10 @@ class Graphmatrix implements Graph {
     		return;
     	}
     	if(!hasEdge(v, w)) {
-	    	adj[v][w] = 1;
-	    	adj[w][v] = 1;
 	    	e++;
     	}
+	    adj[v][w] = 1;
+	    adj[w][v] = 1;
 
     }
     public Iterable<Integer> adj(int v) {
