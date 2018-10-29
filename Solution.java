@@ -21,7 +21,7 @@ interface Graph {
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      */
-    public void addEdge(final int v, final int w);
+    public void addEdge(int v, int w);
     /**
      * { function_description }.
      *
@@ -29,7 +29,7 @@ interface Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public Iterable<Integer> adj(final int v);
+    public Iterable<Integer> adj(int v);
     /**
      * Determines if it has edge.
      *
@@ -38,7 +38,7 @@ interface Graph {
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(final int v, final int w);
+    public boolean hasEdge(int v, int w);
 }
 /**
  * Class for graphlist.
@@ -101,12 +101,19 @@ class Graphlist implements Graph {
         if (v == w) {
             return;
         }
-        if(!hasEdge(v, w)) {
+        if (!hasEdge(v, w)) {
         e++;
         }
         adj[v].add(w);
         adj[w].add(v);
     }
+    /**
+     * { function_description }.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Iterable<Integer> adj(final int v) {
         return adj[v];
 
@@ -144,7 +151,7 @@ class Graphlist implements Graph {
             + ", " + edg() + " edges");
         String s = "";
         for (int i = 0; i < str.length; i++) {
-            s = str[i] + ": " ;
+            s = str[i] + ": ";
             for (int each : adj[i]) {
                 s += str[each] + " ";
             }

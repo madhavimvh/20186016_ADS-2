@@ -20,15 +20,7 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:11:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:17:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:24:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:24:25: Redundant 'final' modifier. [RedundantModifier]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:24:38: Redundant 'final' modifier. [RedundantModifier]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:32:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:32:34: Redundant 'final' modifier. [RedundantModifier]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:41:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:41:28: Redundant 'final' modifier. [RedundantModifier]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:41:41: Redundant 'final' modifier. [RedundantModifier]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:104:11: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:110:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:147:30: ';' is preceded with whitespace. [NoWhitespaceBefore]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 6 errors.
