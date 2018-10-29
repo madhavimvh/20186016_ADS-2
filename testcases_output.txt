@@ -30,11 +30,12 @@ Your Output:
 9
 5
 13 vertices, 13 edges
-9
+Haryana: Gujarat
+Delhi
 
 Exception in thread "main" java.util.NoSuchElementException: No line found
 	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:121)
+	at Solution.main(Solution.java:122)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -55,6 +56,7 @@ Expected Output:
 0 0 0 0 0 0 0 0 0 1 0 1 0
 
 Your Output: 
+13 vertices, 13 edges
 
 0 1 1 0 0 1 1 0 0 0 0 0 0 
 1 0 0 0 0 0 0 0 0 0 0 0 0 
@@ -191,11 +193,12 @@ Your Output:
 29
 35
 36 vertices, 78 edges
-4
+West Bengal: Uttar Pradesh
+Bihar
 
 Exception in thread "main" java.util.NoSuchElementException: No line found
 	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:121)
+	at Solution.main(Solution.java:122)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -239,6 +242,7 @@ Expected Output:
 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
 
 Your Output: 
+36 vertices, 78 edges
 
 0 1 1 0 0 1 1 0 0 0 0 1 1 0 0 1 1 0 0 0 0 1 1 0 0 1 1 0 0 0 0 0 0 0 0 0 
 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
@@ -289,7 +293,7 @@ Your Output:
 Hyderabad: 
 Exception in thread "main" java.util.NoSuchElementException: No line found
 	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:121)
+	at Solution.main(Solution.java:122)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -298,6 +302,7 @@ Expected Output:
 No edges
 
 Your Output: 
+1 vertices, 1 edges
 
 0
 ----------------------------------------
@@ -308,7 +313,7 @@ Expected Output:
 No edges
 
 Your Output: 
-
+0 vertices, 0 edges
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -320,6 +325,6 @@ Your Output:
 0 vertices, 0 edges
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
 	at Graphlist.display(Solution.java:50)
-	at Solution.main(Solution.java:119)
+	at Solution.main(Solution.java:120)
 ----------------------------------------
 
