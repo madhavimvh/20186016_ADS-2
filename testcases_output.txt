@@ -17,12 +17,11 @@ Haryana: Gujarat Delhi
 
 Your Output: 
 13 vertices, 13 edges
-Haryana: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "0 5"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:115)
+9
+
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -43,7 +42,7 @@ Expected Output:
 0 0 0 0 0 0 0 0 0 1 0 1 0
 
 Your Output: 
-0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0110011000000100000000000010000000000000000110000000000101100000010011000000001000100000000000000001000000000001000000000000000111000000000100000000000010010000000001010
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -87,10 +86,12 @@ Uttarakhand: Assam
 West Bengal: Uttar Pradesh Bihar
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 36
-	at Graphlist.hasEdge(Solution.java:38)
-	at Graphlist.addEdge(Solution.java:28)
-	at Solution.main(Solution.java:112)
+36 vertices, 78 edges
+4
+
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -134,10 +135,7 @@ Expected Output:
 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 36
-	at Graphmatrix.hasEdge(Solution.java:89)
-	at Graphmatrix.addEdge(Solution.java:73)
-	at Solution.main(Solution.java:119)
+011001100001100110000110011000000000100000000010000000001000000000100000100000000010000000001000000000100000000011000000001100000000110000000010000101100000010110000001011000000001100110000010011000001001100000100000100010000010001000001000100000100000000000001000000000100000000010000000000000010000000001000000000100000000000000000011100000001110000000111000011001100100000000010000000001000000100000000100100000010010000001001000100000000101000000010100000001010000000011000000000000000000000000000000000101100000000000000000000000000000100110000000000000000000000000000000100010000000000000000000000000000000000000001000000000000000000000000000000000010000000000000000000000000000000000000011100000000000000000000000011001100100000000000000000000000000100000000100100000000000000000000000100000000101000000000000000000000000000011000000000000000000000000000000000101100000000000000000000000000000100110000000000000000000000000000000100010000000000000000000000000000000000000001000000000000000000000000000000000010000000000000000000000000000000000000011100000000000000000000000011001100100000000000000000000000000000000000100100000000000000000000000000000000101000000000000000000000000000000000000000000000000000000000001000100000000000000000000000000000000000010000000000000000000000000000100
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -148,11 +146,9 @@ No edges
 Your Output: 
 1 vertices, 1 edges
 Hyderabad: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "0 0"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:115)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -182,6 +178,6 @@ Your Output:
 0 vertices, 0 edges
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
 	at Graphlist.display(Solution.java:50)
-	at Solution.main(Solution.java:113)
+	at Solution.main(Solution.java:117)
 ----------------------------------------
 

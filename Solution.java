@@ -109,14 +109,22 @@ public class Solution {
 			int e = Integer.parseInt(scan.nextLine());
 			Graphlist list = new Graphlist(v, e);
 			String[] str1 = scan.nextLine().split(",");
-			list.addEdge(v, e);
+			while(scan.hasNext()) {
+				String[] s = scan.nextLine().split(" ");
+				list.addEdge(Integer.parseInt(s[0]), Integer.parseInt(s[1]));
+				
+			}
 			System.out.println(list.display(str1));
 			case "Matrix":
 			v = Integer.parseInt(scan.nextLine());
 			e = Integer.parseInt(scan.nextLine());
 			Graphmatrix matrix = new Graphmatrix(v, e);
 			str1 = scan.nextLine().split(",");
-			matrix.addEdge(v, e);
+			while(scan.hasNext()) {
+				String[] s = scan.nextLine().split(" ");
+				matrix.addEdge(Integer.parseInt(s[0]), Integer.parseInt(s[1]));
+				
+			}
 			System.out.println(matrix.display(str1));
 		}
 	}
