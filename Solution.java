@@ -8,13 +8,13 @@ interface Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int Ver();
+    public int ver();
     /**
      * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
-    public int Edg();
+    public int edg();
     /**
      * Adds an edge.
      *
@@ -80,7 +80,7 @@ class Graphlist implements Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int Ver() {
+    public int ver() {
         return ver;
     }
     /**
@@ -88,7 +88,7 @@ class Graphlist implements Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int Edg() {
+    public int edg() {
         return e;
     }
     /**
@@ -136,10 +136,12 @@ class Graphlist implements Graph {
      */
     public void display(final String[] str) throws Exception {
         if (ver <= 1 && edg <= 1) {
-            System.out.println(Ver() + " vertices" + ", " + Edg() + " edges");
+            System.out.println(ver() + " vertices"
+                + ", " + edg() + " edges");
             throw new Exception("No edges");
         } else {
-        System.out.println(Ver() + " vertices" + ", " + Edg() + " edges");
+        System.out.println(ver() + " vertices"
+            + ", " + edg() + " edges");
         String s = "";
         for (int i = 0; i < str.length; i++) {
             s = str[i] + ": " ;
@@ -188,7 +190,7 @@ class Graphmatrix implements Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int Ver() {
+    public int ver() {
         return ver;
     }
     /**
@@ -196,7 +198,7 @@ class Graphmatrix implements Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int Edg() {
+    public int edg() {
         return e;
     }
     /**
@@ -255,12 +257,12 @@ class Graphmatrix implements Graph {
     public String display(final String[] str)
     throws Exception {
         if (ver <= 1 && edg <= 1) {
-            System.out.println(Ver() + " vertices" +
-            ", " + Edg() + " edges");
+            System.out.println(ver() + " vertices"
+                + ", " + edg() + " edges");
             throw new Exception("No edges");
         } else {
-        System.out.println(Ver() + " vertices" +
-        ", " + Edg() + " edges");
+        System.out.println(ver() + " vertices"
+            + ", " + edg() + " edges");
         String s = "";
         for (int i = 0; i < ver; i++) {
             for (int j = 0; j < ver; j++) {
