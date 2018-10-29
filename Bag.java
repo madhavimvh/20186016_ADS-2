@@ -14,13 +14,25 @@ import java.util.NoSuchElementException;
  * @param      <Item>  The item
  */
 public class Bag<Item> implements Iterable<Item> {
-    private int N;         // number of elements in bag
+    /**
+     * { var_description }.
+     */
+    private int n;
+    /**
+     * { var_description }.
+     */
     private Node first;    // beginning of bag
     /**
      * Class for node.
      */
     private class Node {
+        /**
+         * { var_description }.
+         */
         private Item item;
+        /**
+         * { var_description }.
+         */
         private Node next;
     }
 
@@ -29,7 +41,7 @@ public class Bag<Item> implements Iterable<Item> {
      */
     public Bag() {
         first = null;
-        N = 0;
+        n = 0;
     }
 
    /**
@@ -47,7 +59,7 @@ public class Bag<Item> implements Iterable<Item> {
      * @return     { description_of_the_return_value }
      */
     public int size() {
-        return N;
+        return n;
     }
 
    /**
@@ -60,7 +72,7 @@ public class Bag<Item> implements Iterable<Item> {
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        n++;
     }
    /**
      * Return an iterator that iterates over the items in the bag.
@@ -68,7 +80,7 @@ public class Bag<Item> implements Iterable<Item> {
      * @return     { description_of_the_return_value }
      */
     public Iterator<Item> iterator()  {
-        return new ListIterator();  
+        return new ListIterator();
     }
 
     /**
@@ -88,7 +100,7 @@ public class Bag<Item> implements Iterable<Item> {
             return current != null;
         }
         /**
-         * { function_description }
+         * { function_description }.
          */
         public void remove() {
         throw new UnsupportedOperationException();
