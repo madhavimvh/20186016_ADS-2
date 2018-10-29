@@ -94,6 +94,7 @@ class Graphmatrix implements Graph {
     	for (int i = 0; i < V; i++) {
     		for (int j = 0; j < V; j++) {
     			s += adj[i][j] + " ";
+    			System.out.println("string"  +" " + s);
     		}
     		s += "\n";
     	}
