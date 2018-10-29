@@ -91,8 +91,9 @@ class Graphmatrix implements Graph {
     public String display(String[] str) {
     	String s = "";
     	for (int i = 0; i < V; i++) {
+    		s += "\n";
     		for (int j = 0; j < V; j++) {
-    			s += adj[i][j];
+    			s += adj[i][j] + " ";
     		}
     	}
     	return s;
@@ -111,6 +112,7 @@ public class Solution {
 			String[] str1 = scan.nextLine().split(",");
 			while(scan.hasNext()) {
 				String[] s = scan.nextLine().split(" ");
+				System.out.println(s[0]);
 				list.addEdge(Integer.parseInt(s[0]), Integer.parseInt(s[1]));
 				
 			}
