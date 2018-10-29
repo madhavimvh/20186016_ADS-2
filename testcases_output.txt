@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 13 vertices, 13 edges
 Andaman and Nicobar: Chhattisgarh Arunachal Pradesh Andhra Pradesh Chandigarh 
@@ -29,10 +29,7 @@ Daman and Diu: Dadra and Nagar Haveli
 Delhi: Gujarat Goa Haryana 
 Goa: Delhi 
 Gujarat: Delhi Haryana 
-Haryana: Gujarat Delhi 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:124)
+Haryana: Gujarat Delhi
 ----------------------------------------
 
 ########## Testcase 1: Passed ##########
@@ -146,10 +143,7 @@ Telangana: Delhi Haryana
 Tripura: Gujarat Delhi 
 Uttar Pradesh: West Bengal 
 Uttarakhand: Assam 
-West Bengal: Uttar Pradesh Bihar 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:124)
+West Bengal: Uttar Pradesh Bihar
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -239,10 +233,7 @@ No edges
 
 Your Output: 
 1 vertices, 1 edges
-Hyderabad: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at Solution.main(Solution.java:124)
+Hyderabad:
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -273,6 +264,6 @@ Your Output:
 0 vertices, 0 edges
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
 	at Graphlist.display(Solution.java:50)
-	at Solution.main(Solution.java:122)
+	at Solution.main(Solution.java:121)
 ----------------------------------------
 

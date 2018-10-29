@@ -49,7 +49,6 @@ class Graphlist implements Graph {
 			s = str[i] + ": " ;
 			for (int each : adj[i]) {
 				s += str[each] + " ";
- 
 			}
 			System.out.println(s);
 		}
@@ -120,6 +119,7 @@ public class Solution {
 				
 			}
 			list.display(str1);
+			break;
 			case "Matrix":
 			v = Integer.parseInt(scan.nextLine());
 			e = Integer.parseInt(scan.nextLine());
@@ -131,6 +131,7 @@ public class Solution {
 				
 			}
 			System.out.println(matrix.display(str1));
+			break;
 		}
 	}
 }
