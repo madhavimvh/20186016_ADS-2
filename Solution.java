@@ -42,18 +42,18 @@ class Graphlist implements Graph {
 		}
 		return false;
 	}
-	public String display(String[] str) {
+	public void display(String[] str) {
 		System.out.println(V() + " vertices" + ", " + E() + " edges");
 		String s = "";
 		for (int i = 0; i < str.length; i++) {
 			s = str[i] + ": " ;
 			for (int each : adj[i]) {
-				s += str[each] + "\n";
-				System.out.println("string"  +" " + s);
+				s += str[each] + " ";
  
 			}
+			System.out.println(s);
 		}
-		return s;
+		// return s;
 	}
 }
 class Graphmatrix implements Graph {
@@ -119,7 +119,7 @@ public class Solution {
 				list.addEdge(Integer.parseInt(s[0]), Integer.parseInt(s[1]));
 				
 			}
-			System.out.println(list.display(str1));
+			list.display(str1);
 			case "Matrix":
 			v = Integer.parseInt(scan.nextLine());
 			e = Integer.parseInt(scan.nextLine());
