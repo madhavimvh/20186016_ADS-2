@@ -5,22 +5,11 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Bag.java:18:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Bag.java:23:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Bag.java:24:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Bag.java:73: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Bag.java:77: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Bag.java:78:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Bag.java:79:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Bag.java:82:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Bag.java:85:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Bag.java:86: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Bag.java:88: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Bag.java:71: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Bag.java:90: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:11:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:17:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:24:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:32:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:41:5: Redundant 'public' modifier. [RedundantModifier]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 1 errors.
