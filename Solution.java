@@ -30,6 +30,7 @@ class Graphlist implements Graph {
 		if (v != w && !hasEdge(v, w)) {
 		adj[v].add(w);
 		adj[w].add(v);
+		e++;
 		}
 	}
 	public Iterable<Integer> adj(int v) {
