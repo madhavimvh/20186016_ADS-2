@@ -102,7 +102,7 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:111:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:112:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:112:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:115: switch without "default" clause. [MissingSwitchDefault]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:117: switch without "default" clause. [MissingSwitchDefault]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:121:30: 'while' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:124: Line is longer than 80 characters (found 93). [LineLength]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS-2\m1\1.1 Graph\Solution.java:125: Line has trailing spaces. [RegexpSingleline]

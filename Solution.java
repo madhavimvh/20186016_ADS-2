@@ -112,10 +112,10 @@ public class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String str = scan.nextLine();
+		int v = Integer.parseInt(scan.nextLine());
+		int e = Integer.parseInt(scan.nextLine());
 		switch (str) {
 			case "List":
-			int v = Integer.parseInt(scan.nextLine());
-			int e = Integer.parseInt(scan.nextLine());
 			Graphlist list = new Graphlist(v, e);
 			String[] str1 = scan.nextLine().split(",");
 			while(scan.hasNext()) {
@@ -127,8 +127,8 @@ public class Solution {
 			list.display(str1);
 			break;
 			case "Matrix":
-			v = Integer.parseInt(scan.nextLine());
-			e = Integer.parseInt(scan.nextLine());
+			// v = Integer.parseInt(scan.nextLine());
+			// e = Integer.parseInt(scan.nextLine());
 			Graphmatrix matrix = new Graphmatrix(v, e);
 			str1 = scan.nextLine().split(",");
 			while(scan.hasNext()) {
