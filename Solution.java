@@ -48,7 +48,9 @@ class Graphlist implements Graph {
 		for (int i = 0; i < str.length; i++) {
 			s = str[i] + ": " ;
 			for (int each : adj[i]) {
-				s += str[each] + "\n"; 
+				s += str[each] + "\n";
+				System.out.println("string"  +" " + s);
+ 
 			}
 		}
 		return s;
@@ -94,7 +96,6 @@ class Graphmatrix implements Graph {
     	for (int i = 0; i < V; i++) {
     		for (int j = 0; j < V; j++) {
     			s += adj[i][j] + " ";
-    			System.out.println("string"  +" " + s);
     		}
     		s += "\n";
     	}
