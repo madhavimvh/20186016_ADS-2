@@ -43,7 +43,7 @@ class Graphlist implements Graph {
 		return false;
 	}
 	public String display(String[] str) {
-		System.out.print(V() + " vertices" + ", " + E() + " edges");
+		System.out.println(V() + " vertices" + ", " + E() + " edges");
 		String s = "";
 		for (int i = 0; i < str.length; i++) {
 			s = str[i] + ": " ;
@@ -92,10 +92,10 @@ class Graphmatrix implements Graph {
 		System.out.println(V() + " vertices" + ", " + E() + " edges");
     	String s = "";
     	for (int i = 0; i < V; i++) {
-    		s += "\n";
     		for (int j = 0; j < V; j++) {
     			s += adj[i][j] + " ";
     		}
+    		s += "\n";
     	}
     	return s;
 
@@ -113,7 +113,7 @@ public class Solution {
 			String[] str1 = scan.nextLine().split(",");
 			while(scan.hasNext()) {
 				String[] s = scan.nextLine().split(" ");
-				System.out.println(s[0]);
+				// System.out.println(s[0]);
 				list.addEdge(Integer.parseInt(s[0]), Integer.parseInt(s[1]));
 				
 			}
