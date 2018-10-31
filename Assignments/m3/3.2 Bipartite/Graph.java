@@ -44,19 +44,19 @@
  *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  */
 public class Graph {
-    private final int V;
-    private int E;
+    private final int ver;
+    private int edg;
     private Bag<Integer>[] adj;
     
    /**
      * Create an empty graph with V vertices.
      */
-    public Graph(int V) {
-        if (V < 0) throw new RuntimeException("Number of vertices must be nonnegative");
-        this.V = V;
-        this.E = 0;
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
+    public Graph(int ver) {
+        if (ver < 0) throw new RuntimeException("Number of vertices must be nonnegative");
+        this.ver = ver;
+        this.edg = 0;
+        adj = (Bag<Integer>[]) new Bag[ver];
+        for (int v = 0; v < ver; v++) {
             adj[v] = new Bag<Integer>();
         }
     }
@@ -65,12 +65,14 @@ public class Graph {
      * Create a random graph with V vertices and E edges.
      * Expected running time is proportional to V + E.
      */
-    public Graph(int V, int E) {
-        this(V);
-        if (E < 0) throw new RuntimeException("Number of edges must be nonnegative");
-        for (int i = 0; i < E; i++) {
-            int v = (int) (Math.random() * V);
-            int w = (int) (Math.random() * V);
+    public Graph(int ver, int edg) {
+        this(ver);
+        if (edg < 0) {
+            throw new RuntimeException("Number of edges must be nonnegative");
+        }
+        for (int i = 0; i < edg; i++) {
+            int v = (int) (Math.random() * ver);
+            int w = (int) (Math.random() * ver);
             addEdge(v, w);
         }
     }
@@ -109,19 +111,23 @@ public class Graph {
    /**
      * Return the number of vertices in the graph.
      */
-    public int V() { return V; }
+    public int ver() {
+        return ver;
+    }
 
    /**
      * Return the number of edges in the graph.
      */
-    public int E() { return E; }
+    public int edg() {
+        return edg;
+    }
 
 
    /**
      * Add the edge v-w to graph.
      */
     public void addEdge(int v, int w) {
-        E++;
+        edg++;
         adj[v].add(w);
         adj[w].add(v);
     }
@@ -141,8 +147,8 @@ public class Graph {
     public String toString() {
         StringBuilder s = new StringBuilder();
         String NEWLINE = System.getProperty("line.separator");
-        s.append(V + " vertices, " + E + " edges " + NEWLINE);
-        for (int v = 0; v < V; v++) {
+        s.append(ver + " vertices, " + edg + " edges " + NEWLINE);
+        for (int v = 0; v < ver; v++) {
             s.append(v + ": ");
             for (int w : adj[v]) {
                 s.append(w + " ");
