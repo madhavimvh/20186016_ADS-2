@@ -19,7 +19,6 @@ public class Graph {
      * Constructs the object.
      *
      * @param      verr  The verr
-     * @param      edgg  The edgg
      */
     Graph(final int verr) {
         this.ver = verr;

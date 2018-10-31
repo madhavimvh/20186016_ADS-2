@@ -22,7 +22,6 @@ public class CC {
      * Computes the connected components of the undirected graph {@code G}.
      *
      * @param      gr    The graphics
-     * @param      G     the undirected graph
      */
     public CC(final Graph gr) {
         marked = new boolean[gr.ver()];
@@ -138,9 +137,10 @@ public class CC {
      * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
-        int V = marked.length;
-        if (v < 0 || v >= V) {
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+        int ver = marked.length;
+        if (v < 0 || v >= ver) {
+            throw new IllegalArgumentException("vertex " +
+                v + " is not between 0 and " + (ver - 1));
         }
     }
 }

@@ -132,7 +132,7 @@ class Percolation {
      * @return     { description_of_the_return_value }
      */
     public boolean percolates() {
-    	CC connectedComponents = new CC(graph);
+        CC connectedComponents = new CC(graph);
         return connectedComponents.connected(top, bottom);
     }
 }
