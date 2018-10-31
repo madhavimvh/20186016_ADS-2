@@ -1,34 +1,47 @@
+/**
+ * Class for cc.
+ */
 public class CC {
-    private boolean[] marked;   // marked[v] = has vertex v been marked?
-    private int[] id;           // id[v] = id of connected component containing v
-    private int[] size;         // size[id] = number of vertices in given component
-    private int count;          // number of connected components
-
+    /**
+     * { var_description }.
+     */
+    private boolean[] marked;
+    /**
+     * { var_description }.
+     */
+    private int[] id;
+    /**
+     * { var_description }.
+     */
+    private int[] size;
+    /**
+     * { var_description }.
+     */
+    private int count;
     /**
      * Computes the connected components of the undirected graph {@code G}.
      *
-     * @param G the undirected graph
+     * @param      G     the undirected graph
      */
-    public CC(Graph G) {
-        marked = new boolean[G.ver()];
-        id = new int[G.ver()];
-        size = new int[G.ver()];
-        for (int v = 0; v < G.ver(); v++) {
+    public CC(final Graph gr) {
+        marked = new boolean[gr.ver()];
+        id = new int[gr.ver()];
+        size = new int[gr.ver()];
+        for (int v = 0; v < gr.ver(); v++) {
             if (!marked[v]) {
-                dfs(G, v);
+                dfs(gr, v);
                 count++;
             }
         }
     }
 
-    // depth-first search for a Graph
-    private void dfs(Graph G, int v) {
+    private void dfs(Graph gr, int v) {
         marked[v] = true;
         id[v] = count;
         size[count]++;
-        for (int w : G.adj(v)) {
+        for (int w : gr.adj(v)) {
             if (!marked[w]) {
-                dfs(G, w);
+                dfs(gr, w);
             }
         }
     }
