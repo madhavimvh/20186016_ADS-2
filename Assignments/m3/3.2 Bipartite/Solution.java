@@ -14,15 +14,25 @@ class TwoColor {
 	/**
 	 * { var_description }.
 	 */
-	private boolean isTwocolorable = true;
+	private boolean isTwocolorable;
+	/**
+	 * { var_description }.
+	 */
+	private int[] edgeTo;
+	/**
+	 * { var_description }.
+	 */
+	private Stack<Integer> cycle;
 	/**
 	 * Constructs the object.
 	 *
 	 * @param      gr    The graphics
 	 */
 	TwoColor(final Graph gr) {
+		isTwocolorable = true;
 		marked = new boolean[gr.ver()];
 		color = new boolean[gr.ver()];
+		edgeTo = new int[gr.ver()];
 		for (int i = 0; i < gr.ver(); i++) {
 			if (!marked[i]) {
 				dfs(gr, i);
@@ -38,14 +48,25 @@ class TwoColor {
 	public void dfs(final Graph gr, final int v) {
 		marked[v] = true;
 		for (int w : gr.adj(v)) {
+			if (cycle != null) {
+				return;
+			}
 			if (!marked[w]) {
+				edgeTo[w] = v;
 				color[w] = !color[v];
 				dfs(gr, w);
 			} else if (color[w] == color[v]) {
 				isTwocolorable = false;
+				cycle = new Stack<Integer>();
+				cycle.push(w);
+				for (int x = v; x != w; x = edgeTo[x]) {
+					cycle.push(x);
+				}
+				cycle.push(w);
 			}
 		}
 	}
+	
 	/**
 	 * Determines if bipartite.
 	 *

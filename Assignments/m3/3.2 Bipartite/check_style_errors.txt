@@ -103,13 +103,14 @@ Checkstyle ends with 42 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Solution.java:58: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Solution.java:58:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Solution.java:59:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Solution.java:59:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Solution.java:66: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Solution.java:69: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Solution.java:79: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Solution.java:79:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Solution.java:80:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Solution.java:80:33: Parameter args should be final. [FinalParameters]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Solution.java:87: Line is longer than 80 characters (found 90). [LineLength]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
