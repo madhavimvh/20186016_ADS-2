@@ -25,7 +25,7 @@ public class Graph {
    /**
      * Create an empty graph with V vertices.
      *
-     * @param      ver   The version
+     * @param      verr  The version
      */
     public Graph(final int verr) {
         if (verr < 0) {
@@ -44,8 +44,8 @@ public class Graph {
      * Create a random graph with V vertices and E edges. Expected running time
      * is proportional to V + E.
      *
-     * @param      ver   The version
-     * @param      edg   The edg
+     * @param      verr  The version
+     * @param      edgg  The edg
      */
     public Graph(final int verr, final int edgg) {
         this(verr);
