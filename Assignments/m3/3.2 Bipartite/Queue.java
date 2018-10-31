@@ -103,8 +103,7 @@ public class Queue<Item> implements Iterable<Item> {
         if (isEmpty()) {
             first = x;
             last = x;
-        }
-        else {
+        } else {
             last.next = x;
             last = x;
         }

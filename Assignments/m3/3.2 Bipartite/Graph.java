@@ -34,24 +34,36 @@
 
 
 /**
- *  The <tt>Graph</tt> class represents an undirected graph of vertices
- *  named 0 through V-1.
- *  It supports the following operations: add an edge to the graph,
- *  iterate over all of the neighbors adjacent to a vertex.
- *  Parallel edges and self-loops are permitted.
- *  <p>
- *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/51undirected">Section 5.1</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
+ * The <tt>Graph</tt> class represents an undirected graph of vertices named 0
+ * through V-1. It supports the following operations: add an edge to the graph,
+ * iterate over all of the neighbors adjacent to a vertex. Parallel edges and
+ * self-loops are permitted. <p> For additional documentation, see <a
+ * href="http://algs4.cs.princeton.edu/51undirected">Section 5.1</a> of
+ * <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
+ */
+/**
+ * Class for graph.
  */
 public class Graph {
+    /**
+     * { var_description }.
+     */
     private final int ver;
+    /**
+     * { var_description }.
+     */
     private int edg;
+    /**
+     * { var_description }.
+     */
     private Bag<Integer>[] adj;
     
    /**
      * Create an empty graph with V vertices.
+     *
+     * @param      ver   The version
      */
-    public Graph(int ver) {
+    public Graph(final int ver) {
         if (ver < 0) throw new RuntimeException("Number of vertices must be nonnegative");
         this.ver = ver;
         this.edg = 0;
@@ -62,10 +74,13 @@ public class Graph {
     }
 
    /**
-     * Create a random graph with V vertices and E edges.
-     * Expected running time is proportional to V + E.
+     * Create a random graph with V vertices and E edges. Expected running time
+     * is proportional to V + E.
+     *
+     * @param      ver   The version
+     * @param      edg   The edg
      */
-    public Graph(int ver, int edg) {
+    public Graph(final int ver, final int edg) {
         this(ver);
         if (edg < 0) {
             throw new RuntimeException("Number of edges must be nonnegative");
@@ -110,6 +125,8 @@ public class Graph {
 
    /**
      * Return the number of vertices in the graph.
+     *
+     * @return     { description_of_the_return_value }
      */
     public int ver() {
         return ver;
@@ -117,6 +134,8 @@ public class Graph {
 
    /**
      * Return the number of edges in the graph.
+     *
+     * @return     { description_of_the_return_value }
      */
     public int edg() {
         return edg;
@@ -125,8 +144,11 @@ public class Graph {
 
    /**
      * Add the edge v-w to graph.
+     *
+     * @param      v     { parameter_description }.
+     * @param      w     { parameter_description }
      */
-    public void addEdge(int v, int w) {
+    public void addEdge(final int v, final int w) {
         edg++;
         adj[v].add(w);
         adj[w].add(v);
@@ -135,25 +157,31 @@ public class Graph {
 
    /**
      * Return the list of neighbors of vertex v as in Iterable.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
      */
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(final int v) {
         return adj[v];
     }
 
 
    /**
      * Return a string representation of the graph.
+     *
+     * @return     String representation of the object.
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        String NEWLINE = System.getProperty("line.separator");
-        s.append(ver + " vertices, " + edg + " edges " + NEWLINE);
+        String newline = System.getProperty("line.separator");
+        s.append(ver + " vertices, " + edg + " edges " + newline);
         for (int v = 0; v < ver; v++) {
             s.append(v + ": ");
             for (int w : adj[v]) {
                 s.append(w + " ");
             }
-            s.append(NEWLINE);
+            s.append(newline);
         }
         return s.toString();
     }

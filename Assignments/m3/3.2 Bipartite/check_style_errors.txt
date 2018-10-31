@@ -25,41 +25,19 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:29: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:30: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:32: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:43: Line is longer than 80 characters (found 109). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:47:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:48:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:49:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:50: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:54:18: Parameter ver should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:54:22: 'ver' hides a field. [HiddenField]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:54:22: Expected @param tag for 'ver'. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:55: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:55: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:68:18: Parameter ver should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:68:22: 'ver' hides a field. [HiddenField]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:68:22: Expected @param tag for 'ver'. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:68:27: Parameter edg should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:68:31: 'edg' hides a field. [HiddenField]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:68:31: Expected @param tag for 'edg'. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:80: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:114: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:121: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:129:25: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:129:29: Expected @param tag for 'v'. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:129:32: Parameter w should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:129:36: Expected @param tag for 'w'. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:139: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:139:34: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:139:38: Expected @param tag for 'v'. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:147: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:149:16: Name 'NEWLINE' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:60: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:66:28: 'ver' hides a field. [HiddenField]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:67: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:67: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:83:28: 'ver' hides a field. [HiddenField]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:83:43: 'edg' hides a field. [HiddenField]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Graph.java:95: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 50 errors.
+Checkstyle ends with 29 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m3\3.2 Bipartite\Queue.java:106:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
