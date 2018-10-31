@@ -1,33 +1,14 @@
 Starting audit...
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:24:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:26:27: Expected @param tag for 'gr'. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:38:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:38:22: Parameter gr should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:38:32: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:52: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:55: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:58:19: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:64: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:67: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:70:21: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:95:30: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:95:37: Parameter w should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:114:33: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:114:40: Parameter w should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:121:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:121:33: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:122:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:123: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:124: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:124:93: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:124:94: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:25:8: Unused @param tag for 'G'. [JavadocMethod]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:141:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:143: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:143:93: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\CC.java:143:94: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 23 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m2\2.1 CC_Percolation\Graph.java:22:8: Unused @param tag for 'edgg'. [JavadocMethod]
 Audit done.
