@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 /**
  * Class for directed cycle.
  */
@@ -31,6 +32,8 @@ class DirectedCycle {
         edgeTo  = new int[gr.ver()];
         for (int v = 0; v < gr.ver(); v++) {
             if (!marked[v] && cycle == null) {
+            	// System.out.println("first");
+            	// System.out.println(v);
                 dfs(gr, v);
             }
         }
@@ -44,15 +47,25 @@ class DirectedCycle {
      */
     private void dfs(final Digraph gr, final int v) {
         onStack[v] = true;
+        // System.out.println("onStack");
+        // System.out.println(Arrays.toString(onStack));
         marked[v] = true;
+        // System.out.println("marked");
+        // System.out.println(Arrays.toString(marked));
         for (int w : gr.adj(v)) {
+        	// System.out.println("lslk");
+        	// System.out.println(w);
             if (cycle != null) {
                 return;
             } else if (!marked[w]) {
                 edgeTo[w] = v;
+                // System.out.println(Arrays.toString(edgeTo));
                 dfs(gr, w);
             } else if (onStack[w]) {
                 cycle = new Stack<Integer>();
+                // System.out.println("----------------");
+                // System.out.println(v);
+                // System.out.println(w);
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
                 }
