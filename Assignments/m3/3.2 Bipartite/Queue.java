@@ -1,11 +1,11 @@
 /*************************************************************************
  *  Compilation:  javac Queue.java
  *  Execution:    java Queue < input.txt
- *  Data files:   http://algs4.cs.princeton.edu/13stacks/tobe.txt  
+ *  Data files:   http://algs4.cs.princeton.edu/13stacks/tobe.txt
  *
  *  A generic queue, implemented using a linked list.
  *
- *  % java Queue < tobe.txt 
+ *  % java Queue < tobe.txt
  *  to be or not to be (2 left on queue)
  *
  *************************************************************************/
@@ -29,7 +29,7 @@ public class Queue<Item> implements Iterable<Item> {
     /**
      * { var_description }.
      */
-    private int N;
+    private int n;
     /**
      * { var_description }.
      */
@@ -76,7 +76,7 @@ public class Queue<Item> implements Iterable<Item> {
      * @return     { description_of_the_return_value }
      */
     public int size() {
-        return N;     
+        return n;
     }
 
    /**
@@ -97,16 +97,18 @@ public class Queue<Item> implements Iterable<Item> {
      *
      * @param      item  The item
      */
-    public void enqueue(Item item) {
+    public void enqueue(final Item item) {
         Node x = new Node();
         x.item = item;
         if (isEmpty()) {
-            first = x;     last = x;
+            first = x;
+            last = x;
         }
         else {
-            last.next = x; last = x;
+            last.next = x;
+            last = x;
         }
-        N++;
+        n++;
     }
 
    /**
@@ -121,7 +123,7 @@ public class Queue<Item> implements Iterable<Item> {
         }
         Item item = first.item;
         first = first.next;
-        N--;
+        n--;
         if (isEmpty()) {
             last = null;
         }
@@ -139,9 +141,7 @@ public class Queue<Item> implements Iterable<Item> {
             s.append(item + " ");
         }
         return s.toString();
-    } 
- 
-
+    }
    /**
      * Return an iterator that iterates over the items on the queue in FIFO
      * order.
@@ -149,7 +149,7 @@ public class Queue<Item> implements Iterable<Item> {
      * @return     { description_of_the_return_value }
      */
     public Iterator<Item> iterator() {
-        return new ListIterator();  
+        return new ListIterator();
     }
 
     /**
@@ -170,7 +170,7 @@ public class Queue<Item> implements Iterable<Item> {
         }
 
         /**
-         * { function_description }
+         * { function_description }.
          *
          * @return     { description_of_the_return_value }
          */
