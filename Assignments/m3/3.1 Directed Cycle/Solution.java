@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.Arrays;
+// import java.util.Arrays;
 /**
  * Class for directed cycle.
  */
@@ -32,8 +32,8 @@ class DirectedCycle {
         edgeTo  = new int[gr.ver()];
         for (int v = 0; v < gr.ver(); v++) {
             if (!marked[v] && cycle == null) {
-            	// System.out.println("first");
-            	// System.out.println(v);
+                // System.out.println("first");
+                // System.out.println(v);
                 dfs(gr, v);
             }
         }
@@ -53,8 +53,8 @@ class DirectedCycle {
         // System.out.println("marked");
         // System.out.println(Arrays.toString(marked));
         for (int w : gr.adj(v)) {
-        	// System.out.println("lslk");
-        	// System.out.println(w);
+            // System.out.println("lslk");
+            // System.out.println(w);
             if (cycle != null) {
                 return;
             } else if (!marked[w]) {
