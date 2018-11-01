@@ -14,7 +14,6 @@ public class Solution {
 		}
 		if (type.equals("Queries")) {
 			String[] arr = StdIn.readString().split(" ");
-			// System.out.println(arr[0]);
 			if (arr[0].equals("null")) {
 				System.out.println("IllegalArgumentException");
 			}
