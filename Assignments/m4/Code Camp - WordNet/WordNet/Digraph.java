@@ -44,17 +44,23 @@ public class Digraph {
     }
 
     /**
-     * Initializes a digraph from the specified input stream. The format is the
-     * number of vertices <em>V</em>, followed by the number of edges
-     * <em>E</em>, followed by <em>E</em> pairs of vertices, with each entry
+     * Initializes a digraph from the specified
+     * input stream. The format is the
+     * number of vertices <em>V</em>, followed
+     * by the number of edges
+     * <em>E</em>, followed by <em>E</em> pairs
+     * of vertices, with each entry
      * separated by whitespace.
      *
      * @param      in    the input stream
-     * @throws     IllegalArgumentException  if the endpoints of any edge are not in
-     *                                       prescribed range
-     * @throws     IllegalArgumentException  if the number of vertices or edges is
-     *                                       negative
-     * @throws     IllegalArgumentException  if the input stream is in the wrong format
+     * @throws     IllegalArgumentException  
+     * if the endpoints of any edge are not in
+     *      prescribed range
+     * @throws     IllegalArgumentException  
+     * if the number of vertices or edges is
+     *                    negative
+     * @throws     IllegalArgumentException  
+     * if the input stream is in the wrong format
      */
     public Digraph(final In in) {
         try {

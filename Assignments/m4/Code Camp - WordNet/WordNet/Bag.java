@@ -78,7 +78,7 @@ public class Bag<Item> implements Iterable<Item> {
      *             arbitrary order
      */
     public Iterator<Item> iterator()  {
-        return new ListIterator<Item>(first);  
+        return new ListIterator<Item>(first);
     }
 
     // an iterator, doesn't implement remove() since it's optional
@@ -96,7 +96,7 @@ public class Bag<Item> implements Iterable<Item> {
         /**
          * Constructs the object.
          *
-         * @param      first  The first
+         * @param      firstt  The first
          */
         ListIterator(final Node<Item> firstt) {
             current = firstt;
