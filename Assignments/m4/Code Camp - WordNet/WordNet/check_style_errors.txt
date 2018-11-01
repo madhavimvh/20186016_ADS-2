@@ -4,17 +4,8 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:30:8: Unused @param tag for 'V'. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:33:30: 'ver' hides a field. [HiddenField]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:35: Line is longer than 80 characters (found 102). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:56: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:59: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:62: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:77:17: 'edg' hides a field. [HiddenField]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:136:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:217: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.

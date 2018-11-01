@@ -26,15 +26,15 @@ public class Digraph {
     /**
      * Initializes an empty digraph with <em>V</em> vertices.
      *
-     * @param      ver   The version
-     * @param      V     the number of vertices
+     * @param      verr  The version
      * @throws     IllegalArgumentException  if {@code V < 0}
      */
-    public Digraph(final int ver) {
-        if (ver < 0) {
-            throw new IllegalArgumentException("Number of vertices in a Digraph must be nonnegative");
+    public Digraph(final int verr) {
+        if (verr < 0) {
+            throw new IllegalArgumentException(
+            "Number of vertices in a Digraph must be nonnegative");
         }
-        this.ver = ver;
+        this.ver = verr;
         this.edg = 0;
         indegree = new int[ver];
         adj = (Bag<Integer>[]) new Bag[ver];
@@ -53,13 +53,13 @@ public class Digraph {
      * separated by whitespace.
      *
      * @param      in    the input stream
-     * @throws     IllegalArgumentException  
+     * @throws     IllegalArgumentException
      * if the endpoints of any edge are not in
      *      prescribed range
-     * @throws     IllegalArgumentException  
+     * @throws     IllegalArgumentException
      * if the number of vertices or edges is
      *                    negative
-     * @throws     IllegalArgumentException  
+     * @throws     IllegalArgumentException
      * if the input stream is in the wrong format
      */
     public Digraph(final In in) {
@@ -74,12 +74,12 @@ public class Digraph {
             for (int v = 0; v < ver; v++) {
                 adj[v] = new Bag<Integer>();
             }
-            int edg = in.readInt();
-            if (edg < 0) {
+            int edgg = in.readInt();
+            if (edgg < 0) {
                 throw new IllegalArgumentException(
                 "number of edges in a Digraph must be nonnegative");
             }
-            for (int i = 0; i < edg; i++) {
+            for (int i = 0; i < edgg; i++) {
                 int v = in.readInt();
                 int w = in.readInt();
                 addEdge(v, w);
@@ -133,6 +133,12 @@ public class Digraph {
 
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
+
+    /**
+     * { function_description }.
+     *
+     * @param      v     { parameter_description }
+     */
     private void validateVertex(final int v) {
         if (v < 0 || v >= ver) {
             throw new IllegalArgumentException("vertex "
@@ -209,12 +215,11 @@ public class Digraph {
         }
         return reverse;
     }
-
     /**
      * Returns a string representation of the graph.
      *
      * @return the number of vertices <em>V</em>, followed
-     * by the number of edges <em>E</em>,  
+     * by the number of edges <em>E</em>,
      *         followed by the <em>V</em> adjacency lists
      */
     public String toString() {
