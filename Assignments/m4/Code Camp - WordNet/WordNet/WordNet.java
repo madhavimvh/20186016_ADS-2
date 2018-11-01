@@ -57,7 +57,12 @@ public class WordNet {
                 digraph.addEdge(Integer.parseInt(s[0]), Integer.parseInt(s[i]));
             }
         }
+        DirectedCycle dir = new DirectedCycle(digraph);
+        if(dir.hasCycle()) {
+            System.out.println("Cycle detected");
+        } else {
         System.out.println(digraph);
+        }
     }
     // returns all WordNet nouns
     public Iterable<String> nouns() {
