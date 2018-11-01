@@ -60,7 +60,8 @@ public class Digraph {
         try {
             this.ver = in.readInt();
             if (ver < 0) {
-                throw new IllegalArgumentException("number of vertices in a Digraph must be nonnegative");
+                throw new IllegalArgumentException(
+                "number of vertices in a Digraph must be nonnegative");
             }
             indegree = new int[ver];
             adj = (Bag<Integer>[]) new Bag[ver];
@@ -68,22 +69,26 @@ public class Digraph {
                 adj[v] = new Bag<Integer>();
             }
             int edg = in.readInt();
-            if (edg < 0) throw new IllegalArgumentException("number of edges in a Digraph must be nonnegative");
+            if (edg < 0) {
+                throw new IllegalArgumentException(
+                "number of edges in a Digraph must be nonnegative");
+            }
             for (int i = 0; i < edg; i++) {
                 int v = in.readInt();
                 int w = in.readInt();
-                addEdge(v, w); 
+                addEdge(v, w);
             }
-        }
-        catch (NoSuchElementException e) {
-            throw new IllegalArgumentException("invalid input format in Digraph constructor", e);
+        } catch (NoSuchElementException e) {
+            throw new IllegalArgumentException(
+            "invalid input format in Digraph constructor", e);
         }
     }
 
     /**
-     * Initializes a new digraph that is a deep copy of the specified digraph.
+     * Initializes a new digraph that
+     * is a deep copy of the specified digraph.
      *
-     * @param  G the digraph to copy
+     * @param      gr    The graphics
      */
     public Digraph(final Digraph gr) {
         this(gr.ver());
@@ -102,7 +107,6 @@ public class Digraph {
             }
         }
     }
-        
     /**
      * Returns the number of vertices in this digraph.
      *
@@ -124,8 +128,10 @@ public class Digraph {
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
     private void validateVertex(final int v) {
-        if (v < 0 || v >= ver)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (ver - 1));
+        if (v < 0 || v >= ver) {
+            throw new IllegalArgumentException("vertex "
+                + v + " is not between 0 and " + (ver - 1));
+        }
     }
 
     /**
@@ -133,7 +139,8 @@ public class Digraph {
      *
      * @param  v the tail vertex
      * @param  w the head vertex
-     * @throws IllegalArgumentException unless both {@code 0 <= v < V} and {@code 0 <= w < V}
+     * @throws IllegalArgumentException unless both
+     * {@code 0 <= v < V} and {@code 0 <= w < V}
      */
     public void addEdge(final int v, final int w) {
         validateVertex(v);
@@ -147,7 +154,8 @@ public class Digraph {
      * Returns the vertices adjacent from vertex {@code v} in this digraph.
      *
      * @param  v the vertex
-     * @return the vertices adjacent from vertex {@code v} in this digraph, as an iterable
+     * @return the vertices adjacent from vertex {@code v} in
+     * this digraph, as an iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public Iterable<Integer> adj(final int v) {
@@ -160,7 +168,7 @@ public class Digraph {
      * This is known as the <em>outdegree</em> of vertex {@code v}.
      *
      * @param  v the vertex
-     * @return the outdegree of vertex {@code v}               
+     * @return the outdegree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public int outdegree(final int v) {
@@ -173,7 +181,7 @@ public class Digraph {
      * This is known as the <em>indegree</em> of vertex {@code v}.
      *
      * @param  v the vertex
-     * @return the indegree of vertex {@code v}               
+     * @return the indegree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public int indegree(final int v) {
@@ -199,7 +207,8 @@ public class Digraph {
     /**
      * Returns a string representation of the graph.
      *
-     * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,  
+     * @return the number of vertices <em>V</em>, followed
+     * by the number of edges <em>E</em>,  
      *         followed by the <em>V</em> adjacency lists
      */
     public String toString() {
