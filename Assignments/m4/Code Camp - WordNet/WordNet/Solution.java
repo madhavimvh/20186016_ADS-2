@@ -1,5 +1,15 @@
-public class Solution {
-	public static void main(String[] args) {
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		String synsets = StdIn.readString();
 		String hypernyms = StdIn.readString();
 		// wordnet.readfile(synsets);

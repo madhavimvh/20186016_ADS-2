@@ -28,19 +28,18 @@ public class WordNet {
             vertices++;
         s = in.readString().split(",");
         int id = Integer.parseInt(s[0]);
-        ids.add(id);
         if (s[1].length() > 1) {
-        for (int i = 0; i < s[1].length(); i++) {
-            s1 = s[1].split(" ");
-            if (st.contains(s1[i])) {
-                ids.addAll(st.get(s[i]));
-                // ids.add(id);
-                st.put(s[1], ids);
-            } else {
-                // ids.add(id);
-            st.put(s1[i], ids);
-            }
-        } 
+            for (int i = 0; i < s[1].length(); i++) {
+                s1 = s[1].split(" ");
+                if (st.contains(s1[i])) {
+                    ids.addAll(st.get(s[i]));
+                    ids.add(id);
+                    st.put(s[1], ids);
+                } else {
+                    ids.add(id);
+                    st.put(s1[i], ids);
+                }
+            } 
         }
         // System.out.println(Arrays.toString(s1));
     }
