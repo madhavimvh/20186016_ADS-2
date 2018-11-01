@@ -46,7 +46,7 @@ public class WordNet {
     }
     return vertices;
 }
-    public void readhyn(String file) {
+    public void readhyn(String file)  {
         In in = new In("./Files/" + file);
         while(!in.isEmpty()) {
             String[] s = in.readString().split(",");
@@ -58,11 +58,21 @@ public class WordNet {
             }
         }
         DirectedCycle dir = new DirectedCycle(digraph);
+        int count = 0;
+        for (int i = 0; i < vertices; i++) {
+            if (digraph.outdegree(i) == 0) {
+                count++;
+            }
+        }
+        if (count > 1) {
+            throw new IllegalArgumentException("Multiple roots");
+        }
         if(dir.hasCycle()) {
-            System.out.println("Cycle detected");
+            throw new IllegalArgumentException("Cycle detected");
         } else {
         System.out.println(digraph);
         }
+
     }
     // returns all WordNet nouns
     public Iterable<String> nouns() {
