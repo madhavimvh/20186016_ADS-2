@@ -1,25 +1,45 @@
 import java.util.Arrays;
 import java.util.*;
-
+/**
+ * Class for word net.
+ */
 public class WordNet {
+        /**
+         * { var_description }.
+         */
         private int vertices;
+        /**
+         * { var_description }.
+         */
         private String hypernyms;
+        /**
+         * { var_description }.
+         */
         private Digraph digraph;
-        // private SAP sap;
-        // private int grlength;
+        /**
+         * { item_description }.
+         */
         private LinearProbingHashST<String, List<Integer>> st;
-
-
-    WordNet(String synsets, String hypernyms) {
+    /**
+     * Constructs the object.
+     *
+     * @param      synsets    The synsets
+     * @param      hypernyms  The hypernyms
+     */
+    WordNet(final String synsets, final String hypernyms) {
         vertices = readsyn(synsets);
-        
         digraph = new Digraph(vertices);
         readhyn(hypernyms);
-        // sap = new SAP();
-        // grlength = 0;
         st = new LinearProbingHashST<String, List<Integer>>();
     }
-    public int readsyn(String file) {
+    /**
+     * { function_description }.
+     *
+     * @param      file  The file
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int readsyn(final String file) {
         In in = new In("./Files/" + file);
         String[] s1 = null;
         String[] s = null;
@@ -45,7 +65,12 @@ public class WordNet {
     }
     return vertices;
 }
-    public void readhyn(String file)  {
+    /**
+     * { function_description }.
+     *
+     * @param      file  The file
+     */
+    public void readhyn(final String file)  {
         In in = new In("./Files/" + file);
         while(!in.isEmpty()) {
             String[] s = in.readString().split(",");
@@ -74,25 +99,56 @@ public class WordNet {
 
     }
     // returns all WordNet nouns
+
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Iterable<String> nouns() {
         return st.keys();
     }
     // // is the word a WordNet noun?
-    public boolean isNoun(String word) {
+
+    /**
+     * Determines if noun.
+     *
+     * @param      word  The word
+     *
+     * @return     True if noun, False otherwise.
+     */
+    public boolean isNoun(final String word) {
         return st.contains(word);
     }
     // // distance between nounA and nounB (defined below)
-    // public int distance(String nounA, String nounB) {
-
+    // /**
+    //  * { function_description }.
+    //  *
+    //  * @param      nounA  The noun a
+    //  * @param      nounB  The noun b
+    //  *
+    //  * @return     { description_of_the_return_value }
+    //  */
+    // public int distance(final String nounA, final String nounB) {
     // }
     // // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
     // // in a shortest ancestral path (defined below)
-    // public String sap(String nounA, String nounB) {
-
+    // /**
+    //  * { function_description }.
+    //  *
+    //  * @param      nounA  The noun a
+    //  * @param      nounB  The noun b
+    //  *
+    //  * @return     { description_of_the_return_value }
+    //  */
+    // public String sap(final String nounA, final String nounB) {
     // }
-
-    // do unit testing of this class
-    // public static void main(String[] args) {
-
+    // // do unit testing of this class
+    // /**
+    //  * { function_description }.
+    //  *
+    //  * @param      args  The arguments
+    //  */
+    // public static void main(final String[] args) {
     // }
 }
