@@ -29,6 +29,7 @@ public final class Solution {
 						}
 				}	
 			} catch (Exception ex) {
+				//ex.printStackTrace();				
 				System.out.println(ex.getMessage());
 			}
 	}

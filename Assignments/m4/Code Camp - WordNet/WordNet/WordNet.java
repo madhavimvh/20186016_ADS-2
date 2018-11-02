@@ -31,9 +31,7 @@ public class WordNet {
         digraph = readhyn(hypernyms, vertices);
         sap = new SAP(digraph);
     }
-    WordNet() {
         
-    }
     /**
      * { function_description }.
      *

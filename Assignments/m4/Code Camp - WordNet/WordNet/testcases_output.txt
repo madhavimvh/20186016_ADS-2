@@ -42,7 +42,8 @@ distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 
 Your Output: 
--4
+distance = 0, ancestor = C-reactive_protein CRP
+distance = 0, ancestor = C-reactive_protein CRP
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -55,7 +56,12 @@ distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 
 Your Output: 
--4
+distance = 0, ancestor = ABO_antibodies
+distance = 0, ancestor = ABO_antibodies
+distance = 0, ancestor = ABO_antibodies
+distance = 0, ancestor = ABO_antibodies
+distance = 0, ancestor = ABO_antibodies
+distance = 0, ancestor = ABO_antibodies
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -65,7 +71,9 @@ distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
--2
+distance = 0, ancestor = ABO_antibodies
+distance = 0, ancestor = ABO_antibodies
+distance = 0, ancestor = ABO_antibodies
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -233,7 +241,23 @@ distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
--14
+distance = 0, ancestor = 'hood
+distance = 0, ancestor = 'hood
+distance = 0, ancestor = 'hood
+distance = 0, ancestor = 'hood
+distance = 0, ancestor = 'hood
+distance = 0, ancestor = 'hood
+distance = 0, ancestor = 'hood
+distance = 0, ancestor = 'hood
+distance = 0, ancestor = 'hood
+distance = 0, ancestor = 'hood
+distance = 0, ancestor = 'hood
+distance = 0, ancestor = 'hood
+distance = 0, ancestor = 'hood
+distance = 0, ancestor = 'hood
+distance = 0, ancestor = 'hood
+distance = 0, ancestor = 'hood
+distance = 0, ancestor = 'hood
 ----------------------------------------
 
 ########## Testcase 14: Passed ##########

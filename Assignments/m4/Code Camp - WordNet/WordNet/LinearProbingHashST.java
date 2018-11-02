@@ -1,4 +1,5 @@
-class LinearProbingHashST<Key, Value> {
+
+public class LinearProbingHashST<Key, Value> {
     private static final int INIT_CAPACITY = 4;
 
     private int n;           // number of key-value pairs in the symbol table
@@ -60,12 +61,11 @@ class LinearProbingHashST<Key, Value> {
 
     // hash function for keys - returns value between 0 and M-1
     private int hash(Key key) {
-        // return (key.hashCode() & 0x7fffffff) % m;
-        return (11 * key.hashCode()) % m;
+        return (key.hashCode() & 0x7fffffff) % m;
     }
 
     // resizes the hash table to the given capacity by re-hashing all of the keys
-    public void resize(int capacity) {
+    private void resize(int capacity) {
         LinearProbingHashST<Key, Value> temp = new LinearProbingHashST<Key, Value>(capacity);
         for (int i = 0; i < m; i++) {
             if (keys[i] != null) {
@@ -166,23 +166,6 @@ class LinearProbingHashST<Key, Value> {
 
         assert check();
     }
-    public String display() {
-        String s = "{";
-        int i;
-        for (i = 0; i < keys.length - 1; i++) {
-            if (keys[i] != null) {
-                s += keys[i] + ":" + vals[i] + ", ";
-            }
-        }
-        if (keys[i] != null) {
-            s += keys[i] + ":" + vals[i];
-        }
-        else {
-            s = s.substring(0, s.length() - 2);
-        }
-        s += "}";
-        return s;
-    }
 
     /**
      * Returns all keys in this symbol table as an {@code Iterable}.
@@ -218,5 +201,4 @@ class LinearProbingHashST<Key, Value> {
         }
         return true;
     }
-
 }
