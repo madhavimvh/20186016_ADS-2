@@ -20,6 +20,8 @@ public class WordNet {
          * { item_description }.
          */
         private LinearProbingHashST<String, List<Integer>> st;
+        private ArrayList<String> synsetids;
+        private SAP sap;
     /**
      * Constructs the object.
      *
@@ -30,7 +32,11 @@ public class WordNet {
         vertices = readsyn(synsets);
         digraph = new Digraph(vertices);
         readhyn(hypernyms);
-        st = new LinearProbingHashST<String, List<Integer>>();
+        st = new LinearProbingHashST<>();
+        sap = new SAP(digraph);
+    }
+    WordNet() {
+        
     }
     /**
      * { function_description }.
@@ -46,21 +52,23 @@ public class WordNet {
         while (!in.isEmpty()) {
         ArrayList<Integer> ids = new ArrayList<Integer>();
             vertices++;
-        s = in.readString().split(",");
+        s = in.readLine().split(",");
         int id = Integer.parseInt(s[0]);
-        if (s[1].length() > 1) {
-            for (int i = 0; i < s[1].length(); i++) {
-                s1 = s[1].split(" ");
+        synsetids.add(id, s[1]);
+        s1 = s[1].split(" ");
+        System.out.println(s1.length);
+            for (int i = 0; i < s1.length; i++) {
+                System.out.println(st.contains(s1[i]));
                 if (st.contains(s1[i])) {
                     ids.addAll(st.get(s[i]));
                     ids.add(id);
-                    st.put(s[1], ids);
+                    st.put(s[i], ids);
                 } else {
                     ids.add(id);
                     st.put(s1[i], ids);
                 }
             } 
-        }
+        
         // System.out.println(Arrays.toString(s1));
     }
     return vertices;
@@ -129,8 +137,15 @@ public class WordNet {
     //  *
     //  * @return     { description_of_the_return_value }
     //  */
-    // public int distance(final String nounA, final String nounB) {
-    // }
+    public int distance(final String nounA, final String nounB) {
+        if (nounA == null || nounB == null) {
+            throw new IllegalArgumentException("IllegalArgumentException");
+        }
+        Iterable<Integer> nA = st.get(nounA);
+        Iterable<Integer> nB = st.get(nounB);
+        return sap.length(nA, nB);
+
+    }
     // // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
     // // in a shortest ancestral path (defined below)
     // /**
@@ -141,8 +156,17 @@ public class WordNet {
     //  *
     //  * @return     { description_of_the_return_value }
     //  */
-    // public String sap(final String nounA, final String nounB) {
-    // }
+    public String sap(final String nounA, final String nounB) {
+        // Iterable<Integer> nA = st.get(nounA);
+        // Iterable<Integer> nB = st.get(nounB);
+        // if (nA == null || nB == null) {
+        //     throw new IllegalArgumentException("cannot be null");
+        // }
+        // int ancesid = sap.ancestor(nA, nB);
+        int ancesid = distance(nounA, nounB);
+        return synsetids.get(ancesid);
+
+    }
     // // do unit testing of this class
     // /**
     //  * { function_description }.
