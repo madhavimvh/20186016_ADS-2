@@ -153,7 +153,10 @@ public class WordNet {
     //  * @return     { description_of_the_return_value }
     //  */
     public String sap(final String nounA, final String nounB) {
-        int ancesid = distance(nounA, nounB);
+        int ancesid = sap.ancestor(st.get(nounA), st.get(nounB));
+        if (ancesid == -1) {
+            throw new IllegalArgumentException("IllegalArgumentException");
+        }
         return synsetids.get(ancesid);
 
     }
