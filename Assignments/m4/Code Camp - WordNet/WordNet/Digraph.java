@@ -44,53 +44,6 @@ public class Digraph {
     }
 
     /**
-     * Initializes a digraph from the specified
-     * input stream. The format is the
-     * number of vertices <em>V</em>, followed
-     * by the number of edges
-     * <em>E</em>, followed by <em>E</em> pairs
-     * of vertices, with each entry
-     * separated by whitespace.
-     *
-     * @param      in    the input stream
-     * @throws     IllegalArgumentException
-     * if the endpoints of any edge are not in
-     *      prescribed range
-     * @throws     IllegalArgumentException
-     * if the number of vertices or edges is
-     *                    negative
-     * @throws     IllegalArgumentException
-     * if the input stream is in the wrong format
-     */
-    public Digraph(final In in) {
-        try {
-            this.ver = in.readInt();
-            if (ver < 0) {
-                throw new IllegalArgumentException(
-                "number of vertices in a Digraph must be nonnegative");
-            }
-            indegree = new int[ver];
-            adj = (Bag<Integer>[]) new Bag[ver];
-            for (int v = 0; v < ver; v++) {
-                adj[v] = new Bag<Integer>();
-            }
-            int edgg = in.readInt();
-            if (edgg < 0) {
-                throw new IllegalArgumentException(
-                "number of edges in a Digraph must be nonnegative");
-            }
-            for (int i = 0; i < edgg; i++) {
-                int v = in.readInt();
-                int w = in.readInt();
-                addEdge(v, w);
-            }
-        } catch (NoSuchElementException e) {
-            throw new IllegalArgumentException(
-            "invalid input format in Digraph constructor", e);
-        }
-    }
-
-    /**
      * Initializes a new digraph that
      * is a deep copy of the specified digraph.
      *

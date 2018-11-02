@@ -139,37 +139,4 @@ class BreadthFirstDirectedPaths {
             }
         }
     }
-
-
-    /**
-     * Unit tests the {@code BreadthFirstDirectedPaths} data type.
-     *
-     * @param args the command-line arguments
-     */
-    public static void main(String[] args) {
-        In in = new In(args[0]);
-        Digraph G = new Digraph(in);
-        // StdOut.println(G);
-
-        int s = Integer.parseInt(args[1]);
-        BreadthFirstDirectedPaths bfs = new BreadthFirstDirectedPaths(G, s);
-
-        for (int v = 0; v < G.ver(); v++) {
-            if (bfs.hasPathTo(v)) {
-                System.out.printf("%d to %d (%d):  ", s, v, bfs.distTo(v));
-                for (int x : bfs.pathTo(v)) {
-                    if (x == s) System.out.print(x);
-                    else        System.out.print("->" + x);
-                }
-                System.out.println();
-            }
-
-            else {
-                System.out.printf("%d to %d (-):  not connected\n", s, v);
-            }
-
-        }
-    }
-
-
 }

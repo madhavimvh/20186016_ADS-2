@@ -11,16 +11,12 @@ public class WordNet {
         /**
          * { var_description }.
          */
-        private String hypernyms;
-        /**
-         * { var_description }.
-         */
         private Digraph digraph;
         /**
          * { item_description }.
          */
-        private LinearProbingHashST<String, List<Integer>> st;
-        private ArrayList<String> synsetids;
+        private LinearProbingHashST<String, ArrayList<Integer>> st;
+        private List<String> synsetids;
         private SAP sap;
     /**
      * Constructs the object.
@@ -29,10 +25,10 @@ public class WordNet {
      * @param      hypernyms  The hypernyms
      */
     WordNet(final String synsets, final String hypernyms) {
+        st = new LinearProbingHashST<String, ArrayList<Integer>>();
+        synsetids = new ArrayList<String>();
         vertices = readsyn(synsets);
-        digraph = new Digraph(vertices);
-        readhyn(hypernyms);
-        st = new LinearProbingHashST<>();
+        digraph = readhyn(hypernyms, vertices);
         sap = new SAP(digraph);
     }
     WordNet() {
@@ -47,46 +43,43 @@ public class WordNet {
      */
     public int readsyn(final String file) {
         In in = new In("./Files/" + file);
-        String[] s1 = null;
-        String[] s = null;
+        int count = 0;
         while (!in.isEmpty()) {
-        ArrayList<Integer> ids = new ArrayList<Integer>();
-            vertices++;
-        s = in.readLine().split(",");
-        int id = Integer.parseInt(s[0]);
-        synsetids.add(id, s[1]);
-        s1 = s[1].split(" ");
-        System.out.println(s1.length);
-            for (int i = 0; i < s1.length; i++) {
-                System.out.println(st.contains(s1[i]));
-                if (st.contains(s1[i])) {
-                    ids.addAll(st.get(s[i]));
+            count++;
+            String[] line = in.readLine().split(",");
+            int id = Integer.parseInt(line[0]);
+            synsetids.add(id, line[1]);
+            // Added to array list synset for look up.
+
+            String[] nouns = line[1].split(" ");
+            for (int i = 0; i < nouns.length; i++) {
+                ArrayList<Integer> ids;
+                if (st.contains(nouns[i])) {
+                    ids = st.get(nouns[i]);
+                    //ids.addAll(st.get(nouns[i]));
                     ids.add(id);
-                    st.put(s[i], ids);
                 } else {
+                    ids = new ArrayList<Integer>();
                     ids.add(id);
-                    st.put(s1[i], ids);
                 }
-            } 
-        
-        // System.out.println(Arrays.toString(s1));
+                st.put(nouns[i], ids);
+            }
+        }
+        return count;
     }
-    return vertices;
-}
     /**
      * { function_description }.
      *
      * @param      file  The file
      */
-    public void readhyn(final String file)  {
+    public Digraph readhyn(final String file, final int vertices)  {
+        Digraph digraph = new Digraph(vertices);
         In in = new In("./Files/" + file);
         while(!in.isEmpty()) {
             String[] s = in.readString().split(",");
-            // System.out.println(Arrays.toString(s));
+            int v = Integer.parseInt(s[0]);
             for (int i = 1; i < s.length; i++) {
-                // System.out.println(s[0]);
-                // System.out.println(s[1]);
-                digraph.addEdge(Integer.parseInt(s[0]), Integer.parseInt(s[i]));
+                digraph.addEdge(v, Integer.parseInt(s[i]));
             }
         }
         DirectedCycle dir = new DirectedCycle(digraph);
@@ -101,12 +94,14 @@ public class WordNet {
         }
         if(dir.hasCycle()) {
             throw new IllegalArgumentException("Cycle detected");
-        } else {
-        System.out.println(digraph);
         }
-
+        return digraph;
     }
     // returns all WordNet nouns
+
+    public Digraph getDigraph() {
+        return digraph;
+    }
 
     /**
      * { function_description }.
@@ -157,22 +152,8 @@ public class WordNet {
     //  * @return     { description_of_the_return_value }
     //  */
     public String sap(final String nounA, final String nounB) {
-        // Iterable<Integer> nA = st.get(nounA);
-        // Iterable<Integer> nB = st.get(nounB);
-        // if (nA == null || nB == null) {
-        //     throw new IllegalArgumentException("cannot be null");
-        // }
-        // int ancesid = sap.ancestor(nA, nB);
         int ancesid = distance(nounA, nounB);
         return synsetids.get(ancesid);
 
     }
-    // // do unit testing of this class
-    // /**
-    //  * { function_description }.
-    //  *
-    //  * @param      args  The arguments
-    //  */
-    // public static void main(final String[] args) {
-    // }
 }

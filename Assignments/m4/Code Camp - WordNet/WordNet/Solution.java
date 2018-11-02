@@ -12,23 +12,22 @@ public final class Solution {
 	 * @param      args  The arguments
 	 */
 	public static void main(final String[] args) {
-		try {
 			String synsets = StdIn.readString();
 			String hypernyms = StdIn.readString();
 			String type = StdIn.readString();
+			WordNet wordnet = new WordNet(synsets, hypernyms);
 			if (type.equals("Graph")) {
-				WordNet wordnet = new WordNet(synsets, hypernyms);
+				System.out.println(wordnet.getDigraph());
 			} else {
-				while (StdIn.hasNextLine()) {
-					String[] arr = StdIn.readLine().split(" ");
-					System.out.println("lkllk");
-					WordNet wordnet = new WordNet(synsets, hypernyms);
-					System.out.println(wordnet.distance(arr[0], arr[1]));
-					System.out.println(wordnet.sap(arr[0], arr[1]));
+				try {
+					while (StdIn.hasNextLine()) {
+						String[] arr = StdIn.readLine().split(" ");
+						System.out.println(wordnet.distance(arr[0], arr[1]));
+						System.out.println(wordnet.sap(arr[0], arr[1]));
+					}
+				} catch (Exception ex) {
+					System.out.println(ex.getMessage());
 				}
 			}	
-		} catch (Exception ex) {
-			System.out.println(ex.getMessage());
-		}
 	}
 }
