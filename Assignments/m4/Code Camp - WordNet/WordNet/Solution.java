@@ -20,10 +20,11 @@ public final class Solution {
 				if (type.equals("Graph")) {
 					System.out.println(wordnet.getDigraph());
 				} else {
-						while (StdIn.hasNextLine()) {
-							String[] arr = StdIn.readLine().split(" ");
-							System.out.println(wordnet.distance(arr[0], arr[1]));
-							System.out.println(wordnet.sap(arr[0], arr[1]));
+						while (!StdIn.isEmpty()) {
+							String nounA = StdIn.readString();
+							String nounB = StdIn.readString();
+							System.out.println(wordnet.distance(nounA, nounB));
+							System.out.println(wordnet.sap(nounA, nounB));
 						}
 				}	
 			} catch (Exception ex) {

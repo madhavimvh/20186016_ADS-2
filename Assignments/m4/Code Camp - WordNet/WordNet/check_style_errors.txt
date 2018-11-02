@@ -270,12 +270,13 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:19: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:21: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:24: Line is longer than 80 characters (found 99). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:25: Line is longer than 80 characters (found 109). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:26: Line is longer than 80 characters (found 104). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:28: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:24: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:25: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:26: Line is longer than 80 characters (found 107). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:27: Line is longer than 80 characters (found 102). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:29: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 10 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
@@ -457,8 +458,11 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:95:11: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:102:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'getDigraph' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'getDigraph' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:102:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:144: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:154:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'sap' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'sap' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:154:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:119:8: Unused @param tag for 'word'. [JavadocMethod]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:123:40: Expected @param tag for 'nounA'. [JavadocMethod]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:139:21: '(' is preceded with whitespace. [MethodParamPad]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:147: Line is longer than 80 characters (found 95). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:157:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'sap' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'sap' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:157:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 21 errors.

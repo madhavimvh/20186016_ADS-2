@@ -120,8 +120,11 @@ public class WordNet {
      *
      * @return     True if noun, False otherwise.
      */
-    public boolean isNoun(final String word) {
-        return st.contains(word);
+    public boolean isNoun(final String nounA) {
+        if (nounA.equals(null)) {
+            throw new IllegalArgumentException("IllegalArgumentException");
+        }
+        return st.contains(nounA);
     }
     // // distance between nounA and nounB (defined below)
     /**
@@ -133,7 +136,7 @@ public class WordNet {
      * @return     { description_of_the_return_value }
      */
     public int distance(final String nounA, final String nounB) {
-        if (nounA == null || nounB == null) {
+        if (!isNoun (nounA) || !isNoun(nounB)) {
             throw new IllegalArgumentException("IllegalArgumentException");
         }
         Iterable<Integer> nA = st.get(nounA);

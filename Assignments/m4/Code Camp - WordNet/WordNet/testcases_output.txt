@@ -77,7 +77,16 @@ distance = 0, ancestor = e
 distance = 0, ancestor = f
 
 Your Output: 
-1
+0
+a
+0
+a
+0
+a
+0
+a
+0
+a
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -94,7 +103,26 @@ distance = 2, ancestor = j
 distance = 1, ancestor = k
 
 Your Output: 
-1
+0
+a
+0
+a
+0
+a
+0
+a
+0
+a
+0
+a
+0
+a
+0
+a
+0
+a
+0
+a
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -108,7 +136,20 @@ distance = 3, ancestor = h
 distance = 1, ancestor = h
 
 Your Output: 
-1
+0
+a
+0
+a
+0
+a
+0
+a
+0
+a
+0
+a
+0
+a
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -125,7 +166,26 @@ distance = 3, ancestor = f
 distance = 4, ancestor = f
 
 Your Output: 
-1
+0
+a
+0
+a
+0
+a
+0
+a
+0
+a
+0
+a
+0
+a
+0
+a
+0
+a
+0
+a
 ----------------------------------------
 
 ########## Testcase 8: Passed ##########
@@ -168,20 +228,20 @@ Your Output:
 Multiple roots
 ----------------------------------------
 
-########## Testcase 11: Failed ##########
+########## Testcase 11: Passed ##########
 Expected Output: 
 IllegalArgumentException
 
 Your Output: 
-1
+IllegalArgumentException
 ----------------------------------------
 
-########## Testcase 12: Failed ##########
+########## Testcase 12: Passed ##########
 Expected Output: 
 IllegalArgumentException
 
 Your Output: 
-1
+IllegalArgumentException
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
