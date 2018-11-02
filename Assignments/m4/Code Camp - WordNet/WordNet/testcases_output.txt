@@ -27,7 +27,6 @@ distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 
 Your Output: 
-lkllk
 null
 ----------------------------------------
 
@@ -41,7 +40,6 @@ distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 
 Your Output: 
-lkllk
 null
 ----------------------------------------
 
@@ -52,7 +50,6 @@ distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
-lkllk
 null
 ----------------------------------------
 
@@ -65,7 +62,6 @@ distance = 0, ancestor = e
 distance = 0, ancestor = f
 
 Your Output: 
-lkllk
 null
 ----------------------------------------
 
@@ -83,7 +79,6 @@ distance = 2, ancestor = j
 distance = 1, ancestor = k
 
 Your Output: 
-lkllk
 null
 ----------------------------------------
 
@@ -98,7 +93,6 @@ distance = 3, ancestor = h
 distance = 1, ancestor = h
 
 Your Output: 
-lkllk
 null
 ----------------------------------------
 
@@ -116,7 +110,6 @@ distance = 3, ancestor = f
 distance = 4, ancestor = f
 
 Your Output: 
-lkllk
 null
 ----------------------------------------
 
@@ -157,7 +150,6 @@ Expected Output:
 IllegalArgumentException
 
 Your Output: 
-lkllk
 null
 ----------------------------------------
 
@@ -166,7 +158,6 @@ Expected Output:
 IllegalArgumentException
 
 Your Output: 
-lkllk
 null
 ----------------------------------------
 
@@ -191,7 +182,6 @@ distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
-lkllk
 null
 ----------------------------------------
 

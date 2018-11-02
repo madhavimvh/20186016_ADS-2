@@ -129,14 +129,14 @@ public class WordNet {
         return st.contains(word);
     }
     // // distance between nounA and nounB (defined below)
-    // /**
-    //  * { function_description }.
-    //  *
-    //  * @param      nounA  The noun a
-    //  * @param      nounB  The noun b
-    //  *
-    //  * @return     { description_of_the_return_value }
-    //  */
+    /**
+     * { function_description }.
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int distance(final String nounA, final String nounB) {
         if (nounA == null || nounB == null) {
             throw new IllegalArgumentException("IllegalArgumentException");
