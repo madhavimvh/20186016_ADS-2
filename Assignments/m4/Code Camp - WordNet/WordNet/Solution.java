@@ -23,8 +23,9 @@ public final class Solution {
 						while (!StdIn.isEmpty()) {
 							String nounA = StdIn.readString();
 							String nounB = StdIn.readString();
-							System.out.println(wordnet.distance(nounA, nounB));
-							System.out.println(wordnet.sap(nounA, nounB));
+							System.out.println("distance = " +
+								wordnet.distance(nounA, nounB) + ", ancestor = " +
+								wordnet.sap(nounA, nounB));
 						}
 				}	
 			} catch (Exception ex) {

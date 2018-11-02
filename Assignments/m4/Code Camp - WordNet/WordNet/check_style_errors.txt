@@ -272,11 +272,14 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:21: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:24: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:25: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:26: Line is longer than 80 characters (found 107). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:27: Line is longer than 80 characters (found 102). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:29: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:26: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:26:90: '+' should be on a new line. [OperatorWrap]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:27: Line is longer than 80 characters (found 114). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:27:114: '+' should be on a new line. [OperatorWrap]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:28: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:30: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 13 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
