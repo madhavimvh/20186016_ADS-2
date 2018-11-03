@@ -5,8 +5,8 @@ class PageRank {
 	private Digraph digraph;
 	private LinearProbingHashST<Integer, ArrayList<Integer>> st;
 	PageRank(Digraph digraphh) {
-	this.digraph = digraphh;
-	st = new LinearProbingHashST<Integer, ArrayList<Integer>>();
+		this.digraph = digraphh;
+		st = new LinearProbingHashST<Integer, ArrayList<Integer>>();
 		for (int i = 0; i < digraph.ver(); i++) {
 			for (Integer k : digraph.adj(i)) {
 				if (st.contains(k)) {
@@ -20,6 +20,7 @@ class PageRank {
 				}
 			}
 		}
+
 		// double intial = 1.0/digraph.ver();
 		// // System.out.println(intial);
 		// Digraph revdigraph = digraph.reverse();
@@ -34,9 +35,22 @@ class PageRank {
 		// 		// pr.put(i , index);
 		// 	}
 		// 	// System.out.println(pr.get(0));
-			
+
 		// }
-}
+	}
+	public void getPr() {
+		double initial = 1.0 / digraph.ver();
+		System.out.println(initial);
+			int i = 2;
+			while (i > 0) {
+		for (int n : st.keys()) {
+				int outdegree = digraph.outdegree(n);
+				double rank = initial / outdegree;
+				i--;
+				System.out.println(rank);
+			}
+		}
+	}
 }
 
 class WebSearch {
@@ -57,7 +71,7 @@ public class Solution {
 			if (str.length > 2) {
 				for (int i = 1; i < str.length; i++) {
 					digraph.addEdge(Integer.parseInt(str[0]), Integer.parseInt(str[i]));
-					
+
 				}
 			} else {
 				digraph.addEdge(Integer.parseInt(str[0]), Integer.parseInt(str[1]));
@@ -72,28 +86,29 @@ public class Solution {
 			System.out.println();
 		}
 		PageRank pagerank = new PageRank(digraph);
+		pagerank.getPr();
 
-		// iterate count of vertices times 
+		// iterate count of vertices times
 		// to read the adjacency list from std input
 		// and build the graph
-		
-		
+
+
 		// Create page rank object and pass the graph object to the constructor
-		
+
 		// print the page rank object
-		
+
 		// This part is only for the final test case
-		
+
 		// File path to the web content
 		String file = "WebContent.txt";
-		
+
 		// instantiate web search object
 		// and pass the page rank object and the file path to the constructor
-		
+
 		// read the search queries from std in
 		// remove the q= prefix and extract the search word
 		// pass the word to iAmFeelingLucky method of web search
 		// print the return value of iAmFeelingLucky
-		
+
 	}
 }
