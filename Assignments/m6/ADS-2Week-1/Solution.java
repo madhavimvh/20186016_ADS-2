@@ -1,33 +1,42 @@
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.*;
 class PageRank {
 	private Digraph digraph;
-	private LinearProbingHashST<Integer, Double>  pr;
+	private LinearProbingHashST<Integer, ArrayList<Integer>> st;
 	PageRank(Digraph digraphh) {
-		this.digraph = digraphh;
-		pr = new LinearProbingHashST<Integer, Double>();
-
-	}
-	public void pr() {
-		double intial = 1.0/digraph.ver();
-		// System.out.println(intial);
-		Digraph revdigraph = digraph.reverse();
+	this.digraph = digraphh;
+	st = new LinearProbingHashST<Integer, ArrayList<Integer>>();
 		for (int i = 0; i < digraph.ver(); i++) {
-			for (int n : digraph.adj(i)) {
-				int count = 0;
-				while (count < 2) {
-				double index = intial/digraph.outdegree(n);
-				System.out.println(index);
-				count++;
+			for (Integer k : digraph.adj(i)) {
+				if (st.contains(k)) {
+					ArrayList<Integer> list = st.get(k);
+					list.add(i);
+					st.put(k, list);
+				} else {
+					ArrayList<Integer> list = new ArrayList<Integer>();
+					list.add(i);
+					st.put(k, list);
+				}
 			}
-				// pr.put(i , index);
-			}
-			// System.out.println(pr.get(0));
-			
 		}
-	}
-
-	
+		// double intial = 1.0/digraph.ver();
+		// // System.out.println(intial);
+		// Digraph revdigraph = digraph.reverse();
+		// for (int i = 0; i < digraph.ver(); i++) {
+		// 	for (int n : digraph.adj(i)) {
+		// 		int count = 0;
+		// 		while (count < 2) {
+		// 		double index = intial/digraph.outdegree(n);
+		// 		System.out.println(index);
+		// 		count++;
+		// 	}
+		// 		// pr.put(i , index);
+		// 	}
+		// 	// System.out.println(pr.get(0));
+			
+		// }
+}
 }
 
 class WebSearch {
@@ -63,7 +72,6 @@ public class Solution {
 			System.out.println();
 		}
 		PageRank pagerank = new PageRank(digraph);
-		pagerank.pr();
 
 		// iterate count of vertices times 
 		// to read the adjacency list from std input
