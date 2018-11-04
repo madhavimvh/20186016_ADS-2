@@ -16,7 +16,13 @@ public class WordNet {
      * { item_description }.
      */
     private LinearProbingHashST<String, ArrayList<Integer>> st;
+    /**
+     * { var_description }.
+     */
     private List<String> synsetids;
+    /**
+     * { var_description }.
+     */
     private SAP sap;
     /**
      * Constructs the object.
@@ -95,11 +101,14 @@ public class WordNet {
         return digraph;
     }
     // returns all WordNet nouns
-
+    /**
+     * Gets the digraph.
+     *
+     * @return     The digraph.
+     */
     public Digraph getDigraph() {
         return digraph;
     }
-
     /**
      * { function_description }.
      *
@@ -109,7 +118,6 @@ public class WordNet {
         return st.keys();
     }
     // // is the word a WordNet noun?
-
     /**
      * Determines if noun.
      *
@@ -139,24 +147,22 @@ public class WordNet {
         Iterable<Integer> nA = st.get(nounA);
         Iterable<Integer> nB = st.get(nounB);
         return sap.length(nA, nB);
-
     }
     // // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
     // // in a shortest ancestral path (defined below)
-    // /**
-    //  * { function_description }.
-    //  *
-    //  * @param      nounA  The noun a
-    //  * @param      nounB  The noun b
-    //  *
-    //  * @return     { description_of_the_return_value }
-    //  */
+    /**
+     * { function_description }
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return     { description_of_the_return_value }
+     */
     public String sap(final String nounA, final String nounB) {
         int ancesid = sap.ancestor(st.get(nounA), st.get(nounB));
         if (ancesid == -1) {
             throw new IllegalArgumentException("IllegalArgumentException");
         }
         return synsetids.get(ancesid);
-
     }
 }
