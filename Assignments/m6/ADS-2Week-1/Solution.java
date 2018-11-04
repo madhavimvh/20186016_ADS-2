@@ -73,6 +73,7 @@ public class Solution {
 		Digraph dig = new Digraph(ver);
 		for (int i = 0; i < ver; i++) {
 			String[] tokens = StdIn.readLine().split(" ");
+			// System.out.println(Arrays.toString(tokens));
 			if (tokens.length == 1) {
 				for (int j = 0; j < ver; j++) {
 					if (i != j) {
@@ -80,7 +81,11 @@ public class Solution {
 					}
 				}
 			} else {
-				for (int j = 1; j < ver; j++) {
+				// System.out.println(Arrays.toString(tokens));
+				for (int j = 1; j < tokens.length; j++) {
+					// System.out.println(tokens[0]);
+					// System.out.println(tokens[j]);
+					// System.out.println("ljflkj");
 					digraph.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[j]));
 					dig.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[j]));
 

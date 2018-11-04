@@ -281,10 +281,10 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:58:33: Parameter args should be final. [FinalParameters]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:59: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:70: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:84: Line is longer than 80 characters (found 114). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:85: Line is longer than 80 characters (found 110). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:96: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:106: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:89: Line is longer than 80 characters (found 114). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:90: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:101: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:111: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
 Checkstyle ends with 24 errors.
 Starting audit...
