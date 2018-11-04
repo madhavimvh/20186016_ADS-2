@@ -8,6 +8,10 @@ class PageRank {
     /**
      * { var_description }.
      */
+    private static final int THOU = 1000;
+    /**
+     * { var_description }.
+     */
     private Digraph digraph;
     /**
      * { var_description }.
@@ -44,9 +48,8 @@ class PageRank {
         // System.out.println(prhashmap);
         int pr;
         int i;
-        int thousand = 1000;
         Double[] prs = new Double[digraph.V()];
-        for (int j = 1; j < thousand; j++) {
+        for (int j = 1; j < THOU; j++) {
             for (i = 0; i < digraph.V(); i++) {
                 double sum = 0.0;
                 for (int n : revdigraph.adj(i)) {
