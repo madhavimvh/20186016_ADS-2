@@ -42,7 +42,9 @@ class PageRank {
 				prhashmap.put(x, prs[x]);
 			}
 		}
-		System.out.println(prhashmap);
+		for (int y = 0; y < digraph.V(); y++) {
+			System.out.println(y + " - " + prhashmap.get(y));
+		}
 	}
 
 }
