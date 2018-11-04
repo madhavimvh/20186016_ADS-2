@@ -19,7 +19,9 @@ public class SAP {
                 int dist = bfdv.distTo(i) + bfdw.distTo(i);
                 if (dist < min) {
                     ancestors = i;
+                    System.out.println(dist);
                     min = dist;
+                    System.out.println(min);
                 }
                 
             }

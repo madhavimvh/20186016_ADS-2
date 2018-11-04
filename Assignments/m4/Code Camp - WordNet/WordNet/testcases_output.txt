@@ -36,17 +36,21 @@ Your Output:
 14: 13
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 
 Your Output: 
+7
+7
 distance = 7, ancestor = entity
+10
+10
 distance = 10, ancestor = entity
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 distance = 7, ancestor = macromolecule supermolecule
 distance = 7, ancestor = macromolecule supermolecule
@@ -56,27 +60,67 @@ distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 
 Your Output: 
+17
+17
+7
+7
 distance = 7, ancestor = macromolecule supermolecule
+17
+17
+7
+7
 distance = 7, ancestor = macromolecule supermolecule
+19
+19
+9
+9
 distance = 9, ancestor = macromolecule supermolecule
+18
+18
+8
+8
 distance = 8, ancestor = macromolecule supermolecule
+19
+19
+7
+7
 distance = 7, ancestor = lipid lipide lipoid
+1
+1
 distance = 1, ancestor = animal_oil
 ----------------------------------------
 
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 distance = 3, ancestor = wax
 distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
+17
+17
+5
+5
+3
+3
 distance = 3, ancestor = wax
+17
+17
+15
+15
+13
+13
 distance = 13, ancestor = thing
+16
+16
+4
+4
+2
+2
 distance = 2, ancestor = wax
 ----------------------------------------
 
-########## Testcase 4: Passed ##########
+########## Testcase 4: Failed ##########
 Expected Output: 
 distance = 0, ancestor = b
 distance = 0, ancestor = c
@@ -85,14 +129,34 @@ distance = 0, ancestor = e
 distance = 0, ancestor = f
 
 Your Output: 
+2
+2
+0
+0
 distance = 0, ancestor = b
+8
+8
+0
+0
 distance = 0, ancestor = c
+6
+6
+0
+0
 distance = 0, ancestor = d
+4
+4
+0
+0
 distance = 0, ancestor = e
+2
+2
+0
+0
 distance = 0, ancestor = f
 ----------------------------------------
 
-########## Testcase 5: Passed ##########
+########## Testcase 5: Failed ##########
 Expected Output: 
 distance = 1, ancestor = b
 distance = 2, ancestor = c
@@ -106,19 +170,51 @@ distance = 2, ancestor = j
 distance = 1, ancestor = k
 
 Your Output: 
+1
+1
 distance = 1, ancestor = b
+2
+2
 distance = 2, ancestor = c
+4
+4
 distance = 4, ancestor = c
+3
+3
 distance = 3, ancestor = c
+4
+4
 distance = 4, ancestor = c
+4
+4
 distance = 4, ancestor = c
+3
+3
 distance = 3, ancestor = c
+4
+4
+3
+3
 distance = 3, ancestor = i
+5
+5
+4
+4
+2
+2
 distance = 2, ancestor = j
+6
+6
+5
+5
+3
+3
+1
+1
 distance = 1, ancestor = k
 ----------------------------------------
 
-########## Testcase 6: Passed ##########
+########## Testcase 6: Failed ##########
 Expected Output: 
 distance = 1, ancestor = b
 distance = 2, ancestor = c
@@ -129,16 +225,38 @@ distance = 3, ancestor = h
 distance = 1, ancestor = h
 
 Your Output: 
+1
+1
 distance = 1, ancestor = b
+2
+2
 distance = 2, ancestor = c
+3
+3
+2
+2
 distance = 2, ancestor = h
+6
+6
+5
+5
 distance = 5, ancestor = h
+5
+5
+4
+4
 distance = 4, ancestor = h
+4
+4
+3
+3
 distance = 3, ancestor = h
+1
+1
 distance = 1, ancestor = h
 ----------------------------------------
 
-########## Testcase 7: Passed ##########
+########## Testcase 7: Failed ##########
 Expected Output: 
 distance = 1, ancestor = b
 distance = 1, ancestor = c
@@ -152,15 +270,35 @@ distance = 3, ancestor = f
 distance = 4, ancestor = f
 
 Your Output: 
+1
+1
 distance = 1, ancestor = b
+1
+1
 distance = 1, ancestor = c
+1
+1
 distance = 1, ancestor = d
+1
+1
 distance = 1, ancestor = e
+2
+2
 distance = 2, ancestor = f
+3
+3
 distance = 3, ancestor = f
+3
+3
 distance = 3, ancestor = f
+3
+3
 distance = 3, ancestor = f
+3
+3
 distance = 3, ancestor = f
+4
+4
 distance = 4, ancestor = f
 ----------------------------------------
 
@@ -220,7 +358,7 @@ Your Output:
 IllegalArgumentException
 ----------------------------------------
 
-########## Testcase 13: Passed ##########
+########## Testcase 13: Failed ##########
 Expected Output: 
 distance = 11, ancestor = whole unit
 distance = 8, ancestor = organism being
@@ -241,22 +379,94 @@ distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
+17
+17
+13
+13
+11
+11
 distance = 11, ancestor = whole unit
+15
+15
+10
+10
+8
+8
 distance = 8, ancestor = organism being
+14
+14
 distance = 14, ancestor = entity
+17
+17
+13
+13
 distance = 13, ancestor = object physical_object
+10
+10
+2
+2
 distance = 2, ancestor = decade decennary decennium
+14
+14
+10
+10
+8
+8
 distance = 8, ancestor = substance
+14
+14
+4
+4
+2
+2
 distance = 2, ancestor = port
+14
+14
+4
+4
+2
+2
 distance = 2, ancestor = letter letter_of_the_alphabet alphabetic_character
+14
+14
+4
+4
+2
+2
 distance = 2, ancestor = letter letter_of_the_alphabet alphabetic_character
+14
+14
+12
+12
 distance = 12, ancestor = person individual someone somebody mortal soul
+15
+15
 distance = 15, ancestor = abstraction abstract_entity
+0
+0
 distance = 0, ancestor = 9/11 9-11 September_11 Sept._11 Sep_11
+12
+12
+8
+8
+2
+2
 distance = 2, ancestor = digit figure
+13
+13
 distance = 13, ancestor = abstraction abstract_entity
+12
+12
 distance = 12, ancestor = abstraction abstract_entity
+8
+8
+6
+6
+0
+0
 distance = 0, ancestor = era epoch
+8
+8
 distance = 8, ancestor = abstraction abstract_entity
 ----------------------------------------
 

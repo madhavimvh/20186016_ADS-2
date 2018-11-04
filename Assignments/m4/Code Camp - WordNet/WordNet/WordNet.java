@@ -4,20 +4,20 @@ import java.util.*;
  * Class for word net.
  */
 public class WordNet {
-        /**
-         * { var_description }.
-         */
-        private int vertices;
-        /**
-         * { var_description }.
-         */
-        private Digraph digraph;
-        /**
-         * { item_description }.
-         */
-        private LinearProbingHashST<String, ArrayList<Integer>> st;
-        private List<String> synsetids;
-        private SAP sap;
+    /**
+     * { var_description }.
+     */
+    private int vertices;
+    /**
+     * { var_description }.
+     */
+    private Digraph digraph;
+    /**
+     * { item_description }.
+     */
+    private LinearProbingHashST<String, ArrayList<Integer>> st;
+    private List<String> synsetids;
+    private SAP sap;
     /**
      * Constructs the object.
      *
@@ -31,7 +31,7 @@ public class WordNet {
         digraph = readhyn(hypernyms, vertices);
         sap = new SAP(digraph);
     }
-        
+
     /**
      * { function_description }.
      *
@@ -73,8 +73,8 @@ public class WordNet {
     public Digraph readhyn(final String file, final int vertices)  {
         Digraph digraph = new Digraph(vertices);
         In in = new In("./Files/" + file);
-        while(!in.isEmpty()) {
-            String[] s = in.readString().split(",");
+        while (!in.isEmpty()) {
+            String[] s = in.readLine().split(",");
             int v = Integer.parseInt(s[0]);
             for (int i = 1; i < s.length; i++) {
                 digraph.addEdge(v, Integer.parseInt(s[i]));
@@ -90,7 +90,7 @@ public class WordNet {
         if (count > 1) {
             throw new IllegalArgumentException("Multiple roots");
         }
-        if(dir.hasCycle()) {
+        if (dir.hasCycle()) {
             throw new IllegalArgumentException("Cycle detected");
         }
         return digraph;

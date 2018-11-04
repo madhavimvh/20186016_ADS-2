@@ -254,30 +254,23 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\SAP.java:13:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\SAP.java:13:23: Parameter v should be final. [FinalParameters]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\SAP.java:13:44: Parameter w should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\SAP.java:24: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\SAP.java:32:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'ancestor' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'ancestor' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\SAP.java:32:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\SAP.java:32:25: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\SAP.java:32:46: Parameter w should be final. [FinalParameters]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\SAP.java:26: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\SAP.java:34:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'ancestor' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'ancestor' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\SAP.java:34:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\SAP.java:34:25: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\SAP.java:34:46: Parameter w should be final. [FinalParameters]
 Audit done.
 Checkstyle ends with 16 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:3: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:19: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:21: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:24: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:25: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:26: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:26:90: '+' should be on a new line. [OperatorWrap]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:27: Line is longer than 80 characters (found 114). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:27:114: '+' should be on a new line. [OperatorWrap]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:28: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:30: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:32: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:26:74: '+' should be on a new line. [OperatorWrap]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:27: Line is longer than 80 characters (found 109). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:27:109: '+' should be on a new line. [OperatorWrap]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:28: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
@@ -447,15 +440,12 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:2: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:19:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:20:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:34: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:19:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:20:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:73: Expected @return tag. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:73:57: 'vertices' hides a field. [HiddenField]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:73:57: Expected @param tag for 'vertices'. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:74:17: 'digraph' hides a field. [HiddenField]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:76:14: 'while' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:93:11: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:100:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'getDigraph' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'getDigraph' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:100:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:117:8: Unused @param tag for 'word'. [JavadocMethod]
@@ -465,4 +455,4 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:155:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'sap' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'sap' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:155:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 17 errors.
