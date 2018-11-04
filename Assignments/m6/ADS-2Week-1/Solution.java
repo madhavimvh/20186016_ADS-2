@@ -83,13 +83,8 @@ public class Solution {
 			} else {
 				// System.out.println(Arrays.toString(tokens));
 				for (int j = 1; j < tokens.length; j++) {
-					// System.out.println(tokens[0]);
-					// System.out.println(tokens[j]);
-					// System.out.println("ljflkj");
 					digraph.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[j]));
 					dig.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[j]));
-
-
 				}
 			}
 		}
