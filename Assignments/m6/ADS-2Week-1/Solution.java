@@ -1,12 +1,50 @@
+import java.util.HashMap;
+import java.util.Arrays;
+import java.util.ArrayList;
 
 class PageRank {
-	
+	private Digraph digraph;
+	private Digraph revdigraph;
+	private HashMap<Integer, Double> prhashmap;
+	PageRank(Digraph digraphh) {
+		this.digraph = digraphh;
+		this.revdigraph = digraph.reverse();
+		prhashmap = new HashMap<Integer, Double>();
+		// System.out.println(revdigraph.toString());
+	}
+	public void getPR() {
+		double initialpr = 1.0 / digraph.V();
+		for (int i = 0; i < digraph.V(); i++) {
+			if (digraph.indegree(i) == 0) {
+				prhashmap.put(i, 0.0);
+			} else {
+				prhashmap.put(i, initialpr);
+			}
+		}
+		// System.out.println(prhashmap);
+		int pr;
+		double sum = 0.0;
+		ArrayList<Double> prs = new ArrayList<Double>();
+		for (int j = 0; j < 1000; j++) {
+			for (int i = 0; i < digraph.V(); i++) {
+				for (int n : revdigraph.adj(i)) {
+					double m = (double) digraph.outdegree(n);
+					sum = prhashmap.get(n) / m;
+			}
+			prs.add(i, sum);
+			}
+			for (int i = 0; i < digraph.V(); i++) {
+				prhashmap.put(i, prs.get(i));
+			}
+		}
+		System.out.println(prhashmap);
+	}
+
 }
 
 class WebSearch {
 
 }
-
 
 public class Solution {
 	public static void main(String[] args) {
@@ -15,11 +53,18 @@ public class Solution {
 		// iterate count of vertices times 
 		// to read the adjacency list from std input
 		// and build the graph
-		int ver = StdIn.readInt();
-		System.out.println(ver);
-		String arr = StdIn.readLine();
-		System.out.println(arr);
-		
+		int ver = Integer.parseInt(StdIn.readLine());
+		// System.out.println(Arrays.toString(arr));
+		Digraph digraph = new Digraph(ver);
+		while (!StdIn.isEmpty()) {
+			String[] arr = StdIn.readLine().split(" ");
+			for (int i = 1; i < arr.length; i++) {
+				digraph.addEdge(Integer.parseInt(arr[0]), Integer.parseInt(arr[i]));
+			}
+		}
+		System.out.println(digraph.toString());
+		PageRank pagerank = new PageRank(digraph);
+		pagerank.getPR();	
 		// Create page rank object and pass the graph object to the constructor
 		
 		// print the page rank object
