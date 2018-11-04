@@ -1,5 +1,7 @@
 import java.util.Arrays;
-// import java.util.Scanner;
+/**
+ * { item_description }.
+ */
 public final class Solution {
 	/**
 	 * Constructs the object.
