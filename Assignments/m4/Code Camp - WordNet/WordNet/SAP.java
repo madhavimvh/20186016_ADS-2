@@ -18,15 +18,14 @@ public class SAP {
      *
      * @param      gr    The graphics
      */
-    public SAP(final Digraph gr) {
-        this.gr = gr;
+    public SAP(final Digraph grr) {
+        this.gr = grr;
         ancestors = -1;
     }
 
     //
     // length of shortest ancestral path between any vertex in v and any vertex
     // in w; -1 if no such path
-    
     /**
      * { function_description }.
      *
@@ -48,7 +47,6 @@ public class SAP {
                     min = dist;
                     // System.out.println(min);
                 }
-                
             }
         }
         return min;
@@ -56,7 +54,6 @@ public class SAP {
 
     // a common ancestor that participates in shortest
     // ancestral path; -1 if no such path
-    
     /**
      * { function_description }.
      *
@@ -66,7 +63,7 @@ public class SAP {
      * @return     { description_of_the_return_value }
      */
     public int ancestor(final Iterable<Integer> v,
-        Iterable<Integer> w) {
+        final Iterable<Integer> w) {
         return ancestors;
     }
 
