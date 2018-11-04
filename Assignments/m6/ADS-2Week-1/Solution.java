@@ -31,8 +31,8 @@ class PageRank {
 				double sum = 0.0;
 				for (int n : revdigraph.adj(i)) {
 					double o = (double) prhashmap.get(n);
-					double m = (double) digraph.outdegree(n);
-					sum += (o / m);
+					// double m = ;
+					sum += (o / (double) digraph.outdegree(n));
 					// System.out.println(sum);
 			}
 			prs[i] = sum;
