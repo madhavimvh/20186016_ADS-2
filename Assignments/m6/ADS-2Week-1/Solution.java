@@ -42,6 +42,9 @@ class PageRank {
 				prhashmap.put(x, prs[x]);
 			}
 		}
+		
+	}
+	public void print() {
 		for (int y = 0; y < digraph.V(); y++) {
 			System.out.println(y + " - " + prhashmap.get(y));
 		}
@@ -71,7 +74,8 @@ public class Solution {
 		}
 		System.out.println(digraph.toString());
 		PageRank pagerank = new PageRank(digraph);
-		pagerank.getPR();	
+		pagerank.getPR();
+		pagerank.print();
 		// Create page rank object and pass the graph object to the constructor
 		
 		// print the page rank object
