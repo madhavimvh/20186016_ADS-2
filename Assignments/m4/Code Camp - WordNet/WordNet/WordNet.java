@@ -48,7 +48,6 @@ public class WordNet {
             int id = Integer.parseInt(line[0]);
             synsetids.add(id, line[1]);
             // Added to array list synset for look up.
-
             String[] nouns = line[1].split(" ");
             for (int i = 0; i < nouns.length; i++) {
                 ArrayList<Integer> ids;
