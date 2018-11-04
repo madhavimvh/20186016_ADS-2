@@ -272,7 +272,7 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:9:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:9:18: Parameter digraphh should be final. [FinalParameters]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:15:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:29:37: '104' is a magic number. [MagicNumber]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:29:37: '1000' is a magic number. [MagicNumber]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:35: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:45: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:47:9: Missing a Javadoc comment. [JavadocMethod]
