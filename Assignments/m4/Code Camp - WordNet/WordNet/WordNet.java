@@ -1,5 +1,6 @@
-import java.util.Arrays;
-import java.util.*;
+// import java.util.Arrays;
+import java.util.ArrayList;
+import java.lang.IllegalArgumentException;
 /**
  * Class for word net.
  */
@@ -19,7 +20,7 @@ public class WordNet {
     /**
      * { var_description }.
      */
-    private List<String> synsetids;
+    private ArrayList<String> synsetids;
     /**
      * { var_description }.
      */
@@ -73,10 +74,13 @@ public class WordNet {
     /**
      * { function_description }.
      *
-     * @param      file  The file
+     * @param      file       The file.
+     * @param      verticess  The verticess
+     *
+     * @return     { description_of_the_return_value }
      */
-    public Digraph readhyn(final String file, final int vertices)  {
-        Digraph digraph = new Digraph(vertices);
+    public Digraph readhyn(final String file, final int verticess)  {
+        Digraph digraph = new Digraph(verticess);
         In in = new In("./Files/" + file);
         while (!in.isEmpty()) {
             String[] s = in.readLine().split(",");
@@ -121,7 +125,7 @@ public class WordNet {
     /**
      * Determines if noun.
      *
-     * @param      word  The word
+     * @param      nounA  The noun a
      *
      * @return     True if noun, False otherwise.
      */
@@ -141,17 +145,18 @@ public class WordNet {
      * @return     { description_of_the_return_value }
      */
     public int distance(final String nounA, final String nounB) {
-        if (!isNoun (nounA) || !isNoun(nounB)) {
+        if (!isNoun(nounA) || !isNoun(nounB)) {
             throw new IllegalArgumentException("IllegalArgumentException");
         }
         Iterable<Integer> nA = st.get(nounA);
         Iterable<Integer> nB = st.get(nounB);
         return sap.length(nA, nB);
     }
-    // // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
+    // // a synset (second field of synsets.txt) that
+    // is the common ancestor of nounA and nounB
     // // in a shortest ancestral path (defined below)
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      nounA  The noun a
      * @param      nounB  The noun b

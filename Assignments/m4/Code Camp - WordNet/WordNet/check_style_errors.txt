@@ -14,19 +14,11 @@ Audit done.
 Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:2: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:78: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:78:57: 'vertices' hides a field. [HiddenField]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:78:57: Expected @param tag for 'vertices'. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:79:17: 'digraph' hides a field. [HiddenField]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:124:8: Unused @param tag for 'word'. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:128:40: Expected @param tag for 'nounA'. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:144:21: '(' is preceded with whitespace. [MethodParamPad]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:151: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:153: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:3:1: Redundant import from the java.lang package - java.lang.IllegalArgumentException. [RedundantImport]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:3:8: Unused import - java.lang.IllegalArgumentException. [UnusedImports]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:83:17: 'digraph' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 4 errors.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
