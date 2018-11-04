@@ -64,6 +64,7 @@ public class Solution {
 		int ver = Integer.parseInt(StdIn.readLine());
 		// System.out.println(Arrays.toString(arr));
 		Digraph digraph = new Digraph(ver);
+		Digraph dig = new Digraph(ver);
 		while (!StdIn.isEmpty()) {
 			String[] arr = StdIn.readLine().split(" ");
 			for (int i = 1; i < arr.length; i++) {
@@ -71,7 +72,7 @@ public class Solution {
 			}
 		}
 		System.out.println(digraph.toString());
-		PageRank pagerank = new PageRank(digraph);
+		PageRank pagerank = new PageRank(dig);
 		pagerank.getPR();
 		// pagerank.print();
 		// Create page rank object and pass the graph object to the constructor
