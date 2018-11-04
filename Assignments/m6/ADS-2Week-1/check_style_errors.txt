@@ -282,18 +282,17 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:58:33: Parameter args should be final. [FinalParameters]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:59: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:61: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:77: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:78: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:86: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:87: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:89: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:91: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:94: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:96: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:97: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:102: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:70: Line is longer than 80 characters (found 100). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:77: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:78: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:80: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:82: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:85: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:87: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:88: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:93: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 31 errors.
+Checkstyle ends with 30 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
