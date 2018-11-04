@@ -1,6 +1,5 @@
 // import java.util.Arrays;
 import java.util.ArrayList;
-import java.lang.IllegalArgumentException;
 /**
  * Class for word net.
  */
@@ -12,7 +11,7 @@ public class WordNet {
     /**
      * { var_description }.
      */
-    private Digraph digraph;
+    private Digraph digraphh;
     /**
      * { item_description }.
      */
@@ -35,8 +34,8 @@ public class WordNet {
         st = new LinearProbingHashST<String, ArrayList<Integer>>();
         synsetids = new ArrayList<String>();
         vertices = readsyn(synsets);
-        digraph = readhyn(hypernyms, vertices);
-        sap = new SAP(digraph);
+        digraphh = readhyn(hypernyms, vertices);
+        sap = new SAP(digraphh);
     }
 
     /**
@@ -111,7 +110,7 @@ public class WordNet {
      * @return     The digraph.
      */
     public Digraph getDigraph() {
-        return digraph;
+        return digraphh;
     }
     /**
      * { function_description }.
