@@ -1,18 +1,8 @@
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:3:8: Unused import - java.util.ArrayList. [UnusedImports]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:8:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:48:37: '1000' is a magic number. [MagicNumber]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:53: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:91: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:102: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:118: Line is longer than 80 characters (found 114). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:119: Line is longer than 80 characters (found 110). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:127: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:137: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Solution.java:47:24: '1000' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 2 errors.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
