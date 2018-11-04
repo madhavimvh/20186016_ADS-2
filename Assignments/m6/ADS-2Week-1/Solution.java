@@ -6,9 +6,9 @@ class PageRank {
 	private Digraph digraph;
 	private Digraph revdigraph;
 	private HashMap<Integer, Double> prhashmap;
-	PageRank(Digraph digraphh) {
-		this.digraph = digraphh;
-		this.revdigraph = digraph.reverse();
+	PageRank(Digraph graphh) {
+		this.digraph = graphh;
+		this.revdigraph = graphh.reverse();
 		prhashmap = new HashMap<Integer, Double>();
 		// System.out.println(revdigraph.toString());
 	}
@@ -47,9 +47,6 @@ class PageRank {
 		}
 		
 	}
-	// public void print() {
-		
-	// }
 
 }
 
