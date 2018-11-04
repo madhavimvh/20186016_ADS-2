@@ -65,12 +65,20 @@ public class Solution {
 		// System.out.println(Arrays.toString(arr));
 		Digraph digraph = new Digraph(ver);
 		Digraph dig = new Digraph(ver);
-		while (!StdIn.isEmpty()) {
+		// while (!StdIn.isEmpty()) {
+		for (int j = 0; j < ver; j++) {
 			String[] arr = StdIn.readLine().split(" ");
-			for (int i = 1; i < arr.length; i++) {
+			if (arr.length == 1) {
+				for (int i = 0; i < arr.length; i++) {
+					dig.addEdge(j, i);
+				}
+		} else {
+			for (int i = 0; i < ver; i++) {
+				dig.addEdge(Integer.parseInt(arr[0]), Integer.parseInt(arr[i]));
 				digraph.addEdge(Integer.parseInt(arr[0]), Integer.parseInt(arr[i]));
 			}
-		}
+			}
+		// }
 		System.out.println(digraph.toString());
 		PageRank pagerank = new PageRank(dig);
 		pagerank.getPR();
@@ -93,4 +101,5 @@ public class Solution {
 		// print the return value of iAmFeelingLucky
 		
 	}
+}
 }
