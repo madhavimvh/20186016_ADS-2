@@ -26,7 +26,7 @@ class PageRank {
 		int pr;
 		int i;
 		Double[] prs = new Double[digraph.V()];
-		for (int j = 1; j < 1000; j++) {
+		for (int j = 2; j < 1000; j++) {
 			for (i = 0; i < digraph.V(); i++) {
 				double sum = 0.0;
 				for (int n : revdigraph.adj(i)) {

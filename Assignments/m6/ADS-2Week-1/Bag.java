@@ -91,8 +91,8 @@ public class Bag<Item> implements Iterable<Item> {
          *
          * @param      first  The first
          */
-        public ListIterator(final Node<Item> first) {
-            current = first;
+        public ListIterator(final Node<Item> firstt) {
+            current = firstt;
         }
 
         /**
@@ -120,7 +120,7 @@ public class Bag<Item> implements Iterable<Item> {
                 throw new NoSuchElementException();
             }
             Item item = current.item;
-            current = current.next; 
+            current = current.next;
             return item;
         }
     }

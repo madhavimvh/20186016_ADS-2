@@ -3,9 +3,9 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Bag.java:23:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Bag.java:24:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Bag.java:75: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Bag.java:92:12: Unused @param tag for 'first'. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Bag.java:94:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Bag.java:94:46: 'first' hides a field. [HiddenField]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Bag.java:123: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m6\ADS-2Week-1\Bag.java:94:46: Expected @param tag for 'firstt'. [JavadocMethod]
 Audit done.
 Checkstyle ends with 7 errors.
 Starting audit...
