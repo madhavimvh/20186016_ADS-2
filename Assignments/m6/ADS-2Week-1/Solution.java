@@ -13,7 +13,8 @@ class PageRank {
 		// System.out.println(revdigraph.toString());
 	}
 	public void getPR() {
-		double initialpr = 1.0 / digraph.V();
+		double temp = (double) digraph.V();
+		double initialpr = (1 / temp);
 		for (int i = 0; i < digraph.V(); i++) {
 			if (digraph.indegree(i) == 0) {
 				prhashmap.put(i, 0.0);
@@ -23,18 +24,22 @@ class PageRank {
 		}
 		// System.out.println(prhashmap);
 		int pr;
-		double sum = 0.0;
-		ArrayList<Double> prs = new ArrayList<Double>();
-		for (int j = 0; j < 1000; j++) {
-			for (int i = 0; i < digraph.V(); i++) {
+		int i;
+		Double[] prs = new Double[digraph.V()];
+		for (int j = 1; j < 1000; j++) {
+			for (i = 0; i < digraph.V(); i++) {
+				double sum = 0.0;
 				for (int n : revdigraph.adj(i)) {
+					double o = (double) prhashmap.get(n);
 					double m = (double) digraph.outdegree(n);
-					sum = prhashmap.get(n) / m;
+					sum += (o / m);
+					// System.out.println(sum);
 			}
-			prs.add(i, sum);
+			prs[i] = sum;
 			}
-			for (int i = 0; i < digraph.V(); i++) {
-				prhashmap.put(i, prs.get(i));
+			// System.out.println(prs);
+			for (int x = 0; x < digraph.V(); x++) {
+				prhashmap.put(x, prs[x]);
 			}
 		}
 		System.out.println(prhashmap);
