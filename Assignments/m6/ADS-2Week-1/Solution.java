@@ -73,7 +73,7 @@ public class Solution {
 					dig.addEdge(j, i);
 				}
 		} else {
-			for (int i = 0; i < ver; i++) {
+			for (int i = 1; i < ver; i++) {
 				dig.addEdge(Integer.parseInt(arr[0]), Integer.parseInt(arr[i]));
 				digraph.addEdge(Integer.parseInt(arr[0]), Integer.parseInt(arr[i]));
 			}
