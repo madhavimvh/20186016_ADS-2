@@ -31,24 +31,25 @@ class PageRank {
 				double sum = 0.0;
 				for (int n : revdigraph.adj(i)) {
 					double o = (double) prhashmap.get(n);
-					// double m = ;
-					sum += (o / (double) digraph.outdegree(n));
+					double m = (double) digraph.outdegree(n);
+					sum += (o / m);
 					// System.out.println(sum);
-			}
-			prs[i] = sum;
+				}
+				prs[i] = sum;
 			}
 			// System.out.println(prs);
 			for (int x = 0; x < digraph.V(); x++) {
 				prhashmap.put(x, prs[x]);
 			}
 		}
-		
-	}
-	public void print() {
 		for (int y = 0; y < digraph.V(); y++) {
 			System.out.println(y + " - " + prhashmap.get(y));
 		}
+		
 	}
+	// public void print() {
+		
+	// }
 
 }
 
@@ -75,7 +76,7 @@ public class Solution {
 		System.out.println(digraph.toString());
 		PageRank pagerank = new PageRank(digraph);
 		pagerank.getPR();
-		pagerank.print();
+		// pagerank.print();
 		// Create page rank object and pass the graph object to the constructor
 		
 		// print the page rank object
