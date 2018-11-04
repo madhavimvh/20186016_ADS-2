@@ -1,6 +1,6 @@
 // import java.util.Arrays;
 import java.util.ArrayList;
-// import java.lang.IllegalArgumentException;
+import java.lang.IllegalArgumentException;
 /**
  * Class for word net.
  */
@@ -80,16 +80,16 @@ public class WordNet {
      * @return     { description_of_the_return_value }
      */
     public Digraph readhyn(final String file, final int verticess)  {
-        Digraph digraphh = new Digraph(verticess);
+        Digraph digraph = new Digraph(verticess);
         In in = new In("./Files/" + file);
         while (!in.isEmpty()) {
             String[] s = in.readLine().split(",");
             int v = Integer.parseInt(s[0]);
             for (int i = 1; i < s.length; i++) {
-                digraphh.addEdge(v, Integer.parseInt(s[i]));
+                digraph.addEdge(v, Integer.parseInt(s[i]));
             }
         }
-        DirectedCycle dir = new DirectedCycle(digraphh);
+        DirectedCycle dir = new DirectedCycle(digraph);
         int count = 0;
         for (int i = 0; i < vertices; i++) {
             if (digraph.outdegree(i) == 0) {
