@@ -1,16 +1,41 @@
+/**
+ * Class for sap.
+ */
 public class SAP {
+    /**
+     * { var_description }.
+     */
     private Digraph gr;
+    /**
+     * { var_description }.
+     */
     private int ancestors;
 
     // constructor takes a digraph (not necessarily a DAG)
-    public SAP(Digraph gr) {
+
+    /**
+     * Constructs the object.
+     *
+     * @param      gr    The graphics
+     */
+    public SAP(final Digraph gr) {
         this.gr = gr;
         ancestors = -1;
     }
 
-    // length of shortest ancestral path between any vertex in v
-    // and any vertex in w; -1 if no such path
-    public int length(Iterable<Integer> v, Iterable<Integer> w) {
+    //
+    // length of shortest ancestral path between any vertex in v and any vertex
+    // in w; -1 if no such path
+    
+    /**
+     * { function_description }.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int length(final Iterable<Integer> v, final Iterable<Integer> w) {
         BreadthFirstDirectedPaths bfdv = new BreadthFirstDirectedPaths(gr, v);
         BreadthFirstDirectedPaths bfdw = new BreadthFirstDirectedPaths(gr, w);
         int min = Integer.MAX_VALUE;
@@ -31,7 +56,17 @@ public class SAP {
 
     // a common ancestor that participates in shortest
     // ancestral path; -1 if no such path
-    public int ancestor(Iterable<Integer> v, Iterable<Integer> w) {
+    
+    /**
+     * { function_description }.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int ancestor(final Iterable<Integer> v,
+        Iterable<Integer> w) {
         return ancestors;
     }
 
