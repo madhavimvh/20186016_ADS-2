@@ -1,17 +1,36 @@
 import java.util.HashMap;
 import java.util.Arrays;
 import java.util.ArrayList;
-
+/**
+ * Class for page rank.
+ */
 class PageRank {
+	/**
+	 * { var_description }.
+	 */
 	private Digraph digraph;
+	/**
+	 * { var_description }.
+	 */
 	private Digraph revdigraph;
+	/**
+	 * { var_description }.
+	 */
 	private HashMap<Integer, Double> prhashmap;
-	PageRank(Digraph graphh) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      graphh  The graphh
+	 */
+	PageRank(final Digraph graphh) {
 		this.digraph = graphh;
 		this.revdigraph = graphh.reverse();
 		prhashmap = new HashMap<Integer, Double>();
 		// System.out.println(revdigraph.toString());
 	}
+	/**
+	 * Gets the pr.
+	 */
 	public void getPR() {
 		double temp = (double) digraph.V();
 		double initialpr = (1 / temp);
@@ -49,13 +68,26 @@ class PageRank {
 	}
 
 }
-
+/**
+ * Class for web search.
+ */
 class WebSearch {
-
 }
-
-public class Solution {
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		// read the first line of the input to get the number of vertices
 
 		// iterate count of vertices times
@@ -89,7 +121,6 @@ public class Solution {
 			}
 		}
 		System.out.println(digraph.toString());
-
 		PageRank pagerank = new PageRank(dig);
 		pagerank.getPR();
 		// pagerank.print();
