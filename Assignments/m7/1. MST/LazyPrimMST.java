@@ -23,17 +23,19 @@ class LazyPrimMST {
      */
     private MinPQ<Edge> pq;      // edges with one endpoint in tree
     /**
-     * Compute a minimum spanning tree
-     * (or forest) of an edge-weighted graph.
+     * Compute a minimum spanning tree (or forest) of an edge-weighted graph.
      *
-     * @param      G     the edge-weighted graph
+     * @param      gr    The graphics
      */
     public LazyPrimMST(final EdgeWeightedGraph gr) {
         mst = new Queue<Edge>();
         pq = new MinPQ<Edge>();
         marked = new boolean[gr.ver()];
-        for (int v = 0; v < gr.ver(); v++)
-            if (!marked[v]) prim(gr, v);
+        for (int v = 0; v < gr.ver(); v++) {
+            if (!marked[v]) {
+                prim(gr, v);
+            }
+        }
 
         // check optimality conditions
         assert check(gr);
@@ -54,24 +56,30 @@ class LazyPrimMST {
             if (marked[v] && marked[w]) continue;      // lazy, both v and w already scanned
             mst.enqueue(e);                            // add e to MST
             weight += e.weight();
-            if (!marked[v]) scan(gr, v);               // v becomes part of tree
-            if (!marked[w]) scan(gr, w);               // w becomes part of tree
+            if (!marked[v]) {
+                scan(gr, v);
+            }
+            if (!marked[w]) {
+                scan(gr, w);
+            }
         }
     }
 
     /**
      * { function_description }.
      *
-     * @param      G     { parameter_description }
+     * @param      gr    The graphics
      * @param      v     { parameter_description }
      */
     private void scan(final EdgeWeightedGraph gr, final int v) {
         assert !marked[v];
         marked[v] = true;
-        for (Edge e : gr.adj(v))
-            if (!marked[e.other(v)]) pq.insert(e);
+        for (Edge e : gr.adj(v)) {
+            if (!marked[e.other(v)]) {
+                pq.insert(e);
+            }
+        }
     }
-        
     /**
      * Returns the edges in a minimum
      * spanning tree (or forest).
@@ -154,7 +162,7 @@ class LazyPrimMST {
                 int x = f.either(), y = f.other(x);
                 if (!uf.connected(x, y)) {
                     if (f.weight() < e.weight()) {
-                        System.err.println("Edge "+ f 
+                        System.err.println("Edge " + f
                             + " violates cut optimality conditions");
                         return false;
                     }
