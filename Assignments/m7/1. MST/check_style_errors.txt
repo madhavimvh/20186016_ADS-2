@@ -26,13 +26,11 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\LazyPrimMST.java:71: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\LazyPrimMST.java:72: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\LazyPrimMST.java:74: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\LazyPrimMST.java:107:51: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\LazyPrimMST.java:115: Line is longer than 80 characters (found 109). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\LazyPrimMST.java:139: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\LazyPrimMST.java:146: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\LazyPrimMST.java:154: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\LazyPrimMST.java:103:8: Unused @param tag for 'G'. [JavadocMethod]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\LazyPrimMST.java:107:51: Expected @param tag for 'gr'. [JavadocMethod]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\LazyPrimMST.java:157:51: '+' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 18 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\MinPQ.java:27:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\MinPQ.java:37:5: Missing a Javadoc comment. [JavadocMethod]
