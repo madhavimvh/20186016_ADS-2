@@ -77,7 +77,7 @@ class Queue<Item> implements Iterable<Item> {
      *
      * @param  item the item to add
      */
-    public void enqueue(Item item) {
+    public void enqueue(final Item item) {
         Node<Item> oldlast = last;
         last = new Node<Item>();
         last.item = item;
@@ -136,8 +136,8 @@ class Queue<Item> implements Iterable<Item> {
     private class ListIterator<Item> implements Iterator<Item> {
         private Node<Item> current;
 
-        public ListIterator(Node<Item> first) {
-            current = first;
+        public ListIterator(final Node<Item> firstt) {
+            current = firstt;
         }
 
         public boolean hasNext() {

@@ -18,7 +18,6 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Queue.java:40:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Queue.java:80:25: Parameter item should be final. [FinalParameters]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Queue.java:124: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Queue.java:127: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Queue.java:129: Line is longer than 80 characters (found 83). [LineLength]
@@ -27,14 +26,12 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Queue.java:137:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Queue.java:139:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Queue.java:139:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Queue.java:139:29: Parameter first should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Queue.java:139:40: 'first' hides a field. [HiddenField]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Queue.java:143:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Queue.java:146:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Queue.java:150:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Queue.java:155: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 13 errors.
 Starting audit...
 Audit done.
 Starting audit...
