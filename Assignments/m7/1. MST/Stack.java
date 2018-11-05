@@ -39,7 +39,8 @@ public class Stack<Item> implements Iterable<Item> {
     /**
      * Returns true if this stack is empty.
      *
-     * @return true if this stack is empty; false otherwise
+     * @return true if this stack is empty;
+     * false otherwise
      */
     public boolean isEmpty() {
         return first == null;
@@ -57,18 +58,20 @@ public class Stack<Item> implements Iterable<Item> {
      *
      * @param      item  the item to add
      */
-    public void push(final Item item) {
+    public void push(final Item itemm) {
         Node<Item> oldfirst = first;
         first = new Node<Item>();
-        first.item = item;
+        first.item = itemm;
         first.next = oldfirst;
         n++;
     }
     /**
-     * Removes and returns the item most recently added to this stack.
+     * Removes and returns the item most recently
+     * added to this stack.
      *
      * @return the item most recently added
-     * @throws NoSuchElementException if this stack is empty
+     * @throws NoSuchElementException if this
+     * stack is empty
      */
     public Item pop() {
         if (isEmpty()) {
@@ -80,7 +83,8 @@ public class Stack<Item> implements Iterable<Item> {
         return item;                   // return the saved item
     }
     /**
-     * Returns (but does not remove) the item most recently added to this stack.
+     * Returns (but does not remove) the item most
+     * recently added to this stack.
      *
      * @return the item most recently added to this stack
      * @throws NoSuchElementException if this stack is empty
@@ -94,7 +98,8 @@ public class Stack<Item> implements Iterable<Item> {
     /**
      * Returns a string representation of this stack.
      *
-     * @return the sequence of items in this stack in LIFO order, separated by spaces
+     * @return the sequence of items in this stack
+     * in LIFO order, separated by spaces
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
@@ -105,14 +110,20 @@ public class Stack<Item> implements Iterable<Item> {
         return s.toString();
     }
     /**
-     * Returns an iterator to this stack that iterates through the items in LIFO order.
+     * Returns an iterator to this stack that iterates
+     *through the items in LIFO order.
      *
-     * @return an iterator to this stack that iterates through the items in LIFO order
+     * @return an iterator to this stack that iterates
+     * through the items in LIFO order
      */
     public Iterator<Item> iterator() {
         return new ListIterator<Item>(first);
     }
-    // an iterator, doesn't implement remove() since it's optional
+    /**
+     * Class for list iterator.
+     *
+     * @param      <Item>  The item
+     */
     private class ListIterator<Item> implements Iterator<Item> {
         /**
          * { var_description }.
@@ -123,8 +134,8 @@ public class Stack<Item> implements Iterable<Item> {
          *
          * @param      first  The first
          */
-        ListIterator(Node<Item> first) {
-            current = first;
+        ListIterator(Node<Item> firstt) {
+            current = firstt;
         }
         /**
          * Determines if it has next.
