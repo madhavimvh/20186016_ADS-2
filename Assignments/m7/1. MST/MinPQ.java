@@ -137,16 +137,16 @@ class MinPQ<Key> implements Iterable<Key> {
      */
     private void swim(final int a) {
         int k = a;
-        while (k > 1 && greater(k/2, k)) {
-            exch(k, k/2);
-            k = k/2;
+        while (k > 1 && greater(k / 2, k)) {
+            exch(k, k / 2);
+            k = k / 2;
         }
     }
 
     /**
      * { function_description }.
      *
-     * @param      k     { parameter_description }
+     * @param      a     { parameter_description }
      */
     private void sink(final int a) {
         int k = a;
