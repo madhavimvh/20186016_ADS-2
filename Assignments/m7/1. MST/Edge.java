@@ -1,11 +1,22 @@
-class Edge implements Comparable<Edge> { 
-
-    private final int v;
-    private final int w;
-    private final double weight;
-
+/**
+ * Class for edge.
+ */
+class Edge implements Comparable<Edge> {
     /**
-     * Initializes an edge between vertices {@code v} and {@code w} of
+     * { var_description }.
+     */
+    private final int v;
+    /**
+     * { var_description }.
+     */
+    private final int w;
+    /**
+     * { var_description }.
+     */
+    private final double weight;
+    /**
+     * Initializes an edge between vertices
+     * {@code v} and {@code w} of
      * the given {@code weight}.
      *
      * @param  v one vertex
@@ -15,10 +26,18 @@ class Edge implements Comparable<Edge> {
      *         is a negative integer
      * @throws IllegalArgumentException if {@code weight} is {@code NaN}
      */
-    public Edge(int v, int w, double weight) {
-        if (v < 0) throw new IllegalArgumentException("vertex index must be a nonnegative integer");
-        if (w < 0) throw new IllegalArgumentException("vertex index must be a nonnegative integer");
-        if (Double.isNaN(weight)) throw new IllegalArgumentException("Weight is NaN");
+    public Edge(final int v, final int w, final double weight) {
+        if (v < 0) {
+            throw new IllegalArgumentException(
+                "vertex index must be a nonnegative integer");
+        }
+        if (w < 0) {
+            throw new IllegalArgumentException(
+                "vertex index must be a nonnegative integer");
+        }
+        if (Double.isNaN(weight)) {
+            throw new IllegalArgumentException("Weight is NaN");
+        }
         this.v = v;
         this.w = w;
         this.weight = weight;
@@ -27,7 +46,7 @@ class Edge implements Comparable<Edge> {
     /**
      * Returns the weight of this edge.
      *
-     * @return the weight of this edge
+     * @return     the weight of this edge
      */
     public double weight() {
         return weight;
@@ -36,45 +55,50 @@ class Edge implements Comparable<Edge> {
     /**
      * Returns either endpoint of this edge.
      *
-     * @return either endpoint of this edge
+     * @return     either endpoint of this edge
      */
     public int either() {
         return v;
     }
-
     /**
-     * Returns the endpoint of this edge that is different from the given vertex.
+     * Returns the endpoint of this edge that is different from the given
+     * vertex.
      *
-     * @param  vertex one endpoint of this edge
-     * @return the other endpoint of this edge
-     * @throws IllegalArgumentException if the vertex is not one of the
-     *         endpoints of this edge
+     * @param      vertex  one endpoint of this edge
+     *
+     * @return     the other endpoint of this edge
+     * @throws     IllegalArgumentException  if the vertex is not one of the endpoints
+     *                                       of this edge
      */
-    public int other(int vertex) {
-        if      (vertex == v) return w;
-        else if (vertex == w) return v;
-        else throw new IllegalArgumentException("Illegal endpoint");
+    public int other(final int vertex) {
+        if (vertex == v) {
+            return w;
+        } else if (vertex == w) {
+            return v;
+        } else {
+            throw new IllegalArgumentException("Illegal endpoint");
+        }
     }
-
     /**
-     * Compares two edges by weight.
-     * Note that {@code compareTo()} is not consistent with {@code equals()},
-     * which uses the reference equality implementation inherited from {@code Object}.
+     * Compares two edges by weight. Note that {@code compareTo()} is not
+     * consistent with {@code equals()}, which uses the reference equality
+     * implementation inherited from {@code Object}.
      *
-     * @param  that the other edge
-     * @return a negative integer, zero, or positive integer depending on whether
-     *         the weight of this is less than, equal to, or greater than the
-     *         argument edge
+     * @param      that  the other edge
+     *
+     * @return     a negative integer, zero, or positive integer depending on
+     *             whether the weight of this is less than, equal to, or greater
+     *             than the argument edge
      */
     @Override
-    public int compareTo(Edge that) {
+    public int compareTo(final Edge that) {
         return Double.compare(this.weight, that.weight);
     }
 
     /**
      * Returns a string representation of this edge.
      *
-     * @return a string representation of this edge
+     * @return     a string representation of this edge
      */
     public String toString() {
         return String.format("%d-%d %.5f", v, w, weight);
