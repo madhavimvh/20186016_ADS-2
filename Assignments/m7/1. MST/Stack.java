@@ -29,7 +29,6 @@ public class Stack<Item> implements Iterable<Item> {
          */
         private Node<Item> next;
     }
-
     /**
      * Initializes an empty stack.
      */
@@ -37,7 +36,6 @@ public class Stack<Item> implements Iterable<Item> {
         first = null;
         n = 0;
     }
-
     /**
      * Returns true if this stack is empty.
      *
@@ -46,7 +44,6 @@ public class Stack<Item> implements Iterable<Item> {
     public boolean isEmpty() {
         return first == null;
     }
-
     /**
      * Returns the number of items in this stack.
      *
@@ -55,7 +52,6 @@ public class Stack<Item> implements Iterable<Item> {
     public int size() {
         return n;
     }
-
     /**
      * Adds the item to this stack.
      *
@@ -68,7 +64,6 @@ public class Stack<Item> implements Iterable<Item> {
         first.next = oldfirst;
         n++;
     }
-
     /**
      * Removes and returns the item most recently added to this stack.
      *
@@ -84,8 +79,6 @@ public class Stack<Item> implements Iterable<Item> {
         n--;
         return item;                   // return the saved item
     }
-
-
     /**
      * Returns (but does not remove) the item most recently added to this stack.
      *
@@ -98,7 +91,6 @@ public class Stack<Item> implements Iterable<Item> {
         }
         return first.item;
     }
-
     /**
      * Returns a string representation of this stack.
      *
@@ -112,8 +104,6 @@ public class Stack<Item> implements Iterable<Item> {
         }
         return s.toString();
     }
-       
-
     /**
      * Returns an iterator to this stack that iterates through the items in LIFO order.
      *
@@ -122,7 +112,6 @@ public class Stack<Item> implements Iterable<Item> {
     public Iterator<Item> iterator() {
         return new ListIterator<Item>(first);
     }
-
     // an iterator, doesn't implement remove() since it's optional
     private class ListIterator<Item> implements Iterator<Item> {
         /**
