@@ -108,18 +108,25 @@ class MinPQ<Key> implements Iterable<Key> {
     }
 
     /**
-     * Removes and returns a smallest key on this priority queue.
+     * Removes and returns a smallest key on
+     * this priority queue.
      *
      * @return     a smallest key on this priority queue
-     * @throws     NoSuchElementException  if this priority queue is empty
+     * @throws     NoSuchElementException  if this
+     * priority queue is empty
      */
     public Key delMin() {
-        if (isEmpty()) throw new NoSuchElementException("Priority queue underflow");
+        if (isEmpty()) {
+            throw new NoSuchElementException("Priority queue underflow");
+        }
         Key min = pq[1];
         exch(1, n--);
         sink(1);
-        pq[n+1] = null;     // to avoid loiterig and help with garbage collection
-        if ((n > 0) && (n == (pq.length - 1) / 4)) resize(pq.length / 2);
+        pq[n + 1] = null;     // to avoid loiterig and
+        //help with garbage collection
+        if ((n > 0) && (n == (pq.length - 1) / 4)) {
+            resize(pq.length / 2);
+        }
         assert isMinHeap();
         return min;
     }
@@ -143,10 +150,14 @@ class MinPQ<Key> implements Iterable<Key> {
      */
     private void sink(final int a) {
         int k = a;
-        while (2*k <= n) {
-            int j = 2*k;
-            if (j < n && greater(j, j+1)) j++;
-            if (!greater(k, j)) break;
+        while (2 * k <= n) {
+            int j = 2 * k;
+            if (j < n && greater(j, j + 1)) {
+                j++;
+            }
+            if (!greater(k, j)) {
+                break;
+            }
             exch(k, j);
             k = j;
         }
@@ -162,8 +173,7 @@ class MinPQ<Key> implements Iterable<Key> {
     private boolean greater(final int i, final int j) {
         if (comparator == null) {
             return ((Comparable<Key>) pq[i]).compareTo(pq[j]) > 0;
-        }
-        else {
+        } else {
             return comparator.compare(pq[i], pq[j]) > 0;
         }
     }
@@ -196,11 +206,17 @@ class MinPQ<Key> implements Iterable<Key> {
      * @return     True if minimum heap, False otherwise.
      */
     private boolean isMinHeap(final int k) {
-        if (k > n) return true;
-        int left = 2*k;
-        int right = 2*k + 1;
-        if (left  <= n && greater(k, left))  return false;
-        if (right <= n && greater(k, right)) return false;
+        if (k > n) {
+            return true;
+        }
+        int left = 2 * k;
+        int right = 2 * k + 1;
+        if (left  <= n && greater(k, left)) {
+            return false;
+        }
+        if (right <= n && greater(k, right)) {
+            return false;
+        }
         return isMinHeap(left) && isMinHeap(right);
     }
     /**
