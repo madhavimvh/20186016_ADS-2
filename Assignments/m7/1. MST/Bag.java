@@ -39,7 +39,7 @@ public class Bag<Item> implements Iterable<Item> {
     /**
      * Returns true if this bag is empty.
      *
-     * @return     {@code true} if this bag is empty; 
+     * @return     {@code true} if this bag is empty;
      * {@code false} otherwise
      */
     public boolean isEmpty() {
@@ -91,7 +91,7 @@ public class Bag<Item> implements Iterable<Item> {
         /**
          * Constructs the object.
          *
-         * @param      first  The first
+         * @param      firstt  The first
          */
         ListIterator(final Node<Item> firstt) {
             current = firstt;
