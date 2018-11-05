@@ -37,7 +37,7 @@ class Queue<Item> implements Iterable<Item> {
     /**
      * Initializes an empty queue.
      */
-    public Queue() {
+    Queue() {
         first = null;
         last  = null;
         n = 0;
@@ -131,47 +131,50 @@ class Queue<Item> implements Iterable<Item> {
     public Iterator<Item> iterator()  {
         return new ListIterator<Item>(first);  
     }
-
-    // an iterator, doesn't implement remove() since it's optional
+    /**
+     * Class for list iterator.
+     *
+     * @param      <Item>  The item
+     */
     private class ListIterator<Item> implements Iterator<Item> {
+        /**
+         * { var_description }.
+         */
         private Node<Item> current;
-
+        /**
+         * Constructs the object.
+         *
+         * @param      firstt  The firstt
+         */
         public ListIterator(final Node<Item> firstt) {
             current = firstt;
         }
-
+        /**
+         * Determines if it has next.
+         *
+         * @return     True if has next, False otherwise.
+         */
         public boolean hasNext() {
             return current != null;
         }
+        /**
+         * { function_description }
+         */
         public void remove() {
             throw new UnsupportedOperationException();
         }
-
+        /**
+         * { function_description }
+         *
+         * @return     { description_of_the_return_value }
+         */
         public Item next() {
             if (!hasNext()) {
                 throw new NoSuchElementException();
             }
             Item item = current.item;
-            current = current.next; 
+            current = current.next;
             return item;
         }
     }
-
-
-    /**
-     * Unit tests the {@code Queue} data type.
-     *
-     * @param args the command-line arguments
-     */
-/*    public static void main(String[] args) {
-        Queue<String> queue = new Queue<String>();
-        while (!StdIn.isEmpty()) {
-            String item = StdIn.readString();
-            if (!item.equals("-"))
-                queue.enqueue(item);
-            else if (!queue.isEmpty())
-                StdOut.print(queue.dequeue() + " ");
-        }
-        StdOut.println("(" + queue.size() + " left on queue)");
-    }*/
 }
