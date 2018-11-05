@@ -21,9 +21,11 @@ class Edge implements Comparable<Edge> {
      * @param      vv       one vertex
      * @param      ww       the other vertex
      * @param      weightt  the weight of this edge
-     * @throws     IllegalArgumentException  if either {@code v} or {@code w} is a
-     *                                       negative integer
-     * @throws     IllegalArgumentException  if {@code weight} is {@code NaN}
+     * @throws     IllegalArgumentException
+     * if either {@code v} or {@code w} is a
+     *         negative integer
+     * @throws     IllegalArgumentException
+     * if {@code weight} is {@code NaN}
      */
     Edge(final int vv, final int ww, final double weightt) {
         if (vv < 0) {
