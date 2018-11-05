@@ -1,7 +1,11 @@
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-
+/**
+ * Class for minimum pq.
+ *
+ * @param      <Key>  The key
+ */
 class MinPQ<Key> implements Iterable<Key> {
     /**
      * { var_description }.
