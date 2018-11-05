@@ -27,7 +27,7 @@ class LazyPrimMST {
      *
      * @param      gr    The graphics
      */
-    public LazyPrimMST(final EdgeWeightedGraph gr) {
+    LazyPrimMST(final EdgeWeightedGraph gr) {
         mst = new Queue<Edge>();
         pq = new MinPQ<Edge>();
         marked = new boolean[gr.ver()];

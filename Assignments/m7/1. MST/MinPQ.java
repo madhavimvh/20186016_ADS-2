@@ -34,7 +34,7 @@ class MinPQ<Key> implements Iterable<Key> {
      * @param  initCapacity the initial capacity of this priority queue
      * @param  comparator the order in which to compare the keys
      */
-    public MinPQ(int initCapacity, Comparator<Key> comparator) {
+    public MinPQ(final int initCapacity, final Comparator<Key> comparator) {
         this.comparator = comparator;
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
@@ -123,12 +123,6 @@ class MinPQ<Key> implements Iterable<Key> {
         assert isMinHeap();
         return min;
     }
-
-
-   /***************************************************************************
-    * Helper functions to restore the heap invariant.
-    ***************************************************************************/
-
     /**
      * { function_description }.
      *
@@ -231,7 +225,7 @@ class MinPQ<Key> implements Iterable<Key> {
         /**
          * Constructs the object.
          */
-        public HeapIterator() {
+        HeapIterator() {
             if (comparator == null) {
                 copy = new MinPQ<Key>(size());
             } else {
