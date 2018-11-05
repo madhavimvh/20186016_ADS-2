@@ -1,17 +1,30 @@
+/**
+ * Class for edge weighted graph.
+ */
 class EdgeWeightedGraph {
+    /**
+     * { var_description }.
+     */
     private static final String NEWLINE = System.getProperty("line.separator");
-
+    /**
+     * { var_description }.
+     */
     private final int V;
+    /**
+     * { var_description }.
+     */
     private int E;
+    /**
+     * { var_description }.
+     */
     private Bag<Edge>[] adj;
-    
     /**
      * Initializes an empty edge-weighted graph with {@code V} vertices and 0 edges.
      *
      * @param  V the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public EdgeWeightedGraph(int V) {
+    public EdgeWeightedGraph(final int V) {
         if (V < 0) throw new IllegalArgumentException("Number of vertices must be nonnegative");
         this.V = V;
         this.E = 0;

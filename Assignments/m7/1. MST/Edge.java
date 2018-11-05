@@ -15,16 +15,15 @@ class Edge implements Comparable<Edge> {
      */
     private final double weight;
     /**
-     * Initializes an edge between vertices
-     * {@code v} and {@code w} of
-     * the given {@code weight}.
+     * Initializes an edge between vertices {@code v} and {@code w} of the given
+     * {@code weight}.
      *
-     * @param  v one vertex
-     * @param  w the other vertex
-     * @param  weight the weight of this edge
-     * @throws IllegalArgumentException if either {@code v} or {@code w}
-     *         is a negative integer
-     * @throws IllegalArgumentException if {@code weight} is {@code NaN}
+     * @param      vv       one vertex
+     * @param      ww       the other vertex
+     * @param      weightt  the weight of this edge
+     * @throws     IllegalArgumentException  if either {@code v} or {@code w} is a
+     *                                       negative integer
+     * @throws     IllegalArgumentException  if {@code weight} is {@code NaN}
      */
     Edge(final int vv, final int ww, final double weightt) {
         if (vv < 0) {
@@ -67,9 +66,9 @@ class Edge implements Comparable<Edge> {
      * @param      vertex  one endpoint of this edge
      *
      * @return     the other endpoint of this edge
-     * @throws     IllegalArgumentException 
+     * @throws     IllegalArgumentException
      * if the vertex is not one of the endpoints
-     *                      of this edge
+     * of this edge
      */
     public int other(final int vertex) {
         if (vertex == v) {
