@@ -20,7 +20,8 @@ public final class Solution {
 		EdgeWeightedGraph edgGraph = new EdgeWeightedGraph(ver);
 		while (scan.hasNext()) {
 		String[] arr = scan.nextLine().split(" ");
-		Edge edge = new Edge(Integer.parseInt(arr[0]), Integer.parseInt(arr[1]), Double.parseDouble(arr[2]));
+		Edge edge = new Edge(Integer.parseInt(arr[0]),
+			Integer.parseInt(arr[1]), Double.parseDouble(arr[2]));
 		edgGraph.addEdge(edge);
 	}
 	LazyPrimMST prim = new LazyPrimMST(edgGraph);
