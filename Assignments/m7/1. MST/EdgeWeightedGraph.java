@@ -25,19 +25,18 @@ class EdgeWeightedGraph {
      * @param      ver   The version
      * @throws     IllegalArgumentException  if {@code V < 0}
      */
-    public EdgeWeightedGraph(final int ver) {
-        if (ver < 0) {
+    EdgeWeightedGraph(final int verr) {
+        if (verr < 0) {
             throw new IllegalArgumentException(
                 "Number ofvertices must be nonnegative");
         }
-        this.ver = ver;
+        this.ver = verr;
         this.edg = 0;
         adj = (Bag<Edge>[]) new Bag[ver];
         for (int v = 0; v < ver; v++) {
             adj[v] = new Bag<Edge>();
         }
     }
-
     // /**
     //  * Initializes a random edge-weighted
     //  graph with {@code V}
@@ -60,7 +59,7 @@ class EdgeWeightedGraph {
     //         addEdge(e);
     //     }
     // }
-    // /**  
+    // /**
     //  * Initializes an edge-weighted graph from an input stream.
     //  * The format is the number of vertices <em>V</em>,
     //  * followed by the number of edges <em>E</em>,
@@ -145,7 +144,7 @@ class EdgeWeightedGraph {
      * to this edge-weighted graph.
      *
      * @param      e     the edge
-     * @throws     IllegalArgumentException 
+     * @throws     IllegalArgumentException
      * unless both endpoints are between {@code
      * 0} and {@code V-1}
      */
