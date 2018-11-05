@@ -76,6 +76,12 @@ class PageRank {
  * Class for web search.
  */
 class WebSearch {
+    private PageRank pagerank;
+    private String file;
+    WebSearch(PageRank pagerankk, String filee) {
+        this.pagerank = pagerankk;
+        this.file = filee;
+    }
 }
 /**
  * Class for solution.
@@ -141,7 +147,7 @@ public final class Solution {
 
         // File path to the web content
         String file = "WebContent.txt";
-
+        WebSearch websearch = new WebSearch(pagerank, file);
         // instantiate web search object
         // and pass the page rank object and the
         // file path to the constructor
