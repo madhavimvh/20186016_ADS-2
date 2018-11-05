@@ -24,18 +24,18 @@ class MinPQ<Key> implements Iterable<Key> {
      *
      * @param      initCapacity  the initial capacity of this priority queue
      */
-    public MinPQ(final int initCapacity) {
+    MinPQ(final int initCapacity) {
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
     }
-     /* Initializes an empty priority queue with the given initial capacity,
-     * using the given comparator.
+    /**
+     * Constructs the object.
      *
-     * @param  initCapacity the initial capacity of this priority queue
-     * @param  comparator the order in which to compare the keys
+     * @param      initCapacity  The initialize capacity
+     * @param      comparatorr   The comparatorr
      */
-    public MinPQ(final int initCapacity, final Comparator<Key> comparator) {
-        this.comparator = comparator;
+    MinPQ(final int initCapacity, final Comparator<Key> comparatorr) {
+        this.comparator = comparatorr;
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
     }
@@ -43,7 +43,7 @@ class MinPQ<Key> implements Iterable<Key> {
     /**
      * Initializes an empty priority queue.
      */
-    public MinPQ() {
+    MinPQ() {
         this(1);
     }
 
@@ -75,8 +75,6 @@ class MinPQ<Key> implements Iterable<Key> {
     public Key min() {
         return pq[1];
     }
-
-    
     /**
      * {helper function to double the size of the heap array}.
      *
@@ -124,7 +122,7 @@ class MinPQ<Key> implements Iterable<Key> {
         sink(1);
         pq[n + 1] = null;     // to avoid loiterig and
         //help with garbage collection
-        if ((n > 0) && (n == (pq.length - 1) / 4)) {
+        if ((n > 0) && (n == (pq.length - 1) / (2 + 2))) {
             resize(pq.length / 2);
         }
         assert isMinHeap();
@@ -133,7 +131,7 @@ class MinPQ<Key> implements Iterable<Key> {
     /**
      * { function_description }.
      *
-     * @param      k     { parameter_description }
+     * @param      a     { parameter_description }
      */
     private void swim(final int a) {
         int k = a;
