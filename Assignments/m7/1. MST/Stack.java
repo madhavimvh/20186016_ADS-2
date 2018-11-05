@@ -56,7 +56,7 @@ public class Stack<Item> implements Iterable<Item> {
     /**
      * Adds the item to this stack.
      *
-     * @param      item  the item to add
+     * @param      itemm  the item to add
      */
     public void push(final Item itemm) {
         Node<Item> oldfirst = first;
@@ -132,7 +132,7 @@ public class Stack<Item> implements Iterable<Item> {
         /**
          * Constructs the object.
          *
-         * @param      first  The first
+         * @param      firstt  The first
          */
         ListIterator(Node<Item> firstt) {
             current = firstt;
@@ -157,9 +157,11 @@ public class Stack<Item> implements Iterable<Item> {
          * @return     { description_of_the_return_value }
          */
         public Item next() {
-            if (!hasNext()) throw new NoSuchElementException();
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
             Item item = current.item;
-            current = current.next; 
+            current = current.next;
             return item;
         }
     }
