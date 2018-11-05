@@ -1,16 +1,34 @@
+/**
+ * Class for lazy primitive mst.
+ */
 class LazyPrimMST {
-    private static final double FLOATING_POINT_EPSILON = 1E-12;
-
-    private double weight;       // total weight of MST
-    private Queue<Edge> mst;     // edges in the MST
-    private boolean[] marked;    // marked[v] = true iff v on tree
-    private MinPQ<Edge> pq;      // edges with one endpoint in tree
-
     /**
-     * Compute a minimum spanning tree (or forest) of an edge-weighted graph.
-     * @param G the edge-weighted graph
+     * { var_description }.
      */
-    public LazyPrimMST(EdgeWeightedGraph G) {
+    private static final double FLOATING_POINT_EPSILON = 1E-12;
+    /**
+     * { var_description }.
+     */
+    private double weight;       // total weight of MST
+    /**
+     * { var_description }.
+     */
+    private Queue<Edge> mst;     // edges in the MST
+    /**
+     * { var_description }.
+     */
+    private boolean[] marked;    // marked[v] = true iff v on tree
+    /**
+     * { var_description }.
+     */
+    private MinPQ<Edge> pq;      // edges with one endpoint in tree
+    /**
+     * Compute a minimum spanning tree
+     * (or forest) of an edge-weighted graph.
+     *
+     * @param      G     the edge-weighted graph
+     */
+    public LazyPrimMST(final EdgeWeightedGraph G) {
         mst = new Queue<Edge>();
         pq = new MinPQ<Edge>();
         marked = new boolean[G.ver()];
@@ -21,8 +39,13 @@ class LazyPrimMST {
         assert check(G);
     }
 
-    // run Prim's algorithm
-    private void prim(EdgeWeightedGraph G, int s) {
+    /**
+     * { function_description }.
+     *
+     * @param      G     { parameter_description }
+     * @param      s     { parameter_description }
+     */
+    private void prim(final EdgeWeightedGraph G, final int s) {
         scan(G, s);
         while (!pq.isEmpty()) {                        // better to stop when mst has V-1 edges
             Edge e = pq.delMin();                      // smallest edge on pq
@@ -36,8 +59,13 @@ class LazyPrimMST {
         }
     }
 
-    // add all edges e incident to v onto pq if the other endpoint has not yet been scanned
-    private void scan(EdgeWeightedGraph G, int v) {
+    /**
+     * { function_description }.
+     *
+     * @param      G     { parameter_description }
+     * @param      v     { parameter_description }
+     */
+    private void scan(final EdgeWeightedGraph G, final int v) {
         assert !marked[v];
         marked[v] = true;
         for (Edge e : G.adj(v))
@@ -45,24 +73,38 @@ class LazyPrimMST {
     }
         
     /**
-     * Returns the edges in a minimum spanning tree (or forest).
-     * @return the edges in a minimum spanning tree (or forest) as
-     *    an iterable of edges
+     * Returns the edges in a minimum
+     * spanning tree (or forest).
+     *
+     * @return     the edges in a minimum
+     * spanning tree (or forest) as an
+     *             iterable of edges
      */
     public Iterable<Edge> edges() {
         return mst;
     }
 
     /**
-     * Returns the sum of the edge weights in a minimum spanning tree (or forest).
-     * @return the sum of the edge weights in a minimum spanning tree (or forest)
+     * Returns the sum of the edge weights
+     * in a minimum spanning tree (or
+     * forest).
+     *
+     * @return     the sum of the edge
+     * weights in a minimum spanning tree (or
+     *             forest)
      */
     public double weight() {
         return weight;
     }
 
-    // check optimality conditions (takes time proportional to E V lg* V)
-    private boolean check(EdgeWeightedGraph G) {
+    /**
+     * { function_description }.
+     *
+     * @param      G     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private boolean check(final EdgeWeightedGraph G) {
 
         // check weight
         double totalWeight = 0.0;
