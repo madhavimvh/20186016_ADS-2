@@ -22,7 +22,7 @@ class EdgeWeightedGraph {
      * Initializes an empty edge-weighted graph with {@code V} vertices and 0
      * edges.
      *
-     * @param      ver   The version
+     * @param      verr  The version
      * @throws     IllegalArgumentException  if {@code V < 0}
      */
     EdgeWeightedGraph(final int verr) {
