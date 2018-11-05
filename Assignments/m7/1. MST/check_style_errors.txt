@@ -1,9 +1,7 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
