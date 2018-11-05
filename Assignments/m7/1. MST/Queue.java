@@ -121,15 +121,16 @@ class Queue<Item> implements Iterable<Item> {
             s.append(' ');
         }
         return s.toString();
-    } 
-
+    }
     /**
-     * Returns an iterator that iterates over the items in this queue in FIFO order.
+     * Returns an iterator that iterates over the
+     * items in this queue in FIFO order.
      *
-     * @return an iterator that iterates over the items in this queue in FIFO order
+     * @return an iterator that iterates over
+     * the items in this queue in FIFO order
      */
     public Iterator<Item> iterator()  {
-        return new ListIterator<Item>(first);  
+        return new ListIterator<Item>(first);
     }
     /**
      * Class for list iterator.
@@ -146,7 +147,7 @@ class Queue<Item> implements Iterable<Item> {
          *
          * @param      firstt  The firstt
          */
-        public ListIterator(final Node<Item> firstt) {
+        ListIterator(final Node<Item> firstt) {
             current = firstt;
         }
         /**
@@ -158,13 +159,13 @@ class Queue<Item> implements Iterable<Item> {
             return current != null;
         }
         /**
-         * { function_description }
+         * { function_description }.
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
         /**
-         * { function_description }
+         * { function_description }.
          *
          * @return     { description_of_the_return_value }
          */

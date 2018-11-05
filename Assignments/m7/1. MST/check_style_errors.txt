@@ -17,15 +17,7 @@ Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Queue.java:124: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Queue.java:127: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Queue.java:129: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Queue.java:132: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Queue.java:149:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Queue.java:160: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Queue.java:166: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 7 errors.
 Starting audit...
 Audit done.
 Starting audit...
