@@ -25,7 +25,9 @@ class EdgeWeightedGraph {
      * @throws IllegalArgumentException if {@code V < 0}
      */
     public EdgeWeightedGraph(final int V) {
-        if (V < 0) throw new IllegalArgumentException("Number of vertices must be nonnegative");
+        if (V < 0) {
+            throw new IllegalArgumentException("Number of vertices must be nonnegative");
+        }
         this.V = V;
         this.E = 0;
         adj = (Bag<Edge>[]) new Bag[V];
@@ -85,7 +87,7 @@ class EdgeWeightedGraph {
      *
      * @param  G the edge-weighted graph to copy
      */
-    public EdgeWeightedGraph(EdgeWeightedGraph G) {
+    public EdgeWeightedGraph(final EdgeWeightedGraph G) {
         this(G.ver());
         this.E = G.E();
         for (int v = 0; v < G.ver(); v++) {
@@ -120,7 +122,7 @@ class EdgeWeightedGraph {
     }
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    private void validateVertex(int v) {
+    private void validateVertex(final int v) {
         if (v < 0 || v >= V)
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
     }
@@ -131,7 +133,7 @@ class EdgeWeightedGraph {
      * @param  e the edge
      * @throws IllegalArgumentException unless both endpoints are between {@code 0} and {@code V-1}
      */
-    public void addEdge(Edge e) {
+    public void addEdge(final Edge e) {
         int v = e.either();
         int w = e.other(v);
         validateVertex(v);
@@ -148,7 +150,7 @@ class EdgeWeightedGraph {
      * @return the edges incident on vertex {@code v} as an Iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public Iterable<Edge> adj(int v) {
+    public Iterable<Edge> adj(final int v) {
         validateVertex(v);
         return adj[v];
     }
@@ -160,7 +162,7 @@ class EdgeWeightedGraph {
      * @return the degree of vertex {@code v}               
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int degree(int v) {
+    public int degree(final int v) {
         validateVertex(v);
         return adj[v].size();
     }
