@@ -22,25 +22,25 @@ class Edge implements Comparable<Edge> {
      * @param  v one vertex
      * @param  w the other vertex
      * @param  weight the weight of this edge
-     * @throws IllegalArgumentException if either {@code v} or {@code w} 
+     * @throws IllegalArgumentException if either {@code v} or {@code w}
      *         is a negative integer
      * @throws IllegalArgumentException if {@code weight} is {@code NaN}
      */
-    public Edge(final int v, final int w, final double weight) {
-        if (v < 0) {
+    Edge(final int vv, final int ww, final double weightt) {
+        if (vv < 0) {
             throw new IllegalArgumentException(
                 "vertex index must be a nonnegative integer");
         }
-        if (w < 0) {
+        if (ww < 0) {
             throw new IllegalArgumentException(
                 "vertex index must be a nonnegative integer");
         }
-        if (Double.isNaN(weight)) {
+        if (Double.isNaN(weightt)) {
             throw new IllegalArgumentException("Weight is NaN");
         }
-        this.v = v;
-        this.w = w;
-        this.weight = weight;
+        this.v = vv;
+        this.w = ww;
+        this.weight = weightt;
     }
 
     /**
@@ -67,8 +67,9 @@ class Edge implements Comparable<Edge> {
      * @param      vertex  one endpoint of this edge
      *
      * @return     the other endpoint of this edge
-     * @throws     IllegalArgumentException  if the vertex is not one of the endpoints
-     *                                       of this edge
+     * @throws     IllegalArgumentException 
+     * if the vertex is not one of the endpoints
+     *                      of this edge
      */
     public int other(final int vertex) {
         if (vertex == v) {

@@ -2,17 +2,15 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Edge.java:4: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Edge.java:25: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Edge.java:29:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Edge.java:29:27: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Edge.java:29:40: 'w' hides a field. [HiddenField]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Edge.java:29:56: 'weight' hides a field. [HiddenField]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Edge.java:31: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Edge.java:34: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Edge.java:68: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Edge.java:22:8: Unused @param tag for 'v'. [JavadocMethod]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Edge.java:23:8: Unused @param tag for 'w'. [JavadocMethod]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Edge.java:24:8: Unused @param tag for 'weight'. [JavadocMethod]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Edge.java:29:20: Expected @param tag for 'vv'. [JavadocMethod]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Edge.java:29:34: Expected @param tag for 'ww'. [JavadocMethod]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Edge.java:29:51: Expected @param tag for 'weightt'. [JavadocMethod]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\Edge.java:70: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m7\1. MST\EdgeWeightedGraph.java:1: Missing a Javadoc comment. [JavadocType]
