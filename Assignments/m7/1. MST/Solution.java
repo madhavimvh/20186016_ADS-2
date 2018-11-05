@@ -11,7 +11,7 @@ public class Solution {
 		edgGraph.addEdge(edge);
 	}
 	LazyPrimMST prim = new LazyPrimMST(edgGraph);
-	System.out.println(prim.weight());
+	System.out.printf("%.4f\n", prim.weight());
 
 	}
 } 
