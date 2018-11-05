@@ -7,11 +7,11 @@ public class Solution {
 		EdgeWeightedGraph edgGraph = new EdgeWeightedGraph(ver);
 		while (scan.hasNext()) {
 		String[] arr = scan.nextLine().split(" ");
-		Edge edge = new Edge(Integer.parseInt(arr[0]), Integer.parseInt(arr[1]), Integer.parseInt(arr[2]));
+		Edge edge = new Edge(Integer.parseInt(arr[0]), Integer.parseInt(arr[1]), Double.parseDouble(arr[2]));
 		edgGraph.addEdge(edge);
 	}
 	LazyPrimMST prim = new LazyPrimMST(edgGraph);
-	System.out.printf("%.4f\n", prim.weight());
+	System.out.printf("%.5f\n", prim.weight());
 
 	}
 } 
