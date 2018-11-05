@@ -134,7 +134,7 @@ public class Stack<Item> implements Iterable<Item> {
          *
          * @param      firstt  The first
          */
-        ListIterator(Node<Item> firstt) {
+        ListIterator(final Node<Item> firstt) {
             current = firstt;
         }
         /**
