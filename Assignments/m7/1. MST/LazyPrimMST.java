@@ -28,25 +28,25 @@ class LazyPrimMST {
      *
      * @param      G     the edge-weighted graph
      */
-    public LazyPrimMST(final EdgeWeightedGraph G) {
+    public LazyPrimMST(final EdgeWeightedGraph gr) {
         mst = new Queue<Edge>();
         pq = new MinPQ<Edge>();
-        marked = new boolean[G.ver()];
-        for (int v = 0; v < G.ver(); v++)     // run Prim from all vertices to
-            if (!marked[v]) prim(G, v);     // get a minimum spanning forest
+        marked = new boolean[gr.ver()];
+        for (int v = 0; v < gr.ver(); v++)
+            if (!marked[v]) prim(gr, v);
 
         // check optimality conditions
-        assert check(G);
+        assert check(gr);
     }
 
     /**
      * { function_description }.
      *
-     * @param      G     { parameter_description }
+     * @param      gr    The graphics
      * @param      s     { parameter_description }
      */
-    private void prim(final EdgeWeightedGraph G, final int s) {
-        scan(G, s);
+    private void prim(final EdgeWeightedGraph gr, final int s) {
+        scan(gr, s);
         while (!pq.isEmpty()) {                        // better to stop when mst has V-1 edges
             Edge e = pq.delMin();                      // smallest edge on pq
             int v = e.either(), w = e.other(v);        // two endpoints
@@ -54,8 +54,8 @@ class LazyPrimMST {
             if (marked[v] && marked[w]) continue;      // lazy, both v and w already scanned
             mst.enqueue(e);                            // add e to MST
             weight += e.weight();
-            if (!marked[v]) scan(G, v);               // v becomes part of tree
-            if (!marked[w]) scan(G, w);               // w becomes part of tree
+            if (!marked[v]) scan(gr, v);               // v becomes part of tree
+            if (!marked[w]) scan(gr, w);               // w becomes part of tree
         }
     }
 
@@ -65,10 +65,10 @@ class LazyPrimMST {
      * @param      G     { parameter_description }
      * @param      v     { parameter_description }
      */
-    private void scan(final EdgeWeightedGraph G, final int v) {
+    private void scan(final EdgeWeightedGraph gr, final int v) {
         assert !marked[v];
         marked[v] = true;
-        for (Edge e : G.adj(v))
+        for (Edge e : gr.adj(v))
             if (!marked[e.other(v)]) pq.insert(e);
     }
         
@@ -100,7 +100,7 @@ class LazyPrimMST {
     /**
      * { function_description }.
      *
-     * @param      G     { parameter_description }
+     * @param      gr    The graphics
      *
      * @return     { description_of_the_return_value }
      */
@@ -154,7 +154,7 @@ class LazyPrimMST {
                 int x = f.either(), y = f.other(x);
                 if (!uf.connected(x, y)) {
                     if (f.weight() < e.weight()) {
-                        System.err.println("Edge "+ f
+                        System.err.println("Edge "+ f 
                             + " violates cut optimality conditions");
                         return false;
                     }
