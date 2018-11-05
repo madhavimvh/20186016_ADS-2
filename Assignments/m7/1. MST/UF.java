@@ -15,13 +15,11 @@ class UF {
      */
     private int count;
     /**
-     * Initializes an empty union–find data structure
-     * with {@code n} sites
-     * {@code 0} through {@code n-1}. Each site is
-     * initially in its own
+     * Initializes an empty union–find data structure with {@code n} sites
+     * {@code 0} through {@code n-1}. Each site is initially in its own
      * component.
      *
-     * @param      n     the number of sites
+     * @param      nn    the number of sites
      * @throws     IllegalArgumentException  if {@code n < 0}
      */
     public UF(final int nn) {
@@ -114,7 +112,8 @@ class UF {
     private void validate(final int p) {
         int n = parent.length;
         if (p < 0 || p >= n) {
-            throw new IllegalArgumentException("index " + p + " is not between 0 and " + (n-1));  
+            throw new IllegalArgumentException("index " + p
+                + " is not between 0 and " + (n - 1));
         }
     }
 }
