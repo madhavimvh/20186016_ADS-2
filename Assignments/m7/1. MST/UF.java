@@ -22,7 +22,7 @@ class UF {
      * @param      nn    the number of sites
      * @throws     IllegalArgumentException  if {@code n < 0}
      */
-    public UF(final int nn) {
+    UF(final int nn) {
         if (nn < 0) {
             throw new IllegalArgumentException();
         }
@@ -76,9 +76,9 @@ class UF {
     public boolean connected(final int p, final int q) {
         return find(p) == find(q);
     }
-  
     /**
-     * Merges the component containing site {@code p} with the the component
+     * Merges the component containing site {@code p}
+     * with the the component
      * containing site {@code q}.
      *
      * @param      p     the integer representing one site
