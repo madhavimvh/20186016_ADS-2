@@ -1,6 +1,19 @@
 import java.util.Scanner;
-public class Solution {
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int ver = Integer.parseInt(scan.nextLine());
 		int edg = Integer.parseInt(scan.nextLine());
@@ -14,4 +27,5 @@ public class Solution {
 	System.out.printf("%.5f\n", prim.weight());
 
 	}
-} 
+}
+
