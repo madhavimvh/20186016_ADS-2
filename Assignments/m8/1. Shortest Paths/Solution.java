@@ -13,7 +13,7 @@ public class Solution {
 		for (int i = 0; i < arr.length; i++) {
 			hashmap.put(arr[i], i);
 		}
-		for (int i = 0; i < ver; i++) {
+		for (int i = 0; i < edg; i++) {
 			String[] edges = scan.nextLine().split(" ");
 			graph.addEdge(new Edge(hashmap.get(edges[0]), hashmap.get(edges[1]), Integer.parseInt(edges[2])));
 		}
