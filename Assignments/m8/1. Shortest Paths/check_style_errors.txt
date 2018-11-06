@@ -5,25 +5,18 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:26:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:28: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:29: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:37: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:46: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:64: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:65: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:69: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:73: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:74: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:34: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:41: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:59:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:66: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:70: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:71: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:92: Line is longer than 80 characters (found 88). [LineLength]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:95: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:98: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:104: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:121:51: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:133: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:149: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:151: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:166:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:167: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:168: Line is longer than 80 characters (found 99). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:115:8: Unused @param tag for 'G'. [JavadocMethod]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:120:51: Expected @param tag for 'gr'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 14 errors.
 Starting audit...
 Audit done.
 Starting audit...

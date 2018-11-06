@@ -28,17 +28,12 @@ class DijkstraUndirectedSP {
             if (e.weight() < 0)
                 throw new IllegalArgumentException("edge " + e + " has negative weight");
         }
-
         distTo = new double[gr.ver()];
         edgeTo = new Edge[gr.ver()];
-
         validateVertex(s);
-
         for (int v = 0; v < gr.ver(); v++)
             distTo[v] = Double.POSITIVE_INFINITY;
         distTo[s] = 0.0;
-
-        // relax vertices in order of distance from s
         pq = new IndexMinPQ<Double>(gr.ver());
         pq.insert(s, distTo[s]);
         while (!pq.isEmpty()) {
@@ -46,8 +41,6 @@ class DijkstraUndirectedSP {
             for (Edge e : gr.adj(v))
                 relax(e, v);
         }
-
-        // check optimality conditions
         assert check(gr, s);
     }
     /**
@@ -61,8 +54,12 @@ class DijkstraUndirectedSP {
         if (distTo[w] > distTo[v] + e.weight()) {
             distTo[w] = distTo[v] + e.weight();
             edgeTo[w] = e;
-            if (pq.contains(w)) pq.decreaseKey(w, distTo[w]);
-            else                pq.insert(w, distTo[w]);
+            if (pq.contains(w)) {
+                pq.decreaseKey(w, distTo[w]);
+            }
+            else {
+                pq.insert(w, distTo[w]);
+            }
         }
     }
     /**
@@ -101,7 +98,9 @@ class DijkstraUndirectedSP {
      */
     public Iterable<Edge> pathTo(final int v) {
         validateVertex(v);
-        if (!hasPathTo(v)) return null;
+        if (!hasPathTo(v)) {
+            return null;
+        }
         Stack<Edge> path = new Stack<Edge>();
         int x = v;
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
@@ -118,8 +117,8 @@ class DijkstraUndirectedSP {
      *
      * @return     { description_of_the_return_value }
      */
-    private boolean check(final EdgeWeightedGraph G, final int s) {
-        for (Edge e : G.edges()) {
+    private boolean check(final EdgeWeightedGraph gr, final int s) {
+        for (Edge e : gr.edges()) {
             if (e.weight() < 0) {
                 System.err.println("negative edge weight detected");
                 return false;
@@ -129,15 +128,17 @@ class DijkstraUndirectedSP {
             System.err.println("distTo[s] and edgeTo[s] inconsistent");
             return false;
         }
-        for (int v = 0; v < G.ver(); v++) {
-            if (v == s) continue;
+        for (int v = 0; v < gr.ver(); v++) {
+            if (v == s) {
+                continue;
+            }
             if (edgeTo[v] == null && distTo[v] != Double.POSITIVE_INFINITY) {
                 System.err.println("distTo[] and edgeTo[] inconsistent");
                 return false;
             }
         }
-        for (int v = 0; v < G.ver(); v++) {
-            for (Edge e : G.adj(v)) {
+        for (int v = 0; v < gr.ver(); v++) {
+            for (Edge e : gr.adj(v)) {
                 int w = e.other(v);
                 if (distTo[v] + e.weight() < distTo[w]) {
                     System.err.println("edge " + e + " not relaxed");
@@ -145,10 +146,14 @@ class DijkstraUndirectedSP {
                 }
             }
         }
-        for (int w = 0; w < G.ver(); w++) {
-            if (edgeTo[w] == null) continue;
+        for (int w = 0; w < gr.ver(); w++) {
+            if (edgeTo[w] == null) {
+                continue;
+            }
             Edge e = edgeTo[w];
-            if (w != e.either() && w != e.other(e.either())) return false;
+            if (w != e.either() && w != e.other(e.either())) {
+                return false;
+            }
             int v = e.other(w);
             if (distTo[v] + e.weight() != distTo[w]) {
                 System.err.println("edge " + e + " on shortest path not tight");
@@ -163,8 +168,10 @@ class DijkstraUndirectedSP {
      * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
-        int V = distTo.length;
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V - 1));
+        int vr = distTo.length;
+        if (v < 0 || v >= vr) {
+            throw new IllegalArgumentException("vertex "
+                + v + " is not between 0 and " + (vr - 1));
+        }
     }
 }
