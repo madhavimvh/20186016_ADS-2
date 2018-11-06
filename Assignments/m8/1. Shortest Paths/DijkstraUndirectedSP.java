@@ -22,28 +22,32 @@ class DijkstraUndirectedSP {
      *
      * @param      gr    The graphics
      * @param      s     the source vertex
-     * @throws     IllegalArgumentException 
+     * @throws     IllegalArgumentException
      * if an edge weight is negative
      * @throws     IllegalArgumentException
      * unless {@code 0 <= s < V}
      */
-    public DijkstraUndirectedSP(final EdgeWeightedGraph gr, final int s) {
+    DijkstraUndirectedSP(final EdgeWeightedGraph gr, final int s) {
         for (Edge e : gr.edges()) {
-            if (e.weight() < 0)
-                throw new IllegalArgumentException("edge " + e + " has negative weight");
+            if (e.weight() < 0) {
+                throw new IllegalArgumentException("edge "
+                    + e + " has negative weight");
+            }
         }
         distTo = new double[gr.ver()];
         edgeTo = new Edge[gr.ver()];
         validateVertex(s);
-        for (int v = 0; v < gr.ver(); v++)
+        for (int v = 0; v < gr.ver(); v++) {
             distTo[v] = Double.POSITIVE_INFINITY;
+        }
         distTo[s] = 0.0;
         pq = new IndexMinPQ<Double>(gr.ver());
         pq.insert(s, distTo[s]);
         while (!pq.isEmpty()) {
             int v = pq.delMin();
-            for (Edge e : gr.adj(v))
+            for (Edge e : gr.adj(v)) {
                 relax(e, v);
+            }
         }
         assert check(gr, s);
     }
@@ -60,8 +64,7 @@ class DijkstraUndirectedSP {
             edgeTo[w] = e;
             if (pq.contains(w)) {
                 pq.decreaseKey(w, distTo[w]);
-            }
-            else {
+            } else {
                 pq.insert(w, distTo[w]);
             }
         }
