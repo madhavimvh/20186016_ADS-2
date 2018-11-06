@@ -15,13 +15,17 @@ class DijkstraUndirectedSP {
      */
     private IndexMinPQ<Double> pq;
     /**
-     * Computes a shortest-paths tree from the source vertex {@code s} to every
-     * other vertex in the edge-weighted graph {@code G}.
+     * Computes a shortest-paths tree from the
+     * source vertex {@code s} to every
+     * other vertex in the edge-weighted graph
+     * {@code G}.
      *
      * @param      gr    The graphics
      * @param      s     the source vertex
-     * @throws     IllegalArgumentException  if an edge weight is negative
-     * @throws     IllegalArgumentException  unless {@code 0 <= s < V}
+     * @throws     IllegalArgumentException 
+     * if an edge weight is negative
+     * @throws     IllegalArgumentException
+     * unless {@code 0 <= s < V}
      */
     public DijkstraUndirectedSP(final EdgeWeightedGraph gr, final int s) {
         for (Edge e : gr.edges()) {
@@ -63,12 +67,15 @@ class DijkstraUndirectedSP {
         }
     }
     /**
-     * Returns the length of a shortest path between the source vertex {@code s} and
+     * Returns the length of a shortest path between the source
+     * vertex {@code s} and
      * vertex {@code v}.
      *
      * @param  v the destination vertex
-     * @return the length of a shortest path between the source vertex {@code s} and
-     *         the vertex {@code v}; {@code Double.POSITIVE_INFINITY} if no such path
+     * @return the length of a shortest path between the source
+     * vertex {@code s} and
+     *         the vertex {@code v}; {@code Double.POSITIVE_INFINITY}
+     *         if no such path
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public double distTo(final int v) {
@@ -76,23 +83,29 @@ class DijkstraUndirectedSP {
         return distTo[v];
     }
     /**
-     * Returns true if there is a path between the source vertex {@code s} and
+     * Returns true if there is a path between the source
+     * vertex {@code s} and
      * vertex {@code v}.
      *
      * @param  v the destination vertex
-     * @return {@code true} if there is a path between the source vertex
-     *         {@code s} to vertex {@code v}; {@code false} otherwise
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @return {@code true} if there is a path between
+     * the source vertex
+     *         {@code s} to vertex {@code v};
+     *         {@code false} otherwise
+     * @throws IllegalArgumentException unless
+     * {@code 0 <= v < V}
      */
     public boolean hasPathTo(final int v) {
         validateVertex(v);
         return distTo[v] < Double.POSITIVE_INFINITY;
     }
     /**
-     * Returns a shortest path between the source vertex {@code s} and vertex {@code v}.
+     * Returns a shortest path between the source vertex {@code s}
+     * and vertex {@code v}.
      *
      * @param  v the destination vertex
-     * @return a shortest path between the source vertex {@code s} and vertex {@code v};
+     * @return a shortest path between the source vertex {@code s}
+     * and vertex {@code v};
      *         {@code null} if no such path
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
@@ -112,7 +125,7 @@ class DijkstraUndirectedSP {
     /**
      * { function_description }.
      *
-     * @param      G     { parameter_description }
+     * @param      gr    The graphics
      * @param      s     { parameter_description }
      *
      * @return     { description_of_the_return_value }
@@ -141,7 +154,8 @@ class DijkstraUndirectedSP {
             for (Edge e : gr.adj(v)) {
                 int w = e.other(v);
                 if (distTo[v] + e.weight() < distTo[w]) {
-                    System.err.println("edge " + e + " not relaxed");
+                    System.err.println("edge "
+                        + e + " not relaxed");
                     return false;
                 }
             }
@@ -156,7 +170,8 @@ class DijkstraUndirectedSP {
             }
             int v = e.other(w);
             if (distTo[v] + e.weight() != distTo[w]) {
-                System.err.println("edge " + e + " on shortest path not tight");
+                System.err.println("edge "
+                    + e + " on shortest path not tight");
                 return false;
             }
         }

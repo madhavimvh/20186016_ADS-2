@@ -2,21 +2,15 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:26:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:28: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:29: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:34: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:41: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:59:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:66: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:70: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:71: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:92: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:95: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:115:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:120:51: Expected @param tag for 'gr'. [JavadocMethod]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:25: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:30:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:32: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:33: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:38: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:45: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m8\1. Shortest Paths\DijkstraUndirectedSP.java:63:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 Audit done.
 Starting audit...
