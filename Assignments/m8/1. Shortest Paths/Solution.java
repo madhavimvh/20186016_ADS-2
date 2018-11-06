@@ -23,7 +23,7 @@ public class Solution {
 			int a = hashmap.get(str[0]);
 			DijkstraUndirectedSP sp = new DijkstraUndirectedSP(graph, a);
 			if (sp.hasPathTo(hashmap.get(str[1]))) {
-				System.out.println(sp.distTo(hashmap.get(str[1])));
+				System.out.println((int)sp.distTo(hashmap.get(str[1])));
 			}
 			
 		}
