@@ -2,6 +2,9 @@
  * Class for dijkstra undirected sp.
  */
 class DijkstraUndirectedSP {
+    /**
+     * { var_description }.
+     */
     private double[] distTo;
     /**
      * { var_description }.
@@ -162,6 +165,6 @@ class DijkstraUndirectedSP {
     private void validateVertex(final int v) {
         int V = distTo.length;
         if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V - 1));
     }
 }
