@@ -1,4 +1,4 @@
-
+import java.lang.IllegalArgumentException;
 public class SeamCarver {
 	private Picture picture;
 	// create a seam carver object based on the given picture
@@ -8,6 +8,9 @@ public class SeamCarver {
 	}
 	// current picture
 	public Picture picture() {
+		if (picture.equals("")) {
+			throw new IllegalArgumentException("IllegalArgumentException");
+		}
 		return picture;
 		// return null;
 	}
@@ -25,6 +28,7 @@ public class SeamCarver {
 
 	// energy of pixel at column x and row y
 	public double energy(int x, int y) {
+		// PrintEnergy energy = new PrintEnergy();
 		return 0;
 	}
 
