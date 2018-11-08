@@ -1,5 +1,6 @@
 import java.lang.IllegalArgumentException;
 import java.awt.Color;
+import java.util.*;
 public class SeamCarver {
 	private Picture picture;
 
@@ -30,6 +31,9 @@ public class SeamCarver {
 
 	// energy of pixel at column x and row y
 	public double energy(int x, int y) {
+		if (x == 0 || y == 0 || picture.width() - 1 == x || picture.height() - 1 == y) {
+			return 1000;
+		}
 		// return 0;
 		// int t = picture.getRGB(x - 1, y);
 		// int b = picture.getRGB(x + 1, y );
@@ -50,10 +54,11 @@ public class SeamCarver {
 		// double energy = Math.sqrt(ver + hor);
 		// System.out.println("energy");
 		// return energy;
-		Color t = picture.get(x - 1, y);
-		Color b = picture.get(x + 1, y);
-		Color l = picture.get(x, y - 1);
-		Color r = picture.get(x, y + 1);
+		// System.out.println("'ksldj");
+		Color t = picture.get(x, y - 1);
+		Color b = picture.get(x, y + 1);
+		Color l = picture.get(x - 1, y);
+		Color r = picture.get(x + 1, y);
 		double ver = Math.pow(t.getRed() - b.getRed(), 2) + Math.pow(t.getGreen() - b.getGreen(), 2) + Math.pow(t.getBlue() - b.getBlue(), 2);
 		double hor = Math.pow(l.getRed() - r.getRed(), 2) + Math.pow(l.getGreen() - r.getGreen(), 2) + Math.pow(l.getBlue() - r.getBlue(), 2);
 		return Math.sqrt(ver + hor);
