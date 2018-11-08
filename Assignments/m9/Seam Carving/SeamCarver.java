@@ -1,4 +1,5 @@
 import java.lang.IllegalArgumentException;
+import java.awt.Color;
 public class SeamCarver {
 	private Picture picture;
 
@@ -30,25 +31,32 @@ public class SeamCarver {
 	// energy of pixel at column x and row y
 	public double energy(int x, int y) {
 		// return 0;
-		int t = picture.getRGB(x - 1, y);
-		int b = picture.getRGB(x + 1, y );
-		int l = picture.getRGB(x, y - 1);
-		int r = picture.getRGB(x, y + 1);
-		int[] top = new int[]{(t>>16 & 0xFF), (t>>8 & 0xFF), (t & 0xFF)};
-		int[] bottom = new int[]{(b>>16 & 0xFF), (b>>8 & 0xFF), (b & 0xFF)};
-		int[] left = new int[]{(l>>16 & 0xFF), (l>>8 & 0xFF), (l & 0xFF)};
-		int[] right = new int[]{(r>>16 & 0xFF), (r>>8 & 0xFF), (r & 0xFF)};
-		int verred = Math.abs(top[0] - bottom[0]);
-		int vergreen = Math.abs(top[1] - bottom[1]);
-		int verblue = Math.abs(top[2] - bottom[2]);
-		int ver = (verred * verred) + (vergreen * vergreen) + (verblue * verblue);
-		int horred = Math.abs(left[0] - right[0]);
-		int horgreen = Math.abs(left[1] - right[1]);
-		int horblue = Math.abs(left[2] - right[2]);
-		int hor = (horred * horred) + (horgreen * horgreen) + (horblue * horblue);
-		double energy = Math.sqrt(ver + hor);
-		System.out.println("energy");
-		return energy;
+		// int t = picture.getRGB(x - 1, y);
+		// int b = picture.getRGB(x + 1, y );
+		// int l = picture.getRGB(x, y - 1);
+		// int r = picture.getRGB(x, y + 1);
+		// int[] top = new int[]{(t>>16 & 0xFF), (t>>8 & 0xFF), (t & 0xFF)};
+		// int[] bottom = new int[]{(b>>16 & 0xFF), (b>>8 & 0xFF), (b & 0xFF)};
+		// int[] left = new int[]{(l>>16 & 0xFF), (l>>8 & 0xFF), (l & 0xFF)};
+		// int[] right = new int[]{(r>>16 & 0xFF), (r>>8 & 0xFF), (r & 0xFF)};
+		// int verred = Math.abs(top[0] - bottom[0]);
+		// int vergreen = Math.abs(top[1] - bottom[1]);
+		// int verblue = Math.abs(top[2] - bottom[2]);
+		// int ver = (verred * verred) + (vergreen * vergreen) + (verblue * verblue);
+		// int horred = Math.abs(left[0] - right[0]);
+		// int horgreen = Math.abs(left[1] - right[1]);
+		// int horblue = Math.abs(left[2] - right[2]);
+		// int hor = (horred * horred) + (horgreen * horgreen) + (horblue * horblue);
+		// double energy = Math.sqrt(ver + hor);
+		// System.out.println("energy");
+		// return energy;
+		Color t = picture.get(x - 1, y);
+		Color b = picture.get(x + 1, y);
+		Color l = picture.get(x, y - 1);
+		Color r = picture.get(x, y + 1);
+		double ver = Math.pow(t.getRed() - b.getRed(), 2) + Math.pow(t.getGreen() - b.getGreen(), 2) + Math.pow(t.getBlue() - b.getBlue(), 2);
+		double hor = Math.pow(l.getRed() - r.getRed(), 2) + Math.pow(l.getGreen() - r.getGreen(), 2) + Math.pow(l.getBlue() - r.getBlue(), 2);
+		return Math.sqrt(ver + hor);
 	}
 
 	// sequence of indices for horizontal seam
