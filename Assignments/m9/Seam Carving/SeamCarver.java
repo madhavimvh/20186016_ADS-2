@@ -52,7 +52,7 @@ public class SeamCarver {
 		int horblue = Math.abs(left[2] - right[2]);
 		int hor = (horred * horred) + (horgreen * horgreen) + (horblue * horblue);
 		double energy = Math.sqrt(ver + hor);
-		System.out.println("energy");
+		// System.out.println("energy");
 		return energy;
 		// Color t = picture.get(x, y - 1);
 		// Color b = picture.get(x, y + 1);
