@@ -1,9 +1,10 @@
 import java.lang.IllegalArgumentException;
 public class SeamCarver {
 	private Picture picture;
+
 	// create a seam carver object based on the given picture
 	public SeamCarver(Picture picturee) {
-		if (picturee.equals("")) {
+		if (picturee == null) {
 			throw new IllegalArgumentException("picture is null");
 		}
 		this.picture = picturee;
