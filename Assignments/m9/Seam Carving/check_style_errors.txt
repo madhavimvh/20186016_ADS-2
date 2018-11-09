@@ -300,12 +300,8 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarver.java:180:42: Parameter seam should be final. [FinalParameters]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarver.java:185:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarver.java:185:40: Parameter seam should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarver.java:189:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'printEnergies' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'printEnergies' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarver.java:189:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarver.java:189:35: Parameter arr1 should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarver.java:191: 'for' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 82 errors.
+Checkstyle ends with 78 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarvermentor.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarvermentor.java:4: Missing a Javadoc comment. [JavadocType]

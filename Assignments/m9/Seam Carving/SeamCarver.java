@@ -88,10 +88,10 @@ public class SeamCarver {
 
 	// sequence of indices for vertical seam
 	public int[] findSeam(double[][] arr1) {
-		printEnergies(arr1);
-		System.out.println("___________________");
-		System.out.println();
-		System.out.println(width() + " " + height());
+		// printEnergies(arr1);
+		// System.out.println("___________________");
+		// System.out.println();
+		// System.out.println(width() + " " + height());
 		int[] coordinates = new int[width()];
 		double temp = 0.0;
 		for (int i = 1; i < picture.width(); i++) {
@@ -108,7 +108,7 @@ public class SeamCarver {
 				}
 			}
 		}
-		printEnergies(arr1);
+		// printEnergies(arr1);
 		// System.out.println(Arrays.deepToString(arr1));
 		//finding the j values from each iteration, storing them in coordinates.
 		coordinates[width() - 1] = 0;
@@ -186,12 +186,12 @@ public class SeamCarver {
 
 	}
 
-	public void printEnergies(double[][] arr1) {
-		for (int row = 0; row < width(); row++) {
-			for (int col = 0; col < height(); col++)
-				StdOut.printf("%9.0f ", arr1[row][col]);
-			StdOut.println();
-		}
-	}
+	// public void printEnergies(double[][] arr1) {
+	// 	for (int row = 0; row < width(); row++) {
+	// 		for (int col = 0; col < height(); col++)
+	// 			StdOut.printf("%9.0f ", arr1[row][col]);
+	// 		StdOut.println();
+	// 	}
+	// }
 
 }
