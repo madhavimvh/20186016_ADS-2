@@ -10,11 +10,11 @@ public class Solution {
 		int ver = Integer.parseInt(scan.nextLine());
 		int edg = Integer.parseInt(scan.nextLine());
 		EdgeWeightedGraph graph = new EdgeWeightedGraph(ver);
-		while (ver > 0) {
+		while (edg > 0) {
 			String[] links = scan.nextLine().split(" ");
 			// System.out.println(Arrays.toString(links));
 				graph.addEdge(new Edge(Integer.parseInt(links[0]), Integer.parseInt(links[1]), Integer.parseInt(links[2])));
-			ver--;
+			edg--;
 		}
 
 		String caseToGo = scan.nextLine();
