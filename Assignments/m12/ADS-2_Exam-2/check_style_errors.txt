@@ -13,9 +13,7 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Files to process must be specified, found 0.
