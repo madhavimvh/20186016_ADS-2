@@ -26,7 +26,9 @@ public final class Solution {
         while (edg > 0) {
             String[] links = scan.nextLine().split(" ");
             // System.out.println(Arrays.toString(links));
-            graph.addEdge(new Edge(Integer.parseInt(links[0]), Integer.parseInt(links[1]), Integer.parseInt(links[2])));
+            graph.addEdge(new Edge(Integer.parseInt(links[0]),
+                Integer.parseInt(links[1]),
+                Integer.parseInt(links[2])));
             edg--;
         }
         String caseToGo = scan.nextLine();
@@ -45,14 +47,17 @@ public final class Solution {
             } else {
                 System.out.println("No Path Found.");
             }
-            // Handle the case of DirectedPaths, where two integers are given.
+            // Handle the case of DirectedPaths,
+            // where two integers are given.
             // First is the source and second is the destination.
             // If the path exists print the distance between them.
             // Other wise print "No Path Found."
             break;
         case "ViaPaths":
-            // Handle the case of ViaPaths, where three integers are given.
-            // First is the source and second is the via is the one where path should pass throuh.
+            // Handle the case of ViaPaths,
+            // where three integers are given.
+            // First is the source and second is the
+            // via is the one where path should pass throuh.
             // third is the destination.
             // If the path exists print the distance between them.
             // Other wise print "No Path Found."
@@ -61,11 +66,13 @@ public final class Solution {
                 Integer.parseInt(ispath1[0]));
             if (mst1.hasPathTo(Integer.parseInt(ispath1[1]))
                 && mst1.hasPathTo(Integer.parseInt(ispath1[2]))) {
-                System.out.println(pathdist(graph, Integer.parseInt(ispath1[0]),
-                    Integer.parseInt(ispath1[1]), Integer.parseInt(ispath1[2])));
-                path(graph, Integer.parseInt(ispath1[0]), Integer.parseInt(ispath1[1]),
+                System.out.println(pathdist(graph,
+                    Integer.parseInt(ispath1[0]),
+                    Integer.parseInt(ispath1[1]),
+                    Integer.parseInt(ispath1[2])));
+                path(graph, Integer.parseInt(ispath1[0]),
+                    Integer.parseInt(ispath1[1]),
                     Integer.parseInt(ispath1[2]));
-                // System.out.println(mst1.distTo(Integer.parseInt(ispath1[2])));
             } else {
                 System.out.println("No Path Found.");
             }
