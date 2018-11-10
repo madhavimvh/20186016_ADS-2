@@ -176,10 +176,18 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:44: Line is longer than 80 characters (found 110). [LineLength]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:49: Line is longer than 80 characters (found 114). [LineLength]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:50: Line is longer than 80 characters (found 123). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:51: Line is longer than 80 characters (found 94). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:51: Line is longer than 80 characters (found 154). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:52: Line is longer than 80 characters (found 97). [LineLength]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:56: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:64: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:64:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:64:35: Parameter graph should be final. [FinalParameters]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:64:60: Parameter s should be final. [FinalParameters]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:64:67: Parameter via should be final. [FinalParameters]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:64:76: Parameter d should be final. [FinalParameters]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:67: Line is longer than 80 characters (found 81). [LineLength]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 25 errors.
 Starting audit...
 Audit done.
 Starting audit...

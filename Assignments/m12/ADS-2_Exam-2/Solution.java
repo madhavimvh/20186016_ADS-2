@@ -48,10 +48,10 @@ public class Solution {
 			String[] ispath1 = scan.nextLine().split(" ");
 			DijkstraUndirectedSP mst1 = new DijkstraUndirectedSP(graph, Integer.parseInt(ispath1[0]));
 			if (mst1.hasPathTo(Integer.parseInt(ispath1[1])) && mst1.hasPathTo(Integer.parseInt(ispath1[2]))) {
-				System.out.println(mst1.distTo(Integer.parseInt(ispath1[2])));
+				System.out.println(path(graph, Integer.parseInt(ispath1[0]), Integer.parseInt(ispath1[1]), Integer.parseInt(ispath1[2])));
+				// System.out.println(mst1.distTo(Integer.parseInt(ispath1[2])));
 			} else {
 				System.out.println("No Path Found.");
-
 			}
 			
 			break;
@@ -59,6 +59,17 @@ public class Solution {
 		default:
 			break;
 		}
+
+	}
+	public static double path(EdgeWeightedGraph graph, int s, int via, int d) {
+		DijkstraUndirectedSP mst = new DijkstraUndirectedSP(graph, s);
+		double dist1 = mst.distTo(via);
+		DijkstraUndirectedSP mstt = new DijkstraUndirectedSP(graph, via);
+		double dist2 = mstt.distTo(d);
+		double totaldist = dist1 + dist2;
+		return totaldist;
+
+
 
 	}
 }
