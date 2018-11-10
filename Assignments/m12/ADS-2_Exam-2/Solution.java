@@ -33,10 +33,6 @@ public class Solution {
 				} else {
 					System.out.println("No Path Found.");
 				}
-			// } catch (Exception ex) {
-			// 	System.out.println("No Path Found.");
-			// }
-
 			// Handle the case of DirectedPaths, where two integers are given.
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
@@ -49,6 +45,15 @@ public class Solution {
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			String[] ispath1 = scan.nextLine().split(" ");
+			DijkstraUndirectedSP mst1 = new DijkstraUndirectedSP(graph, Integer.parseInt(ispath1[0]));
+			if (mst1.hasPathTo(Integer.parseInt(ispath1[1])) && mst1.hasPathTo(Integer.parseInt(ispath1[2]))) {
+				System.out.println(mst1.distTo(Integer.parseInt(ispath1[2])));
+			} else {
+				System.out.println("No Path Found.");
+
+			}
+			
 			break;
 
 		default:
