@@ -16,17 +16,12 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:29: Line is longer than 80 characters (found 120). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:41: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:54: Line is longer than 80 characters (found 98). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:59: Line is longer than 80 characters (found 102). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:60: Line is longer than 80 characters (found 111). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:61: Line is longer than 80 characters (found 142). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:62: Line is longer than 80 characters (found 118). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:63: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:82: Line is longer than 80 characters (found 107). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:98: Line is longer than 80 characters (found 101). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:55: Line is longer than 80 characters (found 98). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:65: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:66: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m12\ADS-2_Exam-2\Solution.java:68: Line is longer than 80 characters (found 81). [LineLength]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 Audit done.
 Files to process must be specified, found 0.

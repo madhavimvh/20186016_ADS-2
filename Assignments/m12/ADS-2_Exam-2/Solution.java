@@ -38,7 +38,8 @@ public final class Solution {
         case "DirectedPaths":
             String[] ispath = scan.nextLine().split(" ");
             // System.out.println(Arrays.toString(ispath));
-            DijkstraUndirectedSP mst = new DijkstraUndirectedSP(graph, Integer.parseInt(ispath[0]));
+            DijkstraUndirectedSP mst = new DijkstraUndirectedSP(graph,
+                Integer.parseInt(ispath[0]));
             if (mst.hasPathTo(Integer.parseInt(ispath[1]))) {
                 System.out.println(mst.distTo(Integer.parseInt(ispath[1])));
             } else {
@@ -56,10 +57,14 @@ public final class Solution {
             // If the path exists print the distance between them.
             // Other wise print "No Path Found."
             String[] ispath1 = scan.nextLine().split(" ");
-            DijkstraUndirectedSP mst1 = new DijkstraUndirectedSP(graph, Integer.parseInt(ispath1[0]));
-            if (mst1.hasPathTo(Integer.parseInt(ispath1[1])) && mst1.hasPathTo(Integer.parseInt(ispath1[2]))) {
-                System.out.println(pathdist(graph, Integer.parseInt(ispath1[0]), Integer.parseInt(ispath1[1]), Integer.parseInt(ispath1[2])));
-                path(graph, Integer.parseInt(ispath1[0]), Integer.parseInt(ispath1[1]), Integer.parseInt(ispath1[2]));
+            DijkstraUndirectedSP mst1 = new DijkstraUndirectedSP(graph,
+                Integer.parseInt(ispath1[0]));
+            if (mst1.hasPathTo(Integer.parseInt(ispath1[1]))
+                && mst1.hasPathTo(Integer.parseInt(ispath1[2]))) {
+                System.out.println(pathdist(graph, Integer.parseInt(ispath1[0]),
+                    Integer.parseInt(ispath1[1]), Integer.parseInt(ispath1[2])));
+                path(graph, Integer.parseInt(ispath1[0]), Integer.parseInt(ispath1[1]),
+                    Integer.parseInt(ispath1[2]));
                 // System.out.println(mst1.distTo(Integer.parseInt(ispath1[2])));
             } else {
                 System.out.println("No Path Found.");
@@ -79,7 +84,8 @@ public final class Solution {
      *
      * @return     { description_of_the_return_value }
      */
-    public static double pathdist(final EdgeWeightedGraph graph, final int s, final int via, final int d) {
+    public static double pathdist(final EdgeWeightedGraph graph,
+        final int s, final int via, final int d) {
         DijkstraUndirectedSP mst = new DijkstraUndirectedSP(graph, s);
         double dist1 = mst.distTo(via);
         DijkstraUndirectedSP mstt = new DijkstraUndirectedSP(graph, via);
@@ -95,7 +101,8 @@ public final class Solution {
      * @param      via    The via
      * @param      d      { parameter_description }
      */
-    public static void path(final EdgeWeightedGraph graph, final int s, final int via, final int d) {
+    public static void path(final EdgeWeightedGraph graph,
+        final int s, final int via, final int d) {
         DijkstraUndirectedSP mst = new DijkstraUndirectedSP(graph, s);
         Iterable<Edge> path1 = mst.pathTo(via);
         DijkstraUndirectedSP mstt = new DijkstraUndirectedSP(graph, via);
