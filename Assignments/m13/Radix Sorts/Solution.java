@@ -8,11 +8,11 @@ class LSD {
      * { var_description }.
      */
     private static final int BITS_PER_BYTE = 8;
+    private static final int SIZE = 256;
     /**
      * Constructs the object.
      */
-    LSD() {
-    }
+    protected LSD() { }
    /**
      * Rearranges the array of W-character strings in ascending order.
      *
@@ -21,7 +21,7 @@ class LSD {
      */
     public static void sort(final String[] a, final int w) {
         int n = a.length;
-        int re = 256;   // extend ASCII alphabet size
+        int re = SIZE;   // extend ASCII alphabet size
         String[] aux = new String[n];
         for (int d = w - 1; d >= 0; d--) {
             // sort by key-indexed counting on dth character
@@ -117,4 +117,5 @@ public final class Solution {
         lsd.sort(arr, arr[0].length());
         System.out.println(Arrays.toString(arr));
     }
+    
 }
