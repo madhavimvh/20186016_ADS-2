@@ -1,26 +1,17 @@
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:4: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:4:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:6:38: Parameter fileName should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:8: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:15: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:21: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:21:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:21:34: Parameter carver should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:21:53: Parameter seam should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:21:65: Parameter direction should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:28:32: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:28:61: '||' should be on a new line. [OperatorWrap]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:29:36: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:43:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:43:29: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:77: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:85: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:103: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:6: Class Solution should be declared as final. [FinalClass]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:19: Line is longer than 80 characters (found 105). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:26: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:38: Line is longer than 80 characters (found 102). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:45:32: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:45:61: '||' should be on a new line. [OperatorWrap]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:46:36: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:98: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:106: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\Solution.java:124: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 11 errors.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
