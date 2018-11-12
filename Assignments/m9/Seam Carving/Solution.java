@@ -70,7 +70,7 @@ public class Solution {
                 break;
 
             case "findVerticalSeam":
-                System.out.println("kjhk");
+                // System.out.println("kjhk");
                 while (scan.hasNextLine()) {
                     String file = scan.nextLine();
                     seamCarver = new SeamCarver(new Picture("/Files/" + file));
