@@ -1,7 +1,7 @@
 import java.lang.IllegalArgumentException;
 import java.awt.Color;
 import java.util.*;
-import java.util.HashMap;
+import java.lang.Math;
 public class SeamCarver {
 	private Picture picture;
 
@@ -65,7 +65,7 @@ public class SeamCarver {
 	}
 
 	public int[] findVerticalSeam() {
-		double[][] arr1 = getEnergies();
+		double[][] arr1 = transposeGrid(getEnergies());
 		return findSeam(arr1);
 	}
 	public double[][] getEnergies() {

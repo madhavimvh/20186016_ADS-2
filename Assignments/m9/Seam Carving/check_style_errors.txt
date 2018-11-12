@@ -227,7 +227,8 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarver.java:1:8: Unused import - java.lang.IllegalArgumentException. [UnusedImports]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarver.java:2:8: Unused import - java.awt.Color. [UnusedImports]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarver.java:3: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarver.java:4:8: Unused import - java.util.HashMap. [UnusedImports]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarver.java:4:1: Redundant import from the java.lang package - java.lang.Math. [RedundantImport]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarver.java:4:8: Unused import - java.lang.Math. [UnusedImports]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarver.java:5: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarver.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarver.java:6:9: Missing a Javadoc comment. [JavadocVariable]
@@ -301,7 +302,7 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarver.java:185:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarver.java:185:40: Parameter seam should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 78 errors.
+Checkstyle ends with 79 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarvermentor.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m9\Seam Carving\SeamCarvermentor.java:4: Missing a Javadoc comment. [JavadocType]
