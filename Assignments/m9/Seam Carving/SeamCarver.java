@@ -195,9 +195,6 @@ import java.lang.Math;
 // 	// }
 
 // }
-import java.awt.Color;
-
-
 public class SeamCarver {
     private static final double BORDER = 1000;
     private Picture picture;
