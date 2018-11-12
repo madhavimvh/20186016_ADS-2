@@ -16,7 +16,8 @@ public class Solution {
      */
     public static void printEnergies(final String fileName) {
         Picture picture = new Picture(fileName);
-        StdOut.printf("image is %d pixels wide by %d pixels high.\n", picture.width(), picture.height());
+        StdOut.printf("image is %d pixels wide by %d pixels high.\n",
+            picture.width(), picture.height());
 
         SeamCarver sc = new SeamCarver(picture);
 
@@ -35,7 +36,8 @@ public class Solution {
      * @param      seam       The seam
      * @param      direction  The direction
      */
-    public static void printSeam(final SeamCarver carver, final int[] seam, final boolean direction) {
+    public static void printSeam(final SeamCarver carver,
+        final int[] seam, final boolean direction) {
         double totalSeamEnergy = 0.0;
 
         for (int row = 0; row < carver.height(); row++) {
@@ -98,7 +100,6 @@ public class Solution {
                     System.out.println(Arrays.toString(seamCarver.findVerticalSeam()));
                 }
                 break;
-
             case "findHorizontalSeam":
                 while (scan.hasNextLine()) {
                     String file = scan.nextLine();
@@ -106,7 +107,6 @@ public class Solution {
                     System.out.println(Arrays.toString(seamCarver.findHorizontalSeam()));
                 }
                 break;
-
             case "removeVerticalSeam":
                 while (scan.hasNextLine()) {
                     String file = scan.nextLine();
@@ -116,7 +116,6 @@ public class Solution {
                     printSeam(seamCarver, verticalSeam, false);
                 }
                 break;
-
             case "removeHorizontalSeam":
                 while (scan.hasNextLine()) {
                     String file = scan.nextLine();
@@ -127,7 +126,6 @@ public class Solution {
                     printSeam(seamCarver, horizontalSeam, true);
                 }
                 break;
-
             case "removeHorizontalSeam removeVerticalSeam":
                 while (scan.hasNextLine()) {
                     String file = scan.nextLine();
@@ -139,7 +137,6 @@ public class Solution {
                     printEnergies("/Files/" + file);
                 }
                 break;
-
             default:
                 seamCarver = new SeamCarver(null);
                 break;
