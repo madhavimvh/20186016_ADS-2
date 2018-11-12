@@ -44,8 +44,8 @@ public final class Solution {
             for (int col = 0; col < carver.width(); col++) {
                 double energy = carver.energy(col, row);
                 String marker = " ";
-                if ((direction == true && row == seam[col])
-                    || (direction == false && col == seam[row])) {
+                if ((direction && row == seam[col])
+                    || (direction && col == seam[row])) {
                     marker = "*";
                     totalSeamEnergy += energy;
                 }
@@ -76,7 +76,6 @@ public final class Solution {
                     System.out.println(seamCarver.width());
                 }
                 break;
-
             case "height":
                 while (scan.hasNextLine()) {
                     String file = scan.nextLine();
@@ -84,7 +83,6 @@ public final class Solution {
                     System.out.println(seamCarver.height());
                 }
                 break;
-
             case "energy":
                 while (scan.hasNextLine()) {
                     String file = scan.nextLine();
