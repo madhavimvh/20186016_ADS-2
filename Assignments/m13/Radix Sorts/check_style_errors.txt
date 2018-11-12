@@ -1,14 +1,6 @@
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m13\Radix Sorts\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m13\Radix Sorts\Solution.java:6:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m13\Radix Sorts\Solution.java:14:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m13\Radix Sorts\Solution.java:23:13: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m13\Radix Sorts\Solution.java:23:17: '256' is a magic number. [MagicNumber]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m13\Radix Sorts\Solution.java:30: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m13\Radix Sorts\Solution.java:54:19: Name 'BITS' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m13\Radix Sorts\Solution.java:55:19: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m13\Radix Sorts\Solution.java:56:19: Name 'MASK' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalFinalVariableName]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m13\Radix Sorts\Solution.java:60: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m13\Radix Sorts\Solution.java:63: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m13\Radix Sorts\Solution.java:24:18: '256' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 3 errors.
