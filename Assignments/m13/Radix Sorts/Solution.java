@@ -4,6 +4,9 @@ import java.util.Arrays;
  * Class for lsd.
  */
 class LSD {
+    /**
+     * { var_description }.
+     */
     private static final int BITS_PER_BYTE = 8;
     /**
      * Constructs the object.
@@ -102,7 +105,5 @@ public final class Solution {
         }
         lsd.sort(arr, arr[0].length());
         System.out.println(Arrays.toString(arr));
-        
     }
-
 }
