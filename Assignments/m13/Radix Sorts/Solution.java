@@ -98,7 +98,7 @@ public final class Solution {
         for (int i = 0; i < intn; i++) {
             arr[i] = scan.nextLine();
         }
-        lsd.sort(arr, intn);
+        lsd.sort(arr, arr[0].length());
         System.out.println(Arrays.toString(arr));
         
     }
