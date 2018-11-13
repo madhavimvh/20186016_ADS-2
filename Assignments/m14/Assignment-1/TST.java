@@ -104,14 +104,11 @@ class TST<Value> {
         char c = key.charAt(d);
         if      (c < x.c) {
             return get(x.left,  key, d);
-        }
-        else if (c > x.c) {
+        } else if (c > x.c) {
             return get(x.right, key, d);
-        }
-        else if (d < key.length() - 1) {
+        } else if (d < key.length() - 1) {
             return get(x.mid,   key, d+1);
-        }
-        else {
+        } else {
             return x;
         }
     }
@@ -160,14 +157,11 @@ class TST<Value> {
         }
         if (c < x.c) {
             x.left  = put(x.left,  key, val, d);
-        }
-        else if (c > x.c) {
+        } else if (c > x.c) {
             x.right = put(x.right, key, val, d);
-        }
-        else if (d < key.length() - 1) {
+        } else if (d < key.length() - 1) {
             x.mid   = put(x.mid,   key, val, d+1);
-        }
-        else {
+        } else {
             x.val   = val;
         }
         return x;
@@ -202,11 +196,9 @@ class TST<Value> {
             char c = query.charAt(i);
             if      (c < x.c) {
                 x = x.left;
-            }
-            else if (c > x.c) {
+            } else if (c > x.c) {
                 x = x.right;
-            }
-            else {
+            } else {
                 i++;
                 if (x.val != null) {
                     length = i;
@@ -231,20 +223,18 @@ class TST<Value> {
     }
 
     /**
-     * Returns all of the keys in the set
-     * that start with {@code prefix}.
+     * Returns all of the keys in the set that start with {@code prefix}.
      *
      * @param      prefix  the prefix
      *
-     * @return     all of the keys in the set
-     * that start with {@code prefix}, as
+     * @return     all of the keys in the set that start with {@code prefix}, as
      *             an iterable
-     * @throws     IllegalArgumentException
-     * if {@code prefix} is {@code null}
+     * @throws     IllegalArgumentException  if {@code prefix} is {@code null}
      */
     public Iterable<String> keysWithPrefix(final String prefix) {
         if (prefix == null) {
-            throw new IllegalArgumentException("calls keysWithPrefix() with null argument");
+            throw new IllegalArgumentException(
+                "calls keysWithPrefix() with null argument");
         }
         Queue<String> queue = new Queue<String>();
         Node<Value> x = get(root, prefix, 0);
@@ -257,11 +247,22 @@ class TST<Value> {
         collect(x.mid, new StringBuilder(prefix), queue);
         return queue;
     }
-
-    private void collect(final Node<Value> x, StringBuilder prefix, Queue<String> queue) {
-        if (x == null) return;
+    /**
+     * { function_description }.
+     *
+     * @param      x       { parameter_description }
+     * @param      prefix  The prefix
+     * @param      queue   The queue
+     */
+    private void collect(final Node<Value> x,
+        final StringBuilder prefix, final Queue<String> queue) {
+        if (x == null) {
+            return;
+        }
         collect(x.left,  prefix, queue);
-        if (x.val != null) queue.enqueue(prefix.toString() + x.c);
+        if (x.val != null) {
+            queue.enqueue(prefix.toString() + x.c);
+        }
         collect(x.mid,   prefix.append(x.c), queue);
         prefix.deleteCharAt(prefix.length() - 1);
         collect(x.right, prefix, queue);
@@ -285,7 +286,7 @@ class TST<Value> {
         return queue;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      x        { parameter_description }
      * @param      prefix   The prefix
@@ -293,7 +294,8 @@ class TST<Value> {
      * @param      pattern  The pattern
      * @param      queue    The queue
      */
-    private void collect(final Node<Value> x, final StringBuilder prefix, final int i,
+    private void collect(final Node<Value> x,
+        final StringBuilder prefix, final int i,
         final String pattern, final Queue<String> queue) {
         if (x == null) {
             return;
