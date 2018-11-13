@@ -284,10 +284,20 @@ class TST<Value> {
         collect(root, new StringBuilder(), 0, pattern, queue);
         return queue;
     }
- 
+    /**
+     * { function_description }
+     *
+     * @param      x        { parameter_description }
+     * @param      prefix   The prefix
+     * @param      i        { parameter_description }
+     * @param      pattern  The pattern
+     * @param      queue    The queue
+     */
     private void collect(final Node<Value> x, final StringBuilder prefix, final int i,
-        final String pattern, Queue<String> queue) {
-        if (x == null) return;
+        final String pattern, final Queue<String> queue) {
+        if (x == null) {
+            return;
+        }
         char c = pattern.charAt(i);
         if (c == '.' || c < x.c) {
             collect(x.left, prefix, i, pattern, queue);
@@ -297,7 +307,7 @@ class TST<Value> {
                 queue.enqueue(prefix.toString() + x.c);
             }
             if (i < pattern.length() - 1) {
-                collect(x.mid, prefix.append(x.c), i+1, pattern, queue);
+                collect(x.mid, prefix.append(x.c), i + 1, pattern, queue);
                 prefix.deleteCharAt(prefix.length() - 1);
             }
         }

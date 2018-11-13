@@ -4,12 +4,8 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\SuffixArray.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\SuffixArray.java:39:12: Unused @param tag for 'text'. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\SuffixArray.java:40:12: Unused @param tag for 'index'. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\SuffixArray.java:42:37: Expected @param tag for 'textt'. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\SuffixArray.java:42:54: Expected @param tag for 'indexx'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\TST.java:37:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\TST.java:57: Line has trailing spaces. [RegexpSingleline]
@@ -38,14 +34,9 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\TST.java:261:69: Parameter queue should be final. [FinalParameters]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\TST.java:262: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\TST.java:264: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\TST.java:287: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\TST.java:288: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\TST.java:288:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\TST.java:289:31: Parameter queue should be final. [FinalParameters]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\TST.java:290: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\TST.java:300:53: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\TST.java:300:54: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\TST.java:287: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\TST.java:296: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
-Checkstyle ends with 34 errors.
+Checkstyle ends with 29 errors.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.

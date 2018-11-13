@@ -36,8 +36,8 @@ class SuffixArray {
         /**
          * Constructs the object.
          *
-         * @param      text   The text
-         * @param      index  The index
+         * @param      textt   The text
+         * @param      indexx  The index
          */
         private Suffix(final String textt, final int indexx) {
             this.text = textt;
