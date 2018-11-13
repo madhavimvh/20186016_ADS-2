@@ -34,7 +34,7 @@ class TST<Value> {
     /**
      * Initializes an empty string symbol table.
      */
-    public TST() {
+    TST() {
     }
 
     /**
@@ -56,7 +56,7 @@ class TST<Value> {
      * @return     {@code true} if this symbol
      * table contains {@code key} and
      *             {@code false} otherwise
-     * @throws     IllegalArgumentException 
+     * @throws     IllegalArgumentException
      * if {@code key} is {@code null}
      */
     public boolean contains(final String key) {
@@ -104,7 +104,8 @@ class TST<Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    private Node<Value> get(final Node<Value> x, final String key, final int d) {
+    private Node<Value> get(final Node<Value> x,
+        final String key, final int d) {
         if (x == null) {
             return null;
         }
@@ -329,3 +330,4 @@ class TST<Value> {
         }
     }
 }
+
