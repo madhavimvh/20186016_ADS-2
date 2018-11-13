@@ -10,7 +10,7 @@ class SuffixArray {
     /**
      * Initializes a suffix array for the given {@code text} string.
      *
-     * @param      text  the input string
+     * @param      textt  the input string
      */
     public SuffixArray(final String textt) {
         int n = textt.length();
