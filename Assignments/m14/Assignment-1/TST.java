@@ -18,11 +18,19 @@ class TST<Value> {
      * @param      <Value>  The value
      */
     private static class Node<Value> {
-        private char c;                        // character
-        private Node<Value> left, mid, right;  // left, middle, and right subtries
-        private Value val;                     // value associated with string
+        /**
+         * { var_description }.
+         */
+        private char c;
+        /**
+         * { item_description }.
+         */
+        private Node<Value> left, mid, right;
+        /**
+         * { var_description }.
+         */
+        private Value val;
     }
-
     /**
      * Initializes an empty string symbol table.
      */

@@ -133,7 +133,7 @@ class SuffixArray {
         if (i < 1 || i >= suffixes.length) {
             throw new IllegalArgumentException();
         }
-        return lcpSuffix(suffixes[i], suffixes[i-1]);
+        return lcpSuffix(suffixes[i], suffixes[i - 1]);
     }
 
     /**
@@ -186,11 +186,9 @@ class SuffixArray {
             int cmp = compare(query, suffixes[mid]);
             if (cmp < 0) {
                 hi = mid - 1;
-            }
-            else if (cmp > 0) {
+            } else if (cmp > 0) {
                 lo = mid + 1;
-            }
-            else {
+            } else {
                 return mid;
             }
         }
