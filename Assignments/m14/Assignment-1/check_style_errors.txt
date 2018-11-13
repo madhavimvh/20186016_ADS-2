@@ -4,10 +4,10 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\SuffixArray.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\SuffixArray.java:15:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\SuffixArray.java:27: Class Suffix should be declared as final. [FinalClass]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\SuffixArray.java:42:37: 'text' hides a field. [HiddenField]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\SuffixArray.java:42:53: 'index' hides a field. [HiddenField]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\SuffixArray.java:39:12: Unused @param tag for 'text'. [JavadocMethod]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\SuffixArray.java:40:12: Unused @param tag for 'index'. [JavadocMethod]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\SuffixArray.java:42:37: Expected @param tag for 'textt'. [JavadocMethod]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m14\Assignment-1\SuffixArray.java:42:54: Expected @param tag for 'indexx'. [JavadocMethod]
 Audit done.
 Checkstyle ends with 5 errors.
 Starting audit...

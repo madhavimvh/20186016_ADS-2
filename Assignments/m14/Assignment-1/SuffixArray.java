@@ -12,7 +12,7 @@ class SuffixArray {
      *
      * @param      textt  the input string
      */
-    public SuffixArray(final String textt) {
+    SuffixArray(final String textt) {
         int n = textt.length();
         this.suffixes = new Suffix[n];
         for (int i = 0; i < n; i++) {
@@ -24,7 +24,7 @@ class SuffixArray {
     /**
      * Class for suffix.
      */
-    private static class Suffix implements Comparable<Suffix> {
+    private static final class Suffix implements Comparable<Suffix> {
         /**
          * { var_description }.
          */
@@ -39,9 +39,9 @@ class SuffixArray {
          * @param      text   The text
          * @param      index  The index
          */
-        private Suffix(final String text, final int index) {
-            this.text = text;
-            this.index = index;
+        private Suffix(final String textt, final int indexx) {
+            this.text = textt;
+            this.index = indexx;
         }
         /**
          * { function_description }.
