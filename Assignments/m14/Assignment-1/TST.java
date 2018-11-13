@@ -38,9 +38,11 @@ class TST<Value> {
     }
 
     /**
-     * Returns the number of key-value pairs in this symbol table.
+     * Returns the number of key-value pairs in
+     * this symbol table.
      *
-     * @return     the number of key-value pairs in this symbol table
+     * @return     the number of key-value pairs
+     * in this symbol table
      */
     public int size() {
         return n;
@@ -84,7 +86,8 @@ class TST<Value> {
                 "calls get() with null argument");
         }
         if (key.length() == 0) {
-            throw new IllegalArgumentException("key must have length >= 1");
+            throw new IllegalArgumentException(
+                "key must have length >= 1");
         }
         Node<Value> x = get(root, key, 0);
         if (x == null) {
@@ -92,8 +95,15 @@ class TST<Value> {
         }
         return x.val;
     }
-
-    // return subtrie corresponding to given key
+    /**
+     * { function_description }.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     * @param      d     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node<Value> get(final Node<Value> x, final String key, final int d) {
         if (x == null) {
             return null;
@@ -107,7 +117,7 @@ class TST<Value> {
         } else if (c > x.c) {
             return get(x.right, key, d);
         } else if (d < key.length() - 1) {
-            return get(x.mid,   key, d+1);
+            return get(x.mid,   key, d + 1);
         } else {
             return x;
         }
@@ -141,14 +151,15 @@ class TST<Value> {
     /**
      * { function_description }.
      *
-     * @param      x     { parameter_description }
+     * @param      a     { parameter_description }
      * @param      key   The key
      * @param      val   The value
      * @param      d     { parameter_description }
      *
      * @return     { description_of_the_return_value }
      */
-    private Node<Value> put(final Node<Value> a, final String key, final Value val, int d) {
+    private Node<Value> put(final Node<Value> a,
+        final String key, final Value val, final int d) {
         Node<Value> x = a;
         char c = key.charAt(d);
         if (x == null) {
@@ -160,7 +171,7 @@ class TST<Value> {
         } else if (c > x.c) {
             x.right = put(x.right, key, val, d);
         } else if (d < key.length() - 1) {
-            x.mid   = put(x.mid,   key, val, d+1);
+            x.mid   = put(x.mid,   key, val, d + 1);
         } else {
             x.val   = val;
         }
