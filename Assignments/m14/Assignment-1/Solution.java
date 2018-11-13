@@ -1,8 +1,20 @@
 import java.util.Scanner;
 import java.util.Arrays;
-
-public class Solution {
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		String[] words = loadWords();
 		// System.out.println(Arrays.toString(words));
 		Scanner scan = new Scanner(System.in);
@@ -20,7 +32,11 @@ public class Solution {
 		}
 		//Your code goes here...
 	}
-
+	/**
+	 * Loads words.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public static String[] loadWords() {
 		In in = new In("/Files/dictionary-algs4.txt");
 		String[] words = in.readAllStrings();
