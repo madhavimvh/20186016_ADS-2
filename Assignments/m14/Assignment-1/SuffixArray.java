@@ -15,8 +15,9 @@ class SuffixArray {
     public SuffixArray(final String textt) {
         int n = textt.length();
         this.suffixes = new Suffix[n];
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++) {
             suffixes[i] = new Suffix(textt, i);
+        }
         Arrays.sort(suffixes);
     }
 
@@ -68,11 +69,17 @@ class SuffixArray {
          * @return     { description_of_the_return_value }
          */
         public int compareTo(final Suffix that) {
-            if (this == that) return 0;  // optimization
+            if (this == that) {
+                return 0;
+            }
             int n = Math.min(this.length(), that.length());
             for (int i = 0; i < n; i++) {
-                if (this.charAt(i) < that.charAt(i)) return -1;
-                if (this.charAt(i) > that.charAt(i)) return +1;
+                if (this.charAt(i) < that.charAt(i)) {
+                    return -1;
+                }
+                if (this.charAt(i) > that.charAt(i)) {
+                    return +1;
+                }
             }
             return this.length() - that.length();
         }
@@ -105,7 +112,9 @@ class SuffixArray {
      * @throws     java.lang.IllegalArgumentException  unless {@code 0 <= i < n}
      */
     public int index(final int i) {
-        if (i < 0 || i >= suffixes.length) throw new IllegalArgumentException();
+        if (i < 0 || i >= suffixes.length) {
+            throw new IllegalArgumentException();
+        }
         return suffixes[i].index;
     }
 
@@ -121,7 +130,9 @@ class SuffixArray {
      * @throws     java.lang.IllegalArgumentException  unless {@code 1 <= i < n}
      */
     public int lcp(final int i) {
-        if (i < 1 || i >= suffixes.length) throw new IllegalArgumentException();
+        if (i < 1 || i >= suffixes.length) {
+            throw new IllegalArgumentException();
+        }
         return lcpSuffix(suffixes[i], suffixes[i-1]);
     }
 
@@ -136,7 +147,9 @@ class SuffixArray {
     private static int lcpSuffix(final Suffix s, final Suffix t) {
         int n = Math.min(s.length(), t.length());
         for (int i = 0; i < n; i++) {
-            if (s.charAt(i) != t.charAt(i)) return i;
+            if (s.charAt(i) != t.charAt(i)) {
+                return i;
+            }
         }
         return n;
     }
@@ -151,7 +164,9 @@ class SuffixArray {
      * unless {@code 0 <= i < n}
      */
     public String select(final int i) {
-        if (i < 0 || i >= suffixes.length) throw new IllegalArgumentException();
+        if (i < 0 || i >= suffixes.length) {
+            throw new IllegalArgumentException();
+        }
         return suffixes[i].toString();
     }
     /**
@@ -164,17 +179,23 @@ class SuffixArray {
      * @return     the number of suffixes strictly less than {@code query}
      */
     public int rank(final String query) {
-        int lo = 0, hi = suffixes.length - 1;
+        int lo = 0;
+        int hi = suffixes.length - 1;
         while (lo <= hi) {
             int mid = lo + (hi - lo) / 2;
             int cmp = compare(query, suffixes[mid]);
-            if (cmp < 0) hi = mid - 1;
-            else if (cmp > 0) lo = mid + 1;
-            else return mid;
+            if (cmp < 0) {
+                hi = mid - 1;
+            }
+            else if (cmp > 0) {
+                lo = mid + 1;
+            }
+            else {
+                return mid;
+            }
         }
         return lo;
     }
-
     /**
      * { function_description }.
      *
@@ -186,8 +207,12 @@ class SuffixArray {
     private static int compare(final String query, final Suffix suffix) {
         int n = Math.min(query.length(), suffix.length());
         for (int i = 0; i < n; i++) {
-            if (query.charAt(i) < suffix.charAt(i)) return -1;
-            if (query.charAt(i) > suffix.charAt(i)) return +1;
+            if (query.charAt(i) < suffix.charAt(i)) {
+                return -1;
+            }
+            if (query.charAt(i) > suffix.charAt(i)) {
+                return +1;
+            }
         }
         return query.length() - suffix.length();
     }
