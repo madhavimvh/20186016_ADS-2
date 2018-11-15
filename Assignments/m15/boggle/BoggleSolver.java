@@ -2,9 +2,11 @@ import java.util.Set;
 import java.util.HashSet;
 public class BoggleSolver {
 	private TrieST<Integer> dicTrie;
+	private Set<String> validwords;
 	// Initializes the data structure using the given array of strings as the dictionary.
 	// (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
 	public BoggleSolver(String[] dictionary) {
+		validwords = new HashSet<String>();
 		dicTrie = new TrieST<Integer>();
 		int[] points = {0, 0, 0, 1, 1, 2, 3, 5, 11};
 		for (String word : dictionary) {
@@ -18,44 +20,44 @@ public class BoggleSolver {
 
 	// Returns the set of all valid words in the given Boggle board, as an Iterable.
 	public Iterable<String> getAllValidWords(BoggleBoard board) {
-		Set<String> validwords = new HashSet<String>();
 		for (int i = 0; i < board.rows(); i++) {
 			for (int j = 0; j < board.cols(); i++) {
 				boolean[][] marked = new boolean[board.rows()][board.cols()];
-				dfs(validwords, i, j, marked, board, "");
+				String word = "";
+				word = appendCharacter("", board.getLetter(i, j));
+				dfs(i, j, marked, board, word);
 			}
 		}
 		return validwords;
 	}
-	private void dfs(Set<String> validwords, int row, int col, boolean[][] marked, BoggleBoard board, String prefix) {
-		if (marked[row][col]) {
-			return;
-		}
-		String word = prefix;
-		char letter = board.getLetter(row, col);
+	private String appendCharacter(String word, char letter) {
 		if (letter == 'Q') {
 			word += "QU";
 		} else {
 			word += letter;
 		}
-		if (!dicTrie.hasPrefix(word)) {
-			return;
+		return word;
+	}
+	private boolean isValidword(String word) {
+		if (word.length() < 3) {
+			return false;
 		}
-		if (word.length() > 2 && dicTrie.contains(word)) {
+		return dicTrie.contains(word);
+	}
+	private void dfs(int rows, int cols, boolean[][] marked, BoggleBoard board, String word) {
+		if (isValidword(word)) {
 			validwords.add(word);
 		}
-		marked[row][col] = true;
-		for (int i = -1; i <= 1; i++) {
-			for (int j = -1; j <= 1; j++) {
-				if (i == 0 || j == 0) {
-					continue;
-				}
-				if ((row + i >= 0) && (row + i < board.rows()) && (col + j >= 0) && (col + j < board.cols())) {
-					dfs(validwords, row + i, col + j, marked, board, word);					
+		marked[rows][cols] = true;
+		for (int row = rows - 1; row < board.rows(); row++) {
+			for (int col = cols - 1; col < board.cols(); col++) {
+				if (row >= 0 && row < board.rows() && col >= 0 && cols < board.cols() && !marked[row][col]) {
+					String sequence = appendCharacter(word, board.getLetter(row, col));
+					dfs(row, col, marked, board, sequence);
+
 				}
 			}
 		}
-		marked[row][col] = false;
 
 	}
 

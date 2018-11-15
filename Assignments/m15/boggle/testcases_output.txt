@@ -4,8 +4,8 @@ Score = 33
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -15,8 +15,8 @@ Score = 84
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -26,8 +26,8 @@ Score = 1
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -37,8 +37,8 @@ Score = 2
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -48,8 +48,8 @@ Score = 3
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -59,8 +59,8 @@ Score = 1000
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -70,8 +70,8 @@ Score = 400
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -81,8 +81,8 @@ Score = 7
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -92,8 +92,8 @@ Score = 155
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -103,8 +103,8 @@ Score = 172
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -114,8 +114,8 @@ Score = 68
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 32
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -125,8 +125,8 @@ Score = 147
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -136,8 +136,8 @@ Score = 687
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -147,8 +147,8 @@ Score = 0
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -158,8 +158,8 @@ Score = 172
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -168,7 +168,10 @@ Expected Output:
 Score = 129
 
 Your Output: 
-
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
+	at Solution.main(Solution.java:32)
 ----------------------------------------
 
 ########## Testcase 16: Failed ##########
@@ -177,8 +180,8 @@ Score = 2
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -188,8 +191,8 @@ Score = 1
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -199,8 +202,8 @@ Score = 14
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -209,7 +212,10 @@ Expected Output:
 Score = 11
 
 Your Output: 
-
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 9
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
+	at Solution.main(Solution.java:32)
 ----------------------------------------
 
 ########## Testcase 20: Failed ##########
@@ -217,7 +223,10 @@ Expected Output:
 Score = 33
 
 Your Output: 
-
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
+	at Solution.main(Solution.java:32)
 ----------------------------------------
 
 ########## Testcase 21: Failed ##########
@@ -226,8 +235,8 @@ Score = 23
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -237,8 +246,8 @@ Score = 24
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 32
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -247,7 +256,10 @@ Expected Output:
 Score = 30
 
 Your Output: 
-
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
+	at Solution.main(Solution.java:32)
 ----------------------------------------
 
 ########## Testcase 24: Failed ##########
@@ -256,8 +268,8 @@ Score = 0
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -267,8 +279,8 @@ Score = 26539
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -278,8 +290,8 @@ Score = 19797
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -289,8 +301,8 @@ Score = 27325
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
@@ -300,8 +312,8 @@ Score = 32175
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at BoggleSolver.dfs(BoggleSolver.java:31)
-	at BoggleSolver.getAllValidWords(BoggleSolver.java:25)
+	at BoggleBoard.getLetter(BoggleBoard.java:170)
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:27)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
 
