@@ -50,10 +50,6 @@ class TrieST<Value> {
         char c = key.charAt(d);
         return get(x.next[c], key, d+1);
     }
-    public boolean hasPrefix(String s) {
-        Node x = get(root, s, 0);
-        return x != null;
-    }
 
     /**
      * Inserts the key-value pair into the symbol table, overwriting the old value
