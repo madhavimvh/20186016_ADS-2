@@ -10,8 +10,9 @@ public class BoggleSolver {
 		for (String word : dictionary) {
 			if (word.length() >= 8) {
 				dicTrie.put(word, 11);
-			}
+			} else {
 				dicTrie.put(word, points[word.length()]);
+			}
 		}
 	}
 
@@ -21,12 +22,12 @@ public class BoggleSolver {
 		for (int i = 0; i < board.rows(); i++) {
 			for (int j = 0; j < board.cols(); i++) {
 				boolean[][] marked = new boolean[board.rows()][board.cols()];
-				dfs(validwords, i, j, marked, board);
+				dfs(validwords, i, j, marked, board, "");
 			}
 		}
 		return new Bag<String>();
 	}
-	public void dfs(Set<String> validwords, int row, int col, boolean[][] marked, BoggleBoard board) {
+	public void dfs(Set<String> validwords, int row, int col, boolean[][] marked, BoggleBoard board, String prefix) {
 		if (marked[row][col]) {
 			return;
 		}
@@ -50,7 +51,7 @@ public class BoggleSolver {
 					continue;
 				}
 				if ((row + i >= 0) && (row + i < board.rows()) && (col + j >= 0) && (col + j < board.cols())) {
-					dfs(validwords, row + i, col + j, marked, board);					
+					dfs(validwords, row + i, col + j, marked, board, word);					
 				}
 			}
 		}
