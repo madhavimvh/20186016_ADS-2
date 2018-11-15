@@ -3,6 +3,7 @@ import java.util.HashSet;
 public class BoggleSolver {
 	private TrieST<Integer> dicTrie;
 	private Set<String> validwords;
+	private boolean[][] marked;
 	// Initializes the data structure using the given array of strings as the dictionary.
 	// (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
 	public BoggleSolver(String[] dictionary) {
@@ -20,12 +21,11 @@ public class BoggleSolver {
 
 	// Returns the set of all valid words in the given Boggle board, as an Iterable.
 	public Iterable<String> getAllValidWords(BoggleBoard board) {
+		marked = new boolean[board.rows()][board.cols()];
 		for (int i = 0; i < board.rows(); i++) {
-			for (int j = 0; j < board.cols(); i++) {
-				boolean[][] marked = new boolean[board.rows()][board.cols()];
-				String word = "";
-				word = appendCharacter("", board.getLetter(i, j));
-				dfs(i, j, marked, board, word);
+			for (int j = 0; j < board.cols(); j++) {
+				String word = appendCharacter("", board.getLetter(i, j));
+				dfs(i, j, board, word);
 			}
 		}
 		return validwords;
@@ -44,26 +44,26 @@ public class BoggleSolver {
 		}
 		return dicTrie.contains(word);
 	}
-	private void dfs(int rows, int cols, boolean[][] marked, BoggleBoard board, String word) {
+	private void dfs(int rows, int cols, BoggleBoard board, String word) {
 		if (isValidword(word)) {
 			validwords.add(word);
 		}
 		marked[rows][cols] = true;
-		for (int row = rows - 1; row < board.rows(); row++) {
-			for (int col = cols - 1; col < board.cols(); col++) {
-				if (row >= 0 && row < board.rows() && col >= 0 && cols < board.cols() && !marked[row][col]) {
+		for (int row = rows - 1; row <= rows + 1; row++) {
+			for (int col = cols - 1; col <= cols + 1; col++) {
+				if (row >= 0 && row < board.rows() && col >= 0 && col < board.cols() && !marked[row][col]) {
 					String sequence = appendCharacter(word, board.getLetter(row, col));
-					dfs(row, col, marked, board, sequence);
-
+					dfs(row, col, board, sequence);
 				}
 			}
 		}
-
+		marked[rows][cols] = false;
 	}
 
 	// Returns the score of the given word if it is in the dictionary, zero otherwise.
 	// (You can assume the word contains only the uppercase letters A through Z.)
 	public int scoreOf(String word) {
+		if (word == null) return 0;
 		if (dicTrie.contains(word)) {
 			return dicTrie.get(word);
 		} else {
