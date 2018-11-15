@@ -25,13 +25,13 @@ public class BoggleSolver {
 				dfs(validwords, i, j, marked, board, "");
 			}
 		}
-		return new Bag<String>();
+		return validwords;
 	}
 	public void dfs(Set<String> validwords, int row, int col, boolean[][] marked, BoggleBoard board, String prefix) {
 		if (marked[row][col]) {
 			return;
 		}
-		String word = "";
+		String word = prefix;
 		char letter = board.getLetter(row, col);
 		if (letter == 'Q') {
 			word += "QU";
