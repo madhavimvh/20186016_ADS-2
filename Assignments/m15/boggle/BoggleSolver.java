@@ -35,11 +35,13 @@ public class BoggleSolver {
 	}
 	private String appendCharacter(String word, char letter) {
 		if (letter == 'Q') {
-			word += "QU";
+			// word += "QU";
+			return word + "QU";
 		} else {
-			word += letter;
+			// word += letter;
+			return word + letter;
 		}
-		return word;
+		// return word;
 	}
 	private boolean isValidword(String word) {
 		if (word.length() < 3) {

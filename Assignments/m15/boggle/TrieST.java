@@ -51,7 +51,7 @@ class TrieST<Value> {
         return get(x.next[c - 65], key, d+1);
     }
     public boolean hasPrefix(String s) {
-        Iterable<String> x = keysWithPrefix(s);
+        Node x = get(root, s, 0);
         return x != null;
     }
 
