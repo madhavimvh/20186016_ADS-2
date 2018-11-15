@@ -77,7 +77,7 @@ class TrieST<Value> {
             return x;
         }
         char c = key.charAt(d);
-        x.next[c - 65] = put(x.next[ - 65], key, val, d+1);
+        x.next[c - 65] = put(x.next[c - 65], key, val, d+1);
         return x;
     }
 

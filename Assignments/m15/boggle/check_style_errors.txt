@@ -1289,10 +1289,9 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m15\boggle\TrieST.java:73: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m15\boggle\TrieST.java:75: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m15\boggle\TrieST.java:80:20: '65' is a magic number. [MagicNumber]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m15\boggle\TrieST.java:80:38: '-65' is a magic number. [MagicNumber]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m15\boggle\TrieST.java:80:39: '-' is followed by whitespace. [NoWhitespaceAfter]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m15\boggle\TrieST.java:80:56: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m15\boggle\TrieST.java:80:57: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m15\boggle\TrieST.java:80:41: '65' is a magic number. [MagicNumber]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m15\boggle\TrieST.java:80:57: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m15\boggle\TrieST.java:80:58: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m15\boggle\TrieST.java:94: Line is longer than 80 characters (found 85). [LineLength]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m15\boggle\TrieST.java:116:44: Parameter prefix should be final. [FinalParameters]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m15\boggle\TrieST.java:123:5: Missing a Javadoc comment. [JavadocMethod]
@@ -1345,4 +1344,4 @@ Starting audit...
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m15\boggle\TrieST.java:218: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\mhynd\Desktop\assgnmnt\ADS - 2 Updated\20186016_ADS-2\Assignments\m15\boggle\TrieST.java:219: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 99 errors.
+Checkstyle ends with 98 errors.
