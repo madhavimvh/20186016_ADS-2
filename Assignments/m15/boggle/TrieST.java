@@ -1,5 +1,5 @@
 class TrieST<Value> {
-    private static final int R = 256;        // extended ASCII
+    private static final int R = 26;        // extended ASCII
 
 
     private Node root;      // root of trie
@@ -48,7 +48,7 @@ class TrieST<Value> {
         if (x == null) return null;
         if (d == key.length()) return x;
         char c = key.charAt(d);
-        return get(x.next[c], key, d+1);
+        return get(x.next[c - 65], key, d+1);
     }
     public boolean hasPrefix(String s) {
         Iterable<String> x = keysWithPrefix(s);
@@ -77,7 +77,7 @@ class TrieST<Value> {
             return x;
         }
         char c = key.charAt(d);
-        x.next[c] = put(x.next[c], key, val, d+1);
+        x.next[c - 65] = put(x.next[ - 65], key, val, d+1);
         return x;
     }
 
