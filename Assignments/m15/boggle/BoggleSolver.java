@@ -27,7 +27,7 @@ public class BoggleSolver {
 		}
 		return validwords;
 	}
-	public void dfs(Set<String> validwords, int row, int col, boolean[][] marked, BoggleBoard board, String prefix) {
+	private void dfs(Set<String> validwords, int row, int col, boolean[][] marked, BoggleBoard board, String prefix) {
 		if (marked[row][col]) {
 			return;
 		}
