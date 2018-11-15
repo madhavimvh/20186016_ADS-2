@@ -39,16 +39,17 @@ public class Solution {
 			try {
 				dictionaryName = StdIn.readLine();
 				in = new In("/Files/" + dictionaryName);
-				dictionary = in.readAllStrings();
-				solver = new BoggleSolver(dictionary);
 				board = null;
+				String[] dict = in.readAllStrings();
+				solver = new BoggleSolver(dict);
 				score = 0;
 				for (String word : solver.getAllValidWords(board)) {
 					score += solver.scoreOf(word);
 				}
 				StdOut.println("Score = " + score);
 			} catch (Exception ex) {
-				System.out.println(ex.getMessage());
+				System.out.println("board is null");
+				//ex.printStackTrace();
 			}
 			break;
 		}

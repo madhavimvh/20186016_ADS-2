@@ -48,9 +48,9 @@ public class BoggleSolver {
 		return dicTrie.contains(word);
 	}
 	private void dfs(int rows, int cols, BoggleBoard board, String word) {
-		// if (!dicTrie.hasPrefix(word)) {
-		// 	return;
-		// }
+		if (!dicTrie.hasPrefix(word)) {
+			return;
+		}
 		if (isValidword(word)) {
 			validwords.add(word);
 		}
