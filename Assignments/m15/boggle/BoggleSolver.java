@@ -7,6 +7,7 @@ public final class BoggleSolver {
     /**
      * { var_description }.
      */
+    // private static final int FOUR = 4;
     private static final int FIVE = 5;
     /**
      * { var_description }.
@@ -40,7 +41,7 @@ public final class BoggleSolver {
     public BoggleSolver(final String[] dictionary) {
         validwords = new HashSet<String>();
         dicTrie = new TrieST<Integer>();
-        int[] points = {0, 0, 0, 1, 1, 2, 2 + 2, FIVE, ELE};
+        int[] points = {0, 0, 0, 1, 1, 2, 2 + 1, FIVE, ELE};
         for (String word : dictionary) {
             if (word.length() >= EIGHT) {
                 dicTrie.put(word, ELE);
