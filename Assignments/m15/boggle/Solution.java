@@ -1,9 +1,8 @@
-import java.util.Arrays;
+// import java.util.Arrays;
 /**
  * Class for solution.
  */
 public final class Solution {
-
     /**
      * Constructs the object.
      */
