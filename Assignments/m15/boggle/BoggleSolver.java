@@ -4,6 +4,10 @@ import java.util.HashSet;
  * Class for boggle solver.
  */
 public final class BoggleSolver {
+    private static final int FIVE = 5;
+    private static final int ELE = 11;
+    private static final int EIGHT = 8;
+
     /**
      * { var_description }.
      */
@@ -28,10 +32,10 @@ public final class BoggleSolver {
     public BoggleSolver(final String[] dictionary) {
         validwords = new HashSet<String>();
         dicTrie = new TrieST<Integer>();
-        int[] points = {0, 0, 0, 1, 1, 2, 3, 5, 11};
+        int[] points = {0, 0, 0, 1, 1, 2, 2 + 2, FIVE, ELE};
         for (String word : dictionary) {
-            if (word.length() >= 8) {
-                dicTrie.put(word, 11);
+            if (word.length() >= EIGHT) {
+                dicTrie.put(word, ELE);
             } else {
                 dicTrie.put(word, points[word.length()]);
             }
@@ -61,12 +65,13 @@ public final class BoggleSolver {
     /**
      * Appends a character.
      *
-     * @param      word    The word
+     * @param      wordd   The word
      * @param      letter  The letter
      *
      * @return     { description_of_the_return_value }
      */
-    private String appendCharacter(final String wordd, final char letter) {
+    private String appendCharacter(final String wordd,
+        final char letter) {
         String word = wordd;
         if (letter == 'Q') {
             word += "QU";
@@ -98,7 +103,8 @@ public final class BoggleSolver {
      * @param      board  The board
      * @param      word   The word
      */
-    private void dfs(final int rows, final int cols, final BoggleBoard board, final String word) {
+    private void dfs(final int rows, final int cols,
+        final BoggleBoard board, final String word) {
         if (!dicTrie.hasPrefix(word)) {
             return;
         }
@@ -108,7 +114,8 @@ public final class BoggleSolver {
         marked[rows][cols] = true;
         for (int row = rows - 1; row <= rows + 1; row++) {
             for (int col = cols - 1; col <= cols + 1; col++) {
-                if (row >= 0 && row < board.rows() && col >= 0 && col < board.cols() && !marked[row][col]) {
+                if (row >= 0 && row < board.rows() && col >= 0
+                    && col < board.cols() && !marked[row][col]) {
                     String sequence = appendCharacter(word, board.getLetter(row, col));
                     dfs(row, col, board, sequence);
                 }
@@ -116,8 +123,10 @@ public final class BoggleSolver {
         }
         marked[rows][cols] = false;
     }
-    // Returns the score of the given word if it is in the dictionary, zero otherwise.
-    // (You can assume the word contains only the uppercase letters A through Z.)
+    // Returns the score of the given word if
+    // it is in the dictionary, zero otherwise.
+    // (You can assume the word contains only
+    // the uppercase letters A through Z.)
     /**
      * { function_description }.
      *
@@ -126,7 +135,9 @@ public final class BoggleSolver {
      * @return     { description_of_the_return_value }
      */
     public int scoreOf(final String word) {
-        if (word == null) return 0;
+        if (word == null) {
+            return 0;
+        }
         if (dicTrie.contains(word)) {
             return dicTrie.get(word);
         } else {
