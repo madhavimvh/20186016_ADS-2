@@ -4,10 +4,18 @@ import java.util.HashSet;
  * Class for boggle solver.
  */
 public final class BoggleSolver {
+    /**
+     * { var_description }.
+     */
     private static final int FIVE = 5;
+    /**
+     * { var_description }.
+     */
     private static final int ELE = 11;
+    /**
+     * { var_description }.
+     */
     private static final int EIGHT = 8;
-
     /**
      * { var_description }.
      */
@@ -41,7 +49,8 @@ public final class BoggleSolver {
             }
         }
     }
-    // Returns the set of all valid words in the given Boggle board, as an Iterable.
+    // Returns the set of all valid words in
+    //the given Boggle board, as an Iterable.
     /**
      * Gets all valid words.
      *
@@ -90,7 +99,7 @@ public final class BoggleSolver {
      * @return     True if validword, False otherwise.
      */
     private boolean isValidword(final String word) {
-        if (word.length() < 3) {
+        if (word.length() < 2 + 1) {
             return false;
         }
         return dicTrie.contains(word);
@@ -116,7 +125,8 @@ public final class BoggleSolver {
             for (int col = cols - 1; col <= cols + 1; col++) {
                 if (row >= 0 && row < board.rows() && col >= 0
                     && col < board.cols() && !marked[row][col]) {
-                    String sequence = appendCharacter(word, board.getLetter(row, col));
+                    String sequence = appendCharacter(word,
+                        board.getLetter(row, col));
                     dfs(row, col, board, sequence);
                 }
             }
