@@ -2,6 +2,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 
 
 public class Solution {
@@ -130,9 +131,12 @@ class T9 {
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
 		// System.out.println(t9Signature);
-		ArrayList<String> freq = new ArrayList<String>();
-		freq.add(t9Signature);
-		return freq;
+		// HashMap<Integer, ArrayList<Character>> enum = new HashMap<Integer, ArrayList<Character>>();
+		// for (int i = 0; i < 10; i++) {
+		// 	enum.add()
+		// }
+		
+		return null;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
@@ -140,8 +144,8 @@ class T9 {
 		BinarySearchST<Integer, String> maxfreq = new BinarySearchST<Integer, String>();
 		ArrayList<String> max = new ArrayList<String>();
 		for (String word : words) {
-			System.out.println(word);
-			System.out.println(tst.get(word));
+			// System.out.println(word);
+			// System.out.println(tst.get(word));
 			maxfreq.put(tst.get(word), word);
 		}
 		for (int i = 0; i < k; i++) {
