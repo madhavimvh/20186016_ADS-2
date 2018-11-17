@@ -9,7 +9,7 @@ import java.util.Collections;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -28,7 +28,8 @@ public class Solution {
         switch (cases) {
         case "loadDictionary":
             // input000.txt and output000.txt
-            BinarySearchST<String, Integer> hash = loadDictionary("/Files/t9.csv");
+            BinarySearchST<String, Integer> hash
+            = loadDictionary("/Files/t9.csv");
             while (scan.hasNextLine()) {
                 String key = scan.nextLine();
                 System.out.println(hash.get(key));
@@ -98,7 +99,7 @@ public class Solution {
 
     // Don't modify this method.
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      file  The file
      *
@@ -148,7 +149,7 @@ class T9 {
      *
      * @param      st    { parameter_description }
      */
-    public T9(final BinarySearchST<String, Integer> st) {
+    T9(final BinarySearchST<String, Integer> st) {
         tst = new TST<Integer>();
         for (String word : st.keys()) {
             tst.put(word, st.get(word));
