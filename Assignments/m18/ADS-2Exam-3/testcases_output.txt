@@ -285,8 +285,8 @@ keep
 Your Output: 
 Exception in thread "main" java.util.NoSuchElementException: called max() with empty symbol table
 	at BinarySearchST.max(BinarySearchST.java:285)
-	at T9.getSuggestions(Solution.java:202)
-	at T9.t9(Solution.java:213)
-	at Solution.main(Solution.java:77)
+	at T9.getSuggestions(Solution.java:246)
+	at T9.t9(Solution.java:264)
+	at Solution.main(Solution.java:87)
 ----------------------------------------
 
