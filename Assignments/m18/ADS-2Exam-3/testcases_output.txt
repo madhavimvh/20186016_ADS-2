@@ -157,8 +157,56 @@ fine
 seeking
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:39)
+43556
+74992
+9428
+786329
+2255
+4686583
+346474
+4663
+2288379
+3743637
+9282437
+6676464
+8664448
+7467
+7463
+269
+529
+74337
+2666
+327
+66737
+7335
+78337
+7363
+762533
+87437
+7378
+22837
+94737
+75867
+8437
+3678437
+966
+729464
+6333537
+52637
+42837
+72257
+2278464
+7225464
+73337
+2682437
+73357
+73377
+226
+228
+64637
+54837
+3463
+7335464
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -169,8 +217,10 @@ right
 words
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:58)
+is
+right
+hello
+words
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -222,7 +272,10 @@ paper
 keep
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:71)
+Exception in thread "main" java.lang.IllegalArgumentException: first argument to put() is null
+	at BinarySearchST.put(BinarySearchST.java:179)
+	at T9.getSuggestions(Solution.java:142)
+	at T9.t9(Solution.java:155)
+	at Solution.main(Solution.java:72)
 ----------------------------------------
 

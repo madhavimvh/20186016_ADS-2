@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 
 public class Solution {
@@ -127,13 +128,25 @@ class T9 {
 
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
-		return null;
+		// System.out.println(t9Signature);
+		ArrayList<String> freq = new ArrayList<String>();
+		freq.add(t9Signature);
+		return freq;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
+		BinarySearchST<Integer, String> maxfreq = new BinarySearchST<Integer, String>();
+		ArrayList<String> max = new ArrayList<String>();
+		for (String word : words) {
+			maxfreq.put(tst.get(word), word);
+		}
+		for (int i = 0; i < k; i++) {
+			max.add(maxfreq.get(maxfreq.max()));
+			maxfreq.deleteMax();
+		}
 		// your code goes here
-		return null;
+		return max;
 	}
 
 	// final output
