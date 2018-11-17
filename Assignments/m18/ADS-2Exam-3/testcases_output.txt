@@ -218,8 +218,20 @@ words
 
 Your Output: 
 is
+704
+within
+6
+words
+22
+rights
+2
 right
+87
 hello
+42
+hello
+is
+right
 words
 ----------------------------------------
 
@@ -272,10 +284,12 @@ paper
 keep
 
 Your Output: 
+873283
+null
 Exception in thread "main" java.lang.IllegalArgumentException: first argument to put() is null
 	at BinarySearchST.put(BinarySearchST.java:179)
-	at T9.getSuggestions(Solution.java:142)
-	at T9.t9(Solution.java:155)
-	at Solution.main(Solution.java:72)
+	at T9.getSuggestions(Solution.java:145)
+	at T9.t9(Solution.java:161)
+	at Solution.main(Solution.java:73)
 ----------------------------------------
 

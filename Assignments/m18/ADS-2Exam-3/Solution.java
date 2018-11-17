@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.Collections;
 
 
 public class Solution {
@@ -139,13 +140,18 @@ class T9 {
 		BinarySearchST<Integer, String> maxfreq = new BinarySearchST<Integer, String>();
 		ArrayList<String> max = new ArrayList<String>();
 		for (String word : words) {
+			System.out.println(word);
+			System.out.println(tst.get(word));
 			maxfreq.put(tst.get(word), word);
 		}
 		for (int i = 0; i < k; i++) {
+			// System.out.println(maxfreq.max());
+			// System.out.println(maxfreq.get(maxfreq.max()));
 			max.add(maxfreq.get(maxfreq.max()));
 			maxfreq.deleteMax();
 		}
 		// your code goes here
+		Collections.sort(max);
 		return max;
 	}
 
