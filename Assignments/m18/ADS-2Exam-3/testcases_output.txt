@@ -10,14 +10,14 @@ Expected Output:
 149
 
 Your Output: 
-null
-null
-null
-null
-null
-null
-null
-null
+177
+3427
+807
+27872
+459
+319
+3459
+652
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
