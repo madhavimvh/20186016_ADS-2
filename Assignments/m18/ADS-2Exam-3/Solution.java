@@ -3,6 +3,9 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 
 public class Solution {
@@ -131,12 +134,57 @@ class T9 {
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
 		// System.out.println(t9Signature);
-		// HashMap<Integer, ArrayList<Character>> enum = new HashMap<Integer, ArrayList<Character>>();
-		// for (int i = 0; i < 10; i++) {
-		// 	enum.add()
-		// }
-		
-		return null;
+		// Map<Integer, Set<Character>> keyMappings = new HashMap<Integer, Set<Character>>();
+		// keyMappings.put(2, new HashSet<Character>(Arrays.asList('a', 'b', 'c')));
+		// keyMappings.put(3, new HashSet<Character>(Arrays.asList('d', 'e', 'f')));
+		// keyMappings.put(4, new HashSet<Character>(Arrays.asList('g', 'h', 'i')));
+		// keyMappings.put(5, new HashSet<Character>(Arrays.asList('j', 'k', 'l')));
+		// keyMappings.put(6, new HashSet<Character>(Arrays.asList('m', 'n', 'o')));
+		// keyMappings.put(7, new HashSet<Character>(Arrays.asList('p', 'q', 'r', 's')));
+		// keyMappings.put(8, new HashSet<Character>(Arrays.asList('t', 'u', 'v')));
+		// keyMappings.put(9, new HashSet<Character>(Arrays.asList('w', 'x', 'y', 'z')));
+		//     String[] str = t9Signature.split("");
+		// for (int i = 0; i < t9Signature.length(); i++) {
+		// 	System.out.println(keyMappings.get(str[2]));
+		// 	keyMappings.get(str[i]);
+
+		// } 	
+		// return null;
+		ArrayList<String> words = new ArrayList<String>();
+		for (String each : tst.keys()) {
+			String[] word = each.split("");
+			String num = "";
+			for (String eachchar : word) {
+				if(eachchar.equals("a") || eachchar.equals("b") || eachchar.equals("c")) {
+					num = num + "2";
+				}
+				if(eachchar.equals("d") || eachchar.equals("e") || eachchar.equals("f")) {
+					num = num + "3";
+				}
+				if(eachchar.equals("g") || eachchar.equals("h") || eachchar.equals("i")) {
+					num = num + "4";
+				}
+				if(eachchar.equals("j") || eachchar.equals("k") || eachchar.equals("l")) {
+					num = num + "5";
+				}
+				if(eachchar.equals("m") || eachchar.equals("n") || eachchar.equals("o")) {
+					num = num + "6";
+				}
+				if(eachchar.equals("p") || eachchar.equals("q") || eachchar.equals("r") || eachchar.equals("s")) {
+					num = num + "7";
+				}
+				if(eachchar.equals("t") || eachchar.equals("u") || eachchar.equals("v")) {
+					num = num + "8";
+				}
+				if(eachchar.equals("w") || eachchar.equals("x") || eachchar.equals("y") || eachchar.equals("z")) {
+					num = num + "9";
+				}
+			}
+			if (num.equals(t9Signature)) {
+						words.add(each);					
+			}
+ 		}
+ 		return words;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
