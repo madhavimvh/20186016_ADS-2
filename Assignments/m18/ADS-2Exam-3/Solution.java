@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 
 public class Solution {
@@ -89,12 +90,15 @@ public class Solution {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
 		String[] words = toReadFile(file);
-		// System.out.println(words);
+		// System.out.println(Arrays.toString(words));
 		for (int i = 0; i < words.length; i++) {
-			if (!st.contains(words[i])) {
-				st.put(words[i], i);
+			String word = words[i].toLowerCase();
+			if (st.contains(word)) {
+				// System.out.println(word);
+				// System.out.println(st.get(words[i]) + 1);
+				st.put(word, st.get(word) + 1);
 			} else {
-				st.put(words[i], st.get(words[i]) + 1);
+				st.put(word, 1);
 			}
 		}
 		return st;
@@ -104,15 +108,21 @@ public class Solution {
 }
 
 class T9 {
-
+	private TST<Integer> tst;
 	public T9(BinarySearchST<String, Integer> st) {
+		tst = new TST<Integer>();
+		for (String word : st.keys()) {
+			tst.put(word, st.get(word));
+		}
 		// your code goes here
+
 	}
 
 	// get all the prefixes that match with given prefix.
 	public Iterable<String> getAllWords(String prefix) {
 		// your code goes here
-		return null;
+		return tst.keysWithPrefix(prefix);
+		// return null;
 	}
 
 	public Iterable<String> potentialWords(String t9Signature) {
