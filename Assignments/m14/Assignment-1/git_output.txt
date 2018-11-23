@@ -1,0 +1,9 @@
+warning: LF will be replaced by CRLF in Assignments/m14/Assignment-1/Solution.java.
+The file will have its original line endings in your working directory.
+[master e8c00d5] "ads2_m14_a1_1: 6/6 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 6 files changed, 16 insertions(+), 22 deletions(-)
+ rewrite Assignments/m14/Assignment-1/check_style_errors.txt (83%)
+ rewrite Assignments/m14/Assignment-1/result/score.json (76%)
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/madhavimvh/20186016_ADS-2.git
+   1361619..e8c00d5  master -> master

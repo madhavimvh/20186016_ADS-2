@@ -1,6 +1,8 @@
 import java.util.Scanner;
 // import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.Set;
+import java.util.HashSet;
 /**
  * Class for solution.
  */
@@ -116,32 +118,39 @@ public final class Solution {
         Iterable<Edge> path2 = mstt.pathTo(d);
         ArrayList<Integer> str = new ArrayList<Integer>();
         str.add(s);
+        Set<Integer> set = new HashSet<Integer>();
         for (Edge edge : path1) {
             int temp = edge.either();
-            if (!str.contains(temp)) {
-                str.add(temp);
+            set.add(temp);
+            set.add(edge.other(temp));
+            // if (!str.contains(temp)) {
+            //     str.add(temp);
 
-            } else if (!str.contains(edge.other(temp))) {
-                str.add(edge.other(temp));
-            }
+            // } else if (!str.contains(edge.other(temp))) {
+            //     str.add(edge.other(temp));
+            // }
         }
         for (Edge edge : path2) {
             int temp1 = edge.either();
+            set.add(temp1);
+            set.add(edge.other(temp1));
             // System.out.println(edge.either());
             // System.out.println(edge.other(temp));
-            if (!str.contains(temp1)) {
-                str.add(temp1);
-            } else if (!str.contains(edge.other(temp1))) {
-                str.add(edge.other(temp1));
-            }
-        }
-        // System.out.print(path1);
-        // System.out.println(path2);
-        String str1 = "";
-        // System.out.println(str.size());
-        for (int i = 0; i < str.size(); i++) {
-            str1 += str.get(i) + " ";
-        }
-        System.out.println(str1);
+        //     if (!str.contains(temp1)) {
+        //         str.add(temp1);
+        //     } else if (!str.contains(edge.other(temp1))) {
+        //         str.add(edge.other(temp1));
+        //     }
+        // }
+        // // System.out.print(path1);
+        // // System.out.println(path2);
+        // String str1 = "";
+        // // System.out.println(str.size());
+        // for (int i = 0; i < str.size(); i++) {
+        //     str1 += str.get(i) + " ";
+        // }
+        // System.out.println(str1);
     }
+    System.out.println(set);
+}
 }

@@ -1,0 +1,15 @@
+warning: LF will be replaced by CRLF in Assignments/m3/3.2 Bipartite/Bag.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Assignments/m3/3.2 Bipartite/Graph.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Assignments/m3/3.2 Bipartite/Queue.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Assignments/m3/3.2 Bipartite/Stack.java.
+The file will have its original line endings in your working directory.
+[master 0641b0f] "ads2_m3_a2_1: 5/5 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 2 files changed, 11 insertions(+), 19 deletions(-)
+ rewrite Assignments/m3/3.2 Bipartite/check_style_errors.txt (83%)
+ rewrite Assignments/m3/3.2 Bipartite/result/score.json (73%)
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/madhavimvh/20186016_ADS-2.git
+   9457a34..0641b0f  master -> master
